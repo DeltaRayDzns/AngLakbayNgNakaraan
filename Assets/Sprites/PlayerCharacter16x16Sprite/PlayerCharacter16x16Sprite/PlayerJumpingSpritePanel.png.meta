@@ -1,0 +1,1391 @@
+fileFormatVersion: 2
+guid: 2b249af980d13e84d942d64127b37a93
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -3313698918542537876
+    second: PlayerJumpingSpritePanel_0
+  - first:
+      213: 3487592852910706355
+    second: PlayerJumpingSpritePanel_1
+  - first:
+      213: 2942218209382326798
+    second: PlayerJumpingSpritePanel_2
+  - first:
+      213: 7313381604419726697
+    second: PlayerJumpingSpritePanel_3
+  - first:
+      213: -4477352290238437574
+    second: PlayerJumpingSpritePanel_4
+  - first:
+      213: -1394713788958573886
+    second: PlayerJumpingSpritePanel_5
+  - first:
+      213: 6330388374554277379
+    second: PlayerJumpingSpritePanel_6
+  - first:
+      213: -1666090022401566894
+    second: PlayerJumpingSpritePanel_7
+  - first:
+      213: 9028167401376864221
+    second: PlayerJumpingSpritePanel_8
+  - first:
+      213: -8257542946675022874
+    second: PlayerJumpingSpritePanel_9
+  - first:
+      213: 6640315099751892374
+    second: PlayerJumpingSpritePanel_10
+  - first:
+      213: -8352462428913969050
+    second: PlayerJumpingSpritePanel_11
+  - first:
+      213: -193791564853872542
+    second: PlayerJumpingSpritePanel_12
+  - first:
+      213: 3670170569334304286
+    second: PlayerJumpingSpritePanel_13
+  - first:
+      213: 7063279920488654622
+    second: PlayerJumpingSpritePanel_14
+  - first:
+      213: -3347534892381020660
+    second: PlayerJumpingSpritePanel_15
+  - first:
+      213: -4484879308350769382
+    second: PlayerJumpingSpritePanel_16
+  - first:
+      213: -6432176330052072004
+    second: PlayerJumpingSpritePanel_17
+  - first:
+      213: -734631768926388344
+    second: PlayerJumpingSpritePanel_18
+  - first:
+      213: 1186809223844986393
+    second: PlayerJumpingSpritePanel_19
+  - first:
+      213: 5679108850098054925
+    second: PlayerJumpingSpritePanel_20
+  - first:
+      213: -8101162019351563009
+    second: PlayerJumpingSpritePanel_21
+  - first:
+      213: -44024034977209856
+    second: PlayerJumpingSpritePanel_22
+  - first:
+      213: 7283127966498380747
+    second: PlayerJumpingSpritePanel_23
+  - first:
+      213: -7953147236213290440
+    second: PlayerJumpingSpritePanel_24
+  - first:
+      213: 5328405420770179944
+    second: PlayerJumpingSpritePanel_25
+  - first:
+      213: -573231629756019782
+    second: PlayerJumpingSpritePanel_26
+  - first:
+      213: 5895344443434021670
+    second: PlayerJumpingSpritePanel_27
+  - first:
+      213: 7318056139153145229
+    second: PlayerJumpingSpritePanel_28
+  - first:
+      213: -38236357846110949
+    second: PlayerJumpingSpritePanel_29
+  - first:
+      213: 1296166663518176663
+    second: PlayerJumpingSpritePanel_30
+  - first:
+      213: -5174618298938433952
+    second: PlayerJumpingSpritePanel_31
+  - first:
+      213: 3505595534987338297
+    second: PlayerJumpingSpritePanel_32
+  - first:
+      213: 6609221947012122228
+    second: PlayerJumpingSpritePanel_33
+  - first:
+      213: -7065501109130118053
+    second: PlayerJumpingSpritePanel_34
+  - first:
+      213: -7087220985620635793
+    second: PlayerJumpingSpritePanel_35
+  - first:
+      213: 6541617807132343211
+    second: PlayerJumpingSpritePanel_36
+  - first:
+      213: -4687362986201613768
+    second: PlayerJumpingSpritePanel_37
+  - first:
+      213: -3075231654777238165
+    second: PlayerJumpingSpritePanel_38
+  - first:
+      213: 3756015254040712532
+    second: PlayerJumpingSpritePanel_39
+  - first:
+      213: -6212287623778571444
+    second: PlayerJumpingSpritePanel_40
+  - first:
+      213: -1140512209924600472
+    second: PlayerJumpingSpritePanel_41
+  - first:
+      213: 3878955621397967968
+    second: PlayerJumpingSpritePanel_42
+  - first:
+      213: -2321566784155038249
+    second: PlayerJumpingSpritePanel_43
+  - first:
+      213: -4801685426999843211
+    second: PlayerJumpingSpritePanel_44
+  - first:
+      213: 936345391390870898
+    second: PlayerJumpingSpritePanel_45
+  - first:
+      213: -4561890037028563301
+    second: PlayerJumpingSpritePanel_46
+  - first:
+      213: 7448285038578795407
+    second: PlayerJumpingSpritePanel_47
+  - first:
+      213: -3929873699475741860
+    second: PlayerJumpingSpritePanel_48
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: PlayerJumpingSpritePanel_0
+      rect:
+        serializedVersion: 2
+        x: 275
+        y: 243
+        width: 46
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c6b0dabe3606302d0800000000000000
+      internalID: -3313698918542537876
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayerJumpingSpritePanel_1
+      rect:
+        serializedVersion: 2
+        x: 351
+        y: 287
+        width: 14
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3be0feeb83b666030800000000000000
+      internalID: 3487592852910706355
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayerJumpingSpritePanel_2
+      rect:
+        serializedVersion: 2
+        x: 363
+        y: 295
+        width: 14
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e026be57fdbd4d820800000000000000
+      internalID: 2942218209382326798
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayerJumpingSpritePanel_3
+      rect:
+        serializedVersion: 2
+        x: 375
+        y: 295
+        width: 14
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 96d605e32d95e7560800000000000000
+      internalID: 7313381604419726697
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayerJumpingSpritePanel_4
+      rect:
+        serializedVersion: 2
+        x: 51
+        y: 219
+        width: 46
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a376e0660df3dd1c0800000000000000
+      internalID: -4477352290238437574
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayerJumpingSpritePanel_5
+      rect:
+        serializedVersion: 2
+        x: 119
+        y: 219
+        width: 46
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2caf8cdc23bf4ace0800000000000000
+      internalID: -1394713788958573886
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayerJumpingSpritePanel_6
+      rect:
+        serializedVersion: 2
+        x: 187
+        y: 215
+        width: 14
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 306f193dfae0ad750800000000000000
+      internalID: 6330388374554277379
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayerJumpingSpritePanel_7
+      rect:
+        serializedVersion: 2
+        x: 199
+        y: 231
+        width: 46
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2579ee2b3fbd0e8e0800000000000000
+      internalID: -1666090022401566894
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayerJumpingSpritePanel_8
+      rect:
+        serializedVersion: 2
+        x: 263
+        y: 231
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dd754d31b6e7a4d70800000000000000
+      internalID: 9028167401376864221
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayerJumpingSpritePanel_9
+      rect:
+        serializedVersion: 2
+        x: 279
+        y: 227
+        width: 6
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6e327e9b070576d80800000000000000
+      internalID: -8257542946675022874
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayerJumpingSpritePanel_10
+      rect:
+        serializedVersion: 2
+        x: 291
+        y: 227
+        width: 6
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 695cf5db663272c50800000000000000
+      internalID: 6640315099751892374
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayerJumpingSpritePanel_11
+      rect:
+        serializedVersion: 2
+        x: 307
+        y: 227
+        width: 6
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 66859c49ca7161c80800000000000000
+      internalID: -8352462428913969050
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayerJumpingSpritePanel_12
+      rect:
+        serializedVersion: 2
+        x: 355
+        y: 231
+        width: 46
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 268fa6839938f4df0800000000000000
+      internalID: -193791564853872542
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayerJumpingSpritePanel_13
+      rect:
+        serializedVersion: 2
+        x: 427
+        y: 219
+        width: 46
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e1ea34affa01fe230800000000000000
+      internalID: 3670170569334304286
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayerJumpingSpritePanel_14
+      rect:
+        serializedVersion: 2
+        x: 507
+        y: 219
+        width: 54
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e1720e13aafc50260800000000000000
+      internalID: 7063279920488654622
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayerJumpingSpritePanel_15
+      rect:
+        serializedVersion: 2
+        x: 591
+        y: 219
+        width: 18
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c0e576a50ca2b81d0800000000000000
+      internalID: -3347534892381020660
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayerJumpingSpritePanel_16
+      rect:
+        serializedVersion: 2
+        x: 603
+        y: 219
+        width: 46
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a17b04de70282c1c0800000000000000
+      internalID: -4484879308350769382
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayerJumpingSpritePanel_17
+      rect:
+        serializedVersion: 2
+        x: 643
+        y: 219
+        width: 18
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cbd029af4b15cb6a0800000000000000
+      internalID: -6432176330052072004
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayerJumpingSpritePanel_18
+      rect:
+        serializedVersion: 2
+        x: 695
+        y: 219
+        width: 46
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 88ffc646c401ec5f0800000000000000
+      internalID: -734631768926388344
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayerJumpingSpritePanel_19
+      rect:
+        serializedVersion: 2
+        x: 199
+        y: 215
+        width: 10
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 91eff6b73b4687010800000000000000
+      internalID: 1186809223844986393
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayerJumpingSpritePanel_20
+      rect:
+        serializedVersion: 2
+        x: 215
+        y: 215
+        width: 6
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d072fd2f86f30de40800000000000000
+      internalID: 5679108850098054925
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayerJumpingSpritePanel_21
+      rect:
+        serializedVersion: 2
+        x: 231
+        y: 219
+        width: 6
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ff4f9a0b014e29f80800000000000000
+      internalID: -8101162019351563009
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayerJumpingSpritePanel_22
+      rect:
+        serializedVersion: 2
+        x: 683
+        y: 219
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 002aa999f58936ff0800000000000000
+      internalID: -44024034977209856
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayerJumpingSpritePanel_23
+      rect:
+        serializedVersion: 2
+        x: 743
+        y: 219
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bcb59d04c4ed21560800000000000000
+      internalID: 7283127966498380747
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayerJumpingSpritePanel_24
+      rect:
+        serializedVersion: 2
+        x: 267
+        y: 103
+        width: 46
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 83a802be9beb0a190800000000000000
+      internalID: -7953147236213290440
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayerJumpingSpritePanel_25
+      rect:
+        serializedVersion: 2
+        x: 355
+        y: 159
+        width: 14
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 86bb544cf7c42f940800000000000000
+      internalID: 5328405420770179944
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayerJumpingSpritePanel_26
+      rect:
+        serializedVersion: 2
+        x: 367
+        y: 159
+        width: 14
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: abbcf5eaed87b08f0800000000000000
+      internalID: -573231629756019782
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayerJumpingSpritePanel_27
+      rect:
+        serializedVersion: 2
+        x: 379
+        y: 151
+        width: 14
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6233573598870d150800000000000000
+      internalID: 5895344443434021670
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayerJumpingSpritePanel_28
+      rect:
+        serializedVersion: 2
+        x: 55
+        y: 83
+        width: 46
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d8df69c2945fe8560800000000000000
+      internalID: 7318056139153145229
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayerJumpingSpritePanel_29
+      rect:
+        serializedVersion: 2
+        x: 123
+        y: 83
+        width: 46
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b1de3113c38287ff0800000000000000
+      internalID: -38236357846110949
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayerJumpingSpritePanel_30
+      rect:
+        serializedVersion: 2
+        x: 195
+        y: 95
+        width: 46
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 79544bc86b8ecf110800000000000000
+      internalID: 1296166663518176663
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayerJumpingSpritePanel_31
+      rect:
+        serializedVersion: 2
+        x: 239
+        y: 87
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 06ed98bc2101038b0800000000000000
+      internalID: -5174618298938433952
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayerJumpingSpritePanel_32
+      rect:
+        serializedVersion: 2
+        x: 275
+        y: 87
+        width: 6
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 932ad1dc09066a030800000000000000
+      internalID: 3505595534987338297
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayerJumpingSpritePanel_33
+      rect:
+        serializedVersion: 2
+        x: 291
+        y: 87
+        width: 6
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4768f59f75ca8bb50800000000000000
+      internalID: 6609221947012122228
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayerJumpingSpritePanel_34
+      rect:
+        serializedVersion: 2
+        x: 303
+        y: 87
+        width: 6
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b5cbb260d2c42fd90800000000000000
+      internalID: -7065501109130118053
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayerJumpingSpritePanel_35
+      rect:
+        serializedVersion: 2
+        x: 311
+        y: 91
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f6f5363301225ad90800000000000000
+      internalID: -7087220985620635793
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayerJumpingSpritePanel_36
+      rect:
+        serializedVersion: 2
+        x: 343
+        y: 95
+        width: 46
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bab3e729cbe78ca50800000000000000
+      internalID: 6541617807132343211
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayerJumpingSpritePanel_37
+      rect:
+        serializedVersion: 2
+        x: 427
+        y: 83
+        width: 46
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 83a7322e23423feb0800000000000000
+      internalID: -4687362986201613768
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayerJumpingSpritePanel_38
+      rect:
+        serializedVersion: 2
+        x: 507
+        y: 83
+        width: 54
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b6d47fe6a159255d0800000000000000
+      internalID: -3075231654777238165
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayerJumpingSpritePanel_39
+      rect:
+        serializedVersion: 2
+        x: 591
+        y: 83
+        width: 18
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4559b0c29fb002430800000000000000
+      internalID: 3756015254040712532
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayerJumpingSpritePanel_40
+      rect:
+        serializedVersion: 2
+        x: 603
+        y: 83
+        width: 46
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c4b6f1ef15589c9a0800000000000000
+      internalID: -6212287623778571444
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayerJumpingSpritePanel_41
+      rect:
+        serializedVersion: 2
+        x: 643
+        y: 83
+        width: 18
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 86dc27110361c20f0800000000000000
+      internalID: -1140512209924600472
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayerJumpingSpritePanel_42
+      rect:
+        serializedVersion: 2
+        x: 699
+        y: 83
+        width: 46
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0643ee80691d4d530800000000000000
+      internalID: 3878955621397967968
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayerJumpingSpritePanel_43
+      rect:
+        serializedVersion: 2
+        x: 187
+        y: 79
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7ddc71c5f4328cfd0800000000000000
+      internalID: -2321566784155038249
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayerJumpingSpritePanel_44
+      rect:
+        serializedVersion: 2
+        x: 203
+        y: 79
+        width: 6
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 57621886b8cfc5db0800000000000000
+      internalID: -4801685426999843211
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayerJumpingSpritePanel_45
+      rect:
+        serializedVersion: 2
+        x: 215
+        y: 79
+        width: 10
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 27d4de82c219efc00800000000000000
+      internalID: 936345391390870898
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayerJumpingSpritePanel_46
+      rect:
+        serializedVersion: 2
+        x: 231
+        y: 83
+        width: 6
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b96d4866e29e0b0c0800000000000000
+      internalID: -4561890037028563301
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayerJumpingSpritePanel_47
+      rect:
+        serializedVersion: 2
+        x: 687
+        y: 83
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f838856a7cf9d5760800000000000000
+      internalID: 7448285038578795407
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayerJumpingSpritePanel_48
+      rect:
+        serializedVersion: 2
+        x: 747
+        y: 83
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c53299211b84679c0800000000000000
+      internalID: -3929873699475741860
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      PlayerJumpingSpritePanel_0: -3313698918542537876
+      PlayerJumpingSpritePanel_1: 3487592852910706355
+      PlayerJumpingSpritePanel_10: 6640315099751892374
+      PlayerJumpingSpritePanel_11: -8352462428913969050
+      PlayerJumpingSpritePanel_12: -193791564853872542
+      PlayerJumpingSpritePanel_13: 3670170569334304286
+      PlayerJumpingSpritePanel_14: 7063279920488654622
+      PlayerJumpingSpritePanel_15: -3347534892381020660
+      PlayerJumpingSpritePanel_16: -4484879308350769382
+      PlayerJumpingSpritePanel_17: -6432176330052072004
+      PlayerJumpingSpritePanel_18: -734631768926388344
+      PlayerJumpingSpritePanel_19: 1186809223844986393
+      PlayerJumpingSpritePanel_2: 2942218209382326798
+      PlayerJumpingSpritePanel_20: 5679108850098054925
+      PlayerJumpingSpritePanel_21: -8101162019351563009
+      PlayerJumpingSpritePanel_22: -44024034977209856
+      PlayerJumpingSpritePanel_23: 7283127966498380747
+      PlayerJumpingSpritePanel_24: -7953147236213290440
+      PlayerJumpingSpritePanel_25: 5328405420770179944
+      PlayerJumpingSpritePanel_26: -573231629756019782
+      PlayerJumpingSpritePanel_27: 5895344443434021670
+      PlayerJumpingSpritePanel_28: 7318056139153145229
+      PlayerJumpingSpritePanel_29: -38236357846110949
+      PlayerJumpingSpritePanel_3: 7313381604419726697
+      PlayerJumpingSpritePanel_30: 1296166663518176663
+      PlayerJumpingSpritePanel_31: -5174618298938433952
+      PlayerJumpingSpritePanel_32: 3505595534987338297
+      PlayerJumpingSpritePanel_33: 6609221947012122228
+      PlayerJumpingSpritePanel_34: -7065501109130118053
+      PlayerJumpingSpritePanel_35: -7087220985620635793
+      PlayerJumpingSpritePanel_36: 6541617807132343211
+      PlayerJumpingSpritePanel_37: -4687362986201613768
+      PlayerJumpingSpritePanel_38: -3075231654777238165
+      PlayerJumpingSpritePanel_39: 3756015254040712532
+      PlayerJumpingSpritePanel_4: -4477352290238437574
+      PlayerJumpingSpritePanel_40: -6212287623778571444
+      PlayerJumpingSpritePanel_41: -1140512209924600472
+      PlayerJumpingSpritePanel_42: 3878955621397967968
+      PlayerJumpingSpritePanel_43: -2321566784155038249
+      PlayerJumpingSpritePanel_44: -4801685426999843211
+      PlayerJumpingSpritePanel_45: 936345391390870898
+      PlayerJumpingSpritePanel_46: -4561890037028563301
+      PlayerJumpingSpritePanel_47: 7448285038578795407
+      PlayerJumpingSpritePanel_48: -3929873699475741860
+      PlayerJumpingSpritePanel_5: -1394713788958573886
+      PlayerJumpingSpritePanel_6: 6330388374554277379
+      PlayerJumpingSpritePanel_7: -1666090022401566894
+      PlayerJumpingSpritePanel_8: 9028167401376864221
+      PlayerJumpingSpritePanel_9: -8257542946675022874
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
