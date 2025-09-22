@@ -2,23 +2,41 @@ using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour
 {
-    public float moveSpeed;
-    public float horizontalInput;
+    [Header("Movement")]
+    [SerializeField] private float moveSpeed;
+    [SerializeField] private float horizontalInput;
     Rigidbody2D rb;
-    public float minJumpPower = 5f;
-    public float maxJumpPower = 15f;
-    public float jumpChargeRate = 20f;
-    private float currentJumpPower = 0f;
+    [SerializeField] private float minJumpPower = 5f;
+    [SerializeField] private float maxJumpPower = 15f;
+    [SerializeField] private float jumpChargeRate = 20f;
+    [SerializeField] private float currentJumpPower = 0f;
     bool isJumping = false;
+
+
+    [Header("Animation")]
+    [SerializeField] private Animator animator;
+    private SpriteRenderer sr;
 
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
+        sr = GetComponent<SpriteRenderer>();
     }
 
     void Update()
     {
         horizontalInput = Input.GetAxis("Horizontal");
+
+        animator.SetBool("isRunning", horizontalInput != 0);
+
+        if (horizontalInput > 0)
+        {
+            sr.flipX = false;
+        }
+        else if (horizontalInput < 0)
+        {
+            sr.flipX = true;
+        }
 
         if (Input.GetButtonDown("Jump") && !isJumping)
         {
