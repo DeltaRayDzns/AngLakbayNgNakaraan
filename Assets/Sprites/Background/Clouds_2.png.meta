@@ -109,12 +109,12 @@ TextureImporter:
       name: Clouds_2_0
       rect:
         serializedVersion: 2
-        x: 14
-        y: 205
-        width: 139
-        height: 49
+        x: 7
+        y: 131
+        width: 510
+        height: 137
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -127,55 +127,11 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
-    - serializedVersion: 2
-      name: Clouds_2_1
-      rect:
-        serializedVersion: 2
-        x: 106
-        y: 145
-        width: 256
-        height: 112
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 18ea791821ff08030800000000000000
-      internalID: 3495073765788200577
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Clouds_2_2
-      rect:
-        serializedVersion: 2
-        x: 370
-        y: 182
-        width: 130
-        height: 75
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: bc8bcb90f22347b30800000000000000
-      internalID: 4284104323144399051
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     outline: []
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: cd7c7c7ce05be4b419bdaf7a4c2bc08f
     internalID: 0
     vertices: []
     indices: 
