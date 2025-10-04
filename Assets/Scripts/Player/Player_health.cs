@@ -28,6 +28,18 @@ public class Player_health : MonoBehaviour
         }
     }
 
+    public bool IsShieldActive()
+    {
+        return Shield_active;
+    }
+
+    public void Heal(int amount)
+    {
+        currentHealth += amount;
+        if (currentHealth > maxHealth) currentHealth = maxHealth;
+        UpdateHealthUI();
+    }
+
     // Update is called once per frame
     public void TakeDamage(int damage)
     {
