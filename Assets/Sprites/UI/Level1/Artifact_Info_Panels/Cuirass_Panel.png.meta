@@ -3,8 +3,8 @@ guid: 182735a32d2826046a289ad59546da31
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 1458624262748426192
-    second: Cuirass_Panel_0
+      213: 694415461832467697
+    second: Cuirass_panel_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -100,13 +100,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Cuirass_Panel_0
+      name: Cuirass_panel_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 1440
-        height: 810
+        x: 13
+        y: 36
+        width: 988
+        height: 505
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -115,8 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 0dfc2e1f9031e3410800000000000000
-      internalID: 1458624262748426192
+      spriteID: 1f42011fe2f03a900800000000000000
+      internalID: 694415461832467697
       vertices: []
       indices: 
       edges: []
@@ -135,7 +135,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Cuirass_Panel_0: 1458624262748426192
+      Cuirass_panel_0: 694415461832467697
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

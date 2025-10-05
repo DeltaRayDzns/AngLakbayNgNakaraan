@@ -103,10 +103,10 @@ TextureImporter:
       name: TChest_Panel_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 1440
-        height: 810
+        x: 13
+        y: 36
+        width: 988
+        height: 505
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
