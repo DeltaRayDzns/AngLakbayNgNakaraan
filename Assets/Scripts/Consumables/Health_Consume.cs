@@ -3,6 +3,8 @@ using UnityEngine;
 public class Health_Consume : MonoBehaviour
 {
     public Player_health playerHealth;
+    public ShrinkItem shrinkItem; 
+    
     void Start()
     {
         gameObject.SetActive(true);
@@ -16,8 +18,9 @@ public class Health_Consume : MonoBehaviour
             
             if (playerHealth.currentHealth < playerHealth.maxHealth)
             {
+                gameObject.GetComponent<Collider2D>().enabled = false;
+                StartCoroutine(shrinkItem.Shrinktofalse());
                 playerHealth.Heal(1);
-                gameObject.SetActive(false);
                 Debug.Log("Health Consumed");
             }
             else

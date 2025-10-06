@@ -5,6 +5,7 @@ public class Shield_Consume : MonoBehaviour
 {
 
     public Player_health playerHealth;
+    public ShrinkItem shrinkItem; 
     
     void Start()
     {
@@ -16,10 +17,12 @@ public class Shield_Consume : MonoBehaviour
     {
         if (other.CompareTag("Player"))
         {
+            
             if (!playerHealth.IsShieldActive())
             {
+                gameObject.GetComponent<Collider2D>().enabled = false;
+                StartCoroutine(shrinkItem.Shrinktofalse());
                 playerHealth.ActivateShield();
-                gameObject.SetActive(false);
                 Debug.Log("Shield activated");
             }
             else
