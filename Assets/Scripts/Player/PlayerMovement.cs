@@ -9,6 +9,11 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] private float minJumpPower = 5f;
     [SerializeField] private float maxJumpPower = 15f;
     [SerializeField] private float jumpChargeRate = 20f;
+
+	public float MinJumpPower => minJumpPower;
+	public float MaxJumpPower => maxJumpPower;
+	public float CurrentJumpPower => currentJumpPower;
+
     [SerializeField] private float currentJumpPower = 0f;
     bool isJumping = false;
 
@@ -74,6 +79,8 @@ public class PlayerMovement : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Ground"))
         {
+            currentJumpPower = 0f;
+			isJumping = true;
             animator.SetBool("isJump", true);
         }
     }

@@ -8,11 +8,9 @@ public class Spike_damage : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Player"))
         {
-            // Apply damage
             if (playerHealth != null)
                 playerHealth.TakeDamage(1);
 
-            // Apply knockback
             KnockBack kb = collision.gameObject.GetComponent<KnockBack>();
             if (kb != null)
                 kb.ApplyKnockback(transform.position);
