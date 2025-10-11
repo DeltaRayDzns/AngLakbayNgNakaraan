@@ -68,13 +68,4 @@ public class Interact_artifact : MonoBehaviour
         }
     }
 
-    void Update()
-    {
-        if (!X_Button.activeSelf)
-        {
-            Debug.Log("Continue");
-            Time.timeScale = 1f;
-        }
-    }
-
 }
