@@ -125,12 +125,12 @@ TextureImporter:
       name: GameOver_0
       rect:
         serializedVersion: 2
-        x: 5
-        y: 110
-        width: 63
-        height: 36
+        x: 3
+        y: 111
+        width: 247
+        height: 34
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -143,77 +143,11 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
-    - serializedVersion: 2
-      name: GameOver_1
-      rect:
-        serializedVersion: 2
-        x: 67
-        y: 110
-        width: 63
-        height: 23
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: ce1da6703deaba240800000000000000
-      internalID: 4804125648906539500
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: GameOver_2
-      rect:
-        serializedVersion: 2
-        x: 139
-        y: 110
-        width: 63
-        height: 36
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: ba4eb4b6eb1d75cf0800000000000000
-      internalID: -263511437403757397
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: GameOver_3
-      rect:
-        serializedVersion: 2
-        x: 200
-        y: 110
-        width: 51
-        height: 23
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: cd711c1aeed599490800000000000000
-      internalID: -7739051205162100772
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     outline: []
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 62843a70560bf7849b7b35cdd5777036
     internalID: 0
     vertices: []
     indices: 
@@ -227,6 +161,7 @@ TextureImporter:
       GameOver_1: 4804125648906539500
       GameOver_2: -263511437403757397
       GameOver_3: -7739051205162100772
+      GameOver_4: -812955009
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

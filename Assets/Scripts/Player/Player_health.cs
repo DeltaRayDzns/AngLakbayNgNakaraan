@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.SceneManagement; 
 using UnityEngine.UI; 
 
 public class Player_health : MonoBehaviour
@@ -15,9 +16,18 @@ public class Player_health : MonoBehaviour
     public GameObject shield_Icons;
     public GameObject shield_broken_Icons;
     private bool Shield_active = false;
+
+	[Header("UtilitiesUI")]
+	[SerializeField]
+	private GameObject GameOverPanel;
+
+	[SerializeField]
+	private GameObject PauseBtn;
     
     void Start()
     {
+		GameOverPanel.SetActive(false);
+
         currentHealth = maxHealth;
         UpdateHealthUI();
 
@@ -52,7 +62,16 @@ public class Player_health : MonoBehaviour
         else
         {
             currentHealth -= damage;
-            if (currentHealth < 0) currentHealth = 0;
+            if (currentHealth < 0) 
+			{
+				currentHealth = 0;
+			}
+			
+			if (currentHealth == 0) 
+			{
+				OnDeath(); 
+			}
+			
         }
 
         UpdateHealthUI();
@@ -81,4 +100,22 @@ public class Player_health : MonoBehaviour
         shield_Icons.SetActive(true);
         shield_broken_Icons.SetActive(false);
     }
+
+	public void OnDeath() 
+	{
+		Time.timeScale = 0f;
+		GameOverPanel.SetActive(true);
+		PauseBtn.SetActive(false);
+	}
+	
+	public void retry() {
+		Time.timeScale = 1f;
+
+    	Scene currentScene = SceneManager.GetActiveScene();
+
+		SceneManager.LoadScene(currentScene.name);
+
+		PauseBtn.SetActive(true);
+		
+	}
 }
