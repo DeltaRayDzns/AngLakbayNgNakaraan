@@ -19,13 +19,11 @@ public class KnockBack : MonoBehaviour
     {
         if (isKnocked) return;
 
-        // Calculate direction from source to player
         Vector2 direction = (rb.position - sourcePosition).normalized;
 
-        // Optional tweak: Reduce vertical push so it’s not only upwards
         direction.y = Mathf.Clamp(direction.y, -0.2f, 0.5f);
 
-        rb.linearVelocity = Vector2.zero; // reset current velocity
+        rb.linearVelocity = Vector2.zero; 
         rb.AddForce(direction * strength, ForceMode2D.Impulse);
 
         StartCoroutine(KnockbackRoutine());
