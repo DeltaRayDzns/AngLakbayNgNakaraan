@@ -96,6 +96,7 @@ public class Player_health : MonoBehaviour
 
     public void ActivateShield()
     {
+	    
         Shield_active = true;
         shield_Icons.SetActive(true);
         shield_broken_Icons.SetActive(false);
@@ -103,6 +104,9 @@ public class Player_health : MonoBehaviour
 
 	public void OnDeath() 
 	{
+		if (AudioManager.Instance != null)
+			AudioManager.Instance.FadeOutMusic(1.5f);
+		
 		Time.timeScale = 0f;
 		GameOverPanel.SetActive(true);
 		PauseBtn.SetActive(false);

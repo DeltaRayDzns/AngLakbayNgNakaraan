@@ -1,11 +1,12 @@
 using UnityEngine;
+using System.Collections;
 
 public class Enemy_attack : MonoBehaviour
 {
     [Header("Attack Settings")]
-    public float attackCooldown = 1f;       
-    public int damage;                  
-    public float moveStopDuration = 0.5f;   
+    public float attackCooldown = 1f;         // Time between attacks
+    public int damage = 1;                    // Damage dealt to player
+    public float moveStopDuration = 0.5f;     // How long the enemy stops when attacking
 
     private float lastAttackTime;
     private EnemyAI_controller enemyAI;
@@ -16,17 +17,18 @@ public class Enemy_attack : MonoBehaviour
         enemyAI = GetComponentInParent<EnemyAI_controller>();
     }
 
-    private void OnCollisionStay2D(Collision2D collision)
+    private void OnTriggerStay2D(Collider2D other)
     {
-        if (collision.collider.CompareTag("Player") && Time.time >= lastAttackTime + attackCooldown)
+        // Only attack player and respect cooldown
+        if (other.CompareTag("Player") && Time.time >= lastAttackTime + attackCooldown)
         {
-            Player_health playerHealth = collision.collider.GetComponent<Player_health>();
+            Player_health playerHealth = other.GetComponent<Player_health>();
             if (playerHealth != null)
             {
                 playerHealth.TakeDamage(damage);
             }
 
-            KnockBack kb = collision.collider.GetComponent<KnockBack>();
+            KnockBack kb = other.GetComponent<KnockBack>();
             if (kb != null)
             {
                 kb.ApplyKnockback(transform.position);
@@ -35,24 +37,22 @@ public class Enemy_attack : MonoBehaviour
             lastAttackTime = Time.time;
 
             if (!isAttacking)
-            {
                 StartCoroutine(StopMovementTemporarily());
-            }
         }
     }
 
-    private System.Collections.IEnumerator StopMovementTemporarily()
+    private IEnumerator StopMovementTemporarily()
     {
         isAttacking = true;
 
         if (enemyAI != null)
         {
             float originalSpeed = enemyAI.speed;
-            enemyAI.speed = 0f;  
+            enemyAI.speed = 0f;  // Stop moving during attack
 
             yield return new WaitForSeconds(moveStopDuration);
 
-            enemyAI.speed = originalSpeed;  
+            enemyAI.speed = originalSpeed;  // Resume normal movement
         }
 
         isAttacking = false;
