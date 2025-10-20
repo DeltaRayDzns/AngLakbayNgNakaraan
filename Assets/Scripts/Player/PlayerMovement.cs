@@ -36,11 +36,11 @@ public class PlayerMovement : MonoBehaviour
 
         if (horizontalInput > 0)
         {
-            sr.flipX = false;
+            transform.localScale = new Vector3( 1.3f, transform.localScale.y, 1.3f);
         }
         else if (horizontalInput < 0)
         {
-            sr.flipX = true;
+            transform.localScale = new Vector3(-1.3f, transform.localScale.y, 1.3f);
         }
 
         if (Input.GetButtonDown("Jump") && !isJumping)
@@ -84,4 +84,5 @@ public class PlayerMovement : MonoBehaviour
             animator.SetBool("isJump", true);
         }
     }
+	
 }

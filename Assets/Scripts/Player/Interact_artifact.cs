@@ -47,7 +47,7 @@ public class Interact_artifact : MonoBehaviour
                     Debug.Log("Pressed F and Paused: " + artefacts[i].name);
                     artefact_Panels[i].SetActive(true);
                     X_Button.SetActive(true);
-                    Time.timeScale = 0f; // pause
+                    Time.timeScale = 0f; 
                 }
             }
         }
