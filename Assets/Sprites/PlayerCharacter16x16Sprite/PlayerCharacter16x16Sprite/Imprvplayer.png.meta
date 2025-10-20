@@ -1,0 +1,2704 @@
+fileFormatVersion: 2
+guid: 21ebe365ed29c054d86ce1ea028d5475
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 5377219870112218209
+    second: Imprvplayer_0
+  - first:
+      213: -5756479932428048933
+    second: Imprvplayer_1
+  - first:
+      213: -7548991304663894664
+    second: Imprvplayer_2
+  - first:
+      213: -6540492938073835909
+    second: Imprvplayer_3
+  - first:
+      213: -7255163298291159741
+    second: Imprvplayer_4
+  - first:
+      213: 9127435863934767591
+    second: Imprvplayer_5
+  - first:
+      213: -405583250249040355
+    second: Imprvplayer_6
+  - first:
+      213: -6522375394067334856
+    second: Imprvplayer_7
+  - first:
+      213: -4732570996871769798
+    second: Imprvplayer_8
+  - first:
+      213: -2588691588832645078
+    second: Imprvplayer_9
+  - first:
+      213: -4244166193413411770
+    second: Imprvplayer_10
+  - first:
+      213: 6699289654815430723
+    second: Imprvplayer_11
+  - first:
+      213: 3237119438829146257
+    second: Imprvplayer_12
+  - first:
+      213: -5084749388503319074
+    second: Imprvplayer_13
+  - first:
+      213: 877718970754476514
+    second: Imprvplayer_14
+  - first:
+      213: -5096403777443386844
+    second: Imprvplayer_15
+  - first:
+      213: -1786407347539808058
+    second: Imprvplayer_16
+  - first:
+      213: -4882224740334480502
+    second: Imprvplayer_17
+  - first:
+      213: 7415664841557008104
+    second: Imprvplayer_18
+  - first:
+      213: -6416237367828869914
+    second: Imprvplayer_19
+  - first:
+      213: -5542803795030625130
+    second: Imprvplayer_20
+  - first:
+      213: -5461209530692966965
+    second: Imprvplayer_21
+  - first:
+      213: 7544973318523565197
+    second: Imprvplayer_22
+  - first:
+      213: 2757388665607370984
+    second: Imprvplayer_23
+  - first:
+      213: -5254073504069974944
+    second: Imprvplayer_24
+  - first:
+      213: -7435197618229910257
+    second: Imprvplayer_25
+  - first:
+      213: -7843302223237611170
+    second: Imprvplayer_26
+  - first:
+      213: -2854048889790076713
+    second: Imprvplayer_27
+  - first:
+      213: -8278431973777629395
+    second: Imprvplayer_28
+  - first:
+      213: -2492589553132997896
+    second: Imprvplayer_29
+  - first:
+      213: -3460421267177663026
+    second: Imprvplayer_30
+  - first:
+      213: 9011360829923369672
+    second: Imprvplayer_31
+  - first:
+      213: -8794024619953716976
+    second: Imprvplayer_32
+  - first:
+      213: -7954145822329574020
+    second: Imprvplayer_33
+  - first:
+      213: -743298979447469427
+    second: Imprvplayer_34
+  - first:
+      213: 8822934757574942733
+    second: Imprvplayer_35
+  - first:
+      213: -8999876544840612569
+    second: Imprvplayer_36
+  - first:
+      213: -7680629165832497279
+    second: Imprvplayer_37
+  - first:
+      213: 4103342975214113626
+    second: Imprvplayer_38
+  - first:
+      213: -7559372606882277604
+    second: Imprvplayer_39
+  - first:
+      213: 7786299016510997861
+    second: Imprvplayer_40
+  - first:
+      213: 5117056886598565222
+    second: Imprvplayer_41
+  - first:
+      213: -8629756821835332171
+    second: Imprvplayer_42
+  - first:
+      213: 657390367031929119
+    second: Imprvplayer_43
+  - first:
+      213: -7590477542666972091
+    second: Imprvplayer_44
+  - first:
+      213: 4880090586766284572
+    second: Imprvplayer_45
+  - first:
+      213: -65528273807495179
+    second: Imprvplayer_46
+  - first:
+      213: -7903044502172825087
+    second: Imprvplayer_47
+  - first:
+      213: 5847573356373601289
+    second: Imprvplayer_48
+  - first:
+      213: 8649160130941511233
+    second: Imprvplayer_49
+  - first:
+      213: -5225309923523220223
+    second: Imprvplayer_50
+  - first:
+      213: -4950256413162343750
+    second: Imprvplayer_51
+  - first:
+      213: 1144824906945588550
+    second: Imprvplayer_52
+  - first:
+      213: 6582484786354679964
+    second: Imprvplayer_53
+  - first:
+      213: 6018069822359510612
+    second: Imprvplayer_54
+  - first:
+      213: 1948804379552946290
+    second: Imprvplayer_55
+  - first:
+      213: 6281905593117162527
+    second: Imprvplayer_56
+  - first:
+      213: -5953271233129497470
+    second: Imprvplayer_57
+  - first:
+      213: -3751409565081920039
+    second: Imprvplayer_58
+  - first:
+      213: 5377002748945447938
+    second: Imprvplayer_59
+  - first:
+      213: -111050329033235805
+    second: Imprvplayer_60
+  - first:
+      213: 5042219863360877069
+    second: Imprvplayer_61
+  - first:
+      213: -7989721617645147084
+    second: Imprvplayer_62
+  - first:
+      213: -8073803151383875600
+    second: Imprvplayer_63
+  - first:
+      213: -394055694199212695
+    second: Imprvplayer_64
+  - first:
+      213: -8639342546524450808
+    second: Imprvplayer_65
+  - first:
+      213: -1569245981883544626
+    second: Imprvplayer_66
+  - first:
+      213: 2141596306954089286
+    second: Imprvplayer_67
+  - first:
+      213: -8872992838542023692
+    second: Imprvplayer_68
+  - first:
+      213: -8422042983354050471
+    second: Imprvplayer_69
+  - first:
+      213: -2608043675797555282
+    second: Imprvplayer_70
+  - first:
+      213: -4851533082956406286
+    second: Imprvplayer_71
+  - first:
+      213: 238161163277259738
+    second: Imprvplayer_72
+  - first:
+      213: 4278896013778286223
+    second: Imprvplayer_73
+  - first:
+      213: -1319619805571831228
+    second: Imprvplayer_74
+  - first:
+      213: 7781201570365769906
+    second: Imprvplayer_75
+  - first:
+      213: 1598169107142435491
+    second: Imprvplayer_76
+  - first:
+      213: 6669715566429000239
+    second: Imprvplayer_77
+  - first:
+      213: -220735709962771353
+    second: Imprvplayer_78
+  - first:
+      213: 6940135337722175830
+    second: Imprvplayer_79
+  - first:
+      213: 3203495198090528039
+    second: Imprvplayer_80
+  - first:
+      213: -5144255143851729495
+    second: Imprvplayer_81
+  - first:
+      213: 1212749606735788191
+    second: Imprvplayer_82
+  - first:
+      213: 5935470187300172670
+    second: Imprvplayer_83
+  - first:
+      213: -5250650028514914966
+    second: Imprvplayer_84
+  - first:
+      213: -7621975975494388100
+    second: Imprvplayer_85
+  - first:
+      213: -3480893771862916706
+    second: Imprvplayer_86
+  - first:
+      213: 1189847301215054314
+    second: Imprvplayer_87
+  - first:
+      213: -8516109601224419263
+    second: Imprvplayer_88
+  - first:
+      213: 2673074716200407237
+    second: Imprvplayer_89
+  - first:
+      213: 1655090519849492510
+    second: Imprvplayer_90
+  - first:
+      213: -9189839200535466328
+    second: Imprvplayer_91
+  - first:
+      213: 1059210780072933128
+    second: Imprvplayer_92
+  - first:
+      213: 7354461555853662280
+    second: Imprvplayer_93
+  - first:
+      213: -5135679017054888585
+    second: Imprvplayer_94
+  - first:
+      213: 4924518423100764236
+    second: Imprvplayer_95
+  - first:
+      213: 5666148947334712116
+    second: Imprvplayer_96
+  - first:
+      213: 1399432570230433461
+    second: Imprvplayer_97
+  - first:
+      213: -8001663265672303444
+    second: Imprvplayer_98
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Imprvplayer_0
+      rect:
+        serializedVersion: 2
+        x: 20
+        y: 410
+        width: 50
+        height: 92
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 16cf53d6bf8bf9a40800000000000000
+      internalID: 5377219870112218209
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Imprvplayer_1
+      rect:
+        serializedVersion: 2
+        x: 86
+        y: 476
+        width: 17
+        height: 35
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bd526f62000ec10b0800000000000000
+      internalID: -5756479932428048933
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Imprvplayer_2
+      rect:
+        serializedVersion: 2
+        x: 131
+        y: 476
+        width: 11
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 875fef897689c3790800000000000000
+      internalID: -7548991304663894664
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Imprvplayer_3
+      rect:
+        serializedVersion: 2
+        x: 191
+        y: 410
+        width: 50
+        height: 92
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b76782a63508b35a0800000000000000
+      internalID: -6540492938073835909
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Imprvplayer_4
+      rect:
+        serializedVersion: 2
+        x: 248
+        y: 479
+        width: 17
+        height: 35
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 34d67e17b6b705b90800000000000000
+      internalID: -7255163298291159741
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Imprvplayer_5
+      rect:
+        serializedVersion: 2
+        x: 281
+        y: 479
+        width: 11
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7e11efb1f8a2bae70800000000000000
+      internalID: 9127435863934767591
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Imprvplayer_6
+      rect:
+        serializedVersion: 2
+        x: 353
+        y: 410
+        width: 50
+        height: 92
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d1ebe0ace241f5af0800000000000000
+      internalID: -405583250249040355
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Imprvplayer_7
+      rect:
+        serializedVersion: 2
+        x: 407
+        y: 473
+        width: 17
+        height: 35
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8393ed8d22edb75a0800000000000000
+      internalID: -6522375394067334856
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Imprvplayer_8
+      rect:
+        serializedVersion: 2
+        x: 440
+        y: 473
+        width: 11
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a315429a0c7825eb0800000000000000
+      internalID: -4732570996871769798
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Imprvplayer_9
+      rect:
+        serializedVersion: 2
+        x: 509
+        y: 410
+        width: 50
+        height: 86
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a20b69627be131cd0800000000000000
+      internalID: -2588691588832645078
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Imprvplayer_10
+      rect:
+        serializedVersion: 2
+        x: 566
+        y: 464
+        width: 17
+        height: 35
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 64c2fd96551b915c0800000000000000
+      internalID: -4244166193413411770
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Imprvplayer_11
+      rect:
+        serializedVersion: 2
+        x: 596
+        y: 464
+        width: 11
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 34819ba5278a8fc50800000000000000
+      internalID: 6699289654815430723
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Imprvplayer_12
+      rect:
+        serializedVersion: 2
+        x: 686
+        y: 407
+        width: 50
+        height: 89
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1905ce68afe8cec20800000000000000
+      internalID: 3237119438829146257
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Imprvplayer_13
+      rect:
+        serializedVersion: 2
+        x: 746
+        y: 470
+        width: 17
+        height: 35
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eddff5e0f575f69b0800000000000000
+      internalID: -5084749388503319074
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Imprvplayer_14
+      rect:
+        serializedVersion: 2
+        x: 776
+        y: 470
+        width: 11
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2e92178e0c84e2c00800000000000000
+      internalID: 877718970754476514
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Imprvplayer_15
+      rect:
+        serializedVersion: 2
+        x: 92
+        y: 410
+        width: 38
+        height: 59
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 42a278d24cfe549b0800000000000000
+      internalID: -5096403777443386844
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Imprvplayer_16
+      rect:
+        serializedVersion: 2
+        x: 131
+        y: 425
+        width: 41
+        height: 35
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6c0fdb17bf76537e0800000000000000
+      internalID: -1786407347539808058
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Imprvplayer_17
+      rect:
+        serializedVersion: 2
+        x: 254
+        y: 410
+        width: 38
+        height: 62
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a835dbe377ade3cb0800000000000000
+      internalID: -4882224740334480502
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Imprvplayer_18
+      rect:
+        serializedVersion: 2
+        x: 299
+        y: 416
+        width: 41
+        height: 35
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8eedb5e22ebb9e660800000000000000
+      internalID: 7415664841557008104
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Imprvplayer_19
+      rect:
+        serializedVersion: 2
+        x: 416
+        y: 410
+        width: 38
+        height: 59
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6ec09ffcb12f4f6a0800000000000000
+      internalID: -6416237367828869914
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Imprvplayer_20
+      rect:
+        serializedVersion: 2
+        x: 455
+        y: 425
+        width: 41
+        height: 35
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6943381c0510413b0800000000000000
+      internalID: -5542803795030625130
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Imprvplayer_21
+      rect:
+        serializedVersion: 2
+        x: 572
+        y: 407
+        width: 38
+        height: 53
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bc56117ddd2e534b0800000000000000
+      internalID: -5461209530692966965
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Imprvplayer_22
+      rect:
+        serializedVersion: 2
+        x: 626
+        y: 419
+        width: 41
+        height: 35
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d84b56a124125b860800000000000000
+      internalID: 7544973318523565197
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Imprvplayer_23
+      rect:
+        serializedVersion: 2
+        x: 749
+        y: 407
+        width: 38
+        height: 56
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8e83731d166344620800000000000000
+      internalID: 2757388665607370984
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Imprvplayer_24
+      rect:
+        serializedVersion: 2
+        x: 794
+        y: 413
+        width: 41
+        height: 35
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0640e1e3cf7c517b0800000000000000
+      internalID: -5254073504069974944
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Imprvplayer_25
+      rect:
+        serializedVersion: 2
+        x: 20
+        y: 284
+        width: 53
+        height: 95
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f05639ad82fd0d890800000000000000
+      internalID: -7435197618229910257
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Imprvplayer_26
+      rect:
+        serializedVersion: 2
+        x: 113
+        y: 332
+        width: 14
+        height: 29
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e5104edfe2ef62390800000000000000
+      internalID: -7843302223237611170
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Imprvplayer_27
+      rect:
+        serializedVersion: 2
+        x: 173
+        y: 284
+        width: 62
+        height: 92
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7d8e678f7a16468d0800000000000000
+      internalID: -2854048889790076713
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Imprvplayer_28
+      rect:
+        serializedVersion: 2
+        x: 245
+        y: 347
+        width: 20
+        height: 23
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d2f9fb91bf91d1d80800000000000000
+      internalID: -8278431973777629395
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Imprvplayer_29
+      rect:
+        serializedVersion: 2
+        x: 278
+        y: 344
+        width: 23
+        height: 23
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8f278aaf10b886dd0800000000000000
+      internalID: -2492589553132997896
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Imprvplayer_30
+      rect:
+        serializedVersion: 2
+        x: 344
+        y: 281
+        width: 56
+        height: 95
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ec51bac013d1affc0800000000000000
+      internalID: -3460421267177663026
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Imprvplayer_31
+      rect:
+        serializedVersion: 2
+        x: 407
+        y: 347
+        width: 14
+        height: 29
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8c2a37a3ee8ce0d70800000000000000
+      internalID: 9011360829923369672
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Imprvplayer_32
+      rect:
+        serializedVersion: 2
+        x: 434
+        y: 347
+        width: 14
+        height: 17
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0118e9d633955f580800000000000000
+      internalID: -8794024619953716976
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Imprvplayer_33
+      rect:
+        serializedVersion: 2
+        x: 503
+        y: 281
+        width: 56
+        height: 92
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c7d636874823d9190800000000000000
+      internalID: -7954145822329574020
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Imprvplayer_34
+      rect:
+        serializedVersion: 2
+        x: 566
+        y: 347
+        width: 23
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d8a8f1034854fa5f0800000000000000
+      internalID: -743298979447469427
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Imprvplayer_35
+      rect:
+        serializedVersion: 2
+        x: 599
+        y: 347
+        width: 8
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d00a3b58a6c517a70800000000000000
+      internalID: 8822934757574942733
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Imprvplayer_36
+      rect:
+        serializedVersion: 2
+        x: 674
+        y: 281
+        width: 53
+        height: 95
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 725c76247f30a1380800000000000000
+      internalID: -8999876544840612569
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Imprvplayer_37
+      rect:
+        serializedVersion: 2
+        x: 737
+        y: 350
+        width: 26
+        height: 29
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1879c07a77ce86590800000000000000
+      internalID: -7680629165832497279
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Imprvplayer_38
+      rect:
+        serializedVersion: 2
+        x: 77
+        y: 284
+        width: 29
+        height: 65
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a535b3d02b002f830800000000000000
+      internalID: 4103342975214113626
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Imprvplayer_39
+      rect:
+        serializedVersion: 2
+        x: 143
+        y: 332
+        width: 14
+        height: 17
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c1796f15aa6b71790800000000000000
+      internalID: -7559372606882277604
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Imprvplayer_40
+      rect:
+        serializedVersion: 2
+        x: 242
+        y: 281
+        width: 44
+        height: 62
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5658c12b3bd7e0c60800000000000000
+      internalID: 7786299016510997861
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Imprvplayer_41
+      rect:
+        serializedVersion: 2
+        x: 290
+        y: 302
+        width: 44
+        height: 35
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 66d7c258020730740800000000000000
+      internalID: 5117056886598565222
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Imprvplayer_42
+      rect:
+        serializedVersion: 2
+        x: 407
+        y: 281
+        width: 32
+        height: 62
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5b5408894e1fc3880800000000000000
+      internalID: -8629756821835332171
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Imprvplayer_43
+      rect:
+        serializedVersion: 2
+        x: 566
+        y: 281
+        width: 44
+        height: 62
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f19a3b94e058f1900800000000000000
+      internalID: 657390367031929119
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Imprvplayer_44
+      rect:
+        serializedVersion: 2
+        x: 722
+        y: 281
+        width: 35
+        height: 65
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 54451c914e439a690800000000000000
+      internalID: -7590477542666972091
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Imprvplayer_45
+      rect:
+        serializedVersion: 2
+        x: 113
+        y: 293
+        width: 41
+        height: 35
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c179ee7688099b340800000000000000
+      internalID: 4880090586766284572
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Imprvplayer_46
+      rect:
+        serializedVersion: 2
+        x: 449
+        y: 287
+        width: 44
+        height: 38
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5ffa5f4d162371ff0800000000000000
+      internalID: -65528273807495179
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Imprvplayer_47
+      rect:
+        serializedVersion: 2
+        x: 614
+        y: 290
+        width: 44
+        height: 35
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 10a82ebb5eeb25290800000000000000
+      internalID: -7903044502172825087
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Imprvplayer_48
+      rect:
+        serializedVersion: 2
+        x: 767
+        y: 287
+        width: 44
+        height: 35
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 90cefa06cf0c62150800000000000000
+      internalID: 5847573356373601289
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Imprvplayer_49
+      rect:
+        serializedVersion: 2
+        x: 17
+        y: 161
+        width: 53
+        height: 71
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1466d3a505df70870800000000000000
+      internalID: 8649160130941511233
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Imprvplayer_50
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 212
+        width: 17
+        height: 23
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 10d23173f48fb77b0800000000000000
+      internalID: -5225309923523220223
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Imprvplayer_51
+      rect:
+        serializedVersion: 2
+        x: 110
+        y: 215
+        width: 14
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ab2fb5215082d4bb0800000000000000
+      internalID: -4950256413162343750
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Imprvplayer_52
+      rect:
+        serializedVersion: 2
+        x: 167
+        y: 161
+        width: 59
+        height: 77
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 64de284ff2c33ef00800000000000000
+      internalID: 1144824906945588550
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Imprvplayer_53
+      rect:
+        serializedVersion: 2
+        x: 233
+        y: 221
+        width: 20
+        height: 23
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c907516a90fa95b50800000000000000
+      internalID: 6582484786354679964
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Imprvplayer_54
+      rect:
+        serializedVersion: 2
+        x: 263
+        y: 221
+        width: 14
+        height: 17
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 45e9c3b4e9a748350800000000000000
+      internalID: 6018069822359510612
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Imprvplayer_55
+      rect:
+        serializedVersion: 2
+        x: 335
+        y: 161
+        width: 53
+        height: 86
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2789afb024b8b0b10800000000000000
+      internalID: 1948804379552946290
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Imprvplayer_56
+      rect:
+        serializedVersion: 2
+        x: 398
+        y: 221
+        width: 20
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f1cb94e9adfcd2750800000000000000
+      internalID: 6281905593117162527
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Imprvplayer_57
+      rect:
+        serializedVersion: 2
+        x: 431
+        y: 221
+        width: 11
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 28cb3c1fa5bb16da0800000000000000
+      internalID: -5953271233129497470
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Imprvplayer_58
+      rect:
+        serializedVersion: 2
+        x: 491
+        y: 161
+        width: 53
+        height: 86
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9dd1a4a50e050fbc0800000000000000
+      internalID: -3751409565081920039
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Imprvplayer_59
+      rect:
+        serializedVersion: 2
+        x: 554
+        y: 227
+        width: 17
+        height: 29
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 20c3137f283fe9a40800000000000000
+      internalID: 5377002748945447938
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Imprvplayer_60
+      rect:
+        serializedVersion: 2
+        x: 584
+        y: 227
+        width: 14
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3a2a8c96058757ef0800000000000000
+      internalID: -111050329033235805
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Imprvplayer_61
+      rect:
+        serializedVersion: 2
+        x: 650
+        y: 161
+        width: 59
+        height: 77
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d023b0b304099f540800000000000000
+      internalID: 5042219863360877069
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Imprvplayer_62
+      rect:
+        serializedVersion: 2
+        x: 716
+        y: 221
+        width: 23
+        height: 23
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 43c6006258ece1190800000000000000
+      internalID: -7989721617645147084
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Imprvplayer_63
+      rect:
+        serializedVersion: 2
+        x: 749
+        y: 221
+        width: 14
+        height: 23
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0ffa5578fc614ff80800000000000000
+      internalID: -8073803151383875600
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Imprvplayer_64
+      rect:
+        serializedVersion: 2
+        x: 77
+        y: 161
+        width: 35
+        height: 47
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 96539851f68088af0800000000000000
+      internalID: -394055694199212695
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Imprvplayer_65
+      rect:
+        serializedVersion: 2
+        x: 119
+        y: 161
+        width: 35
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 800dd752ab3ea1880800000000000000
+      internalID: -8639342546524450808
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Imprvplayer_66
+      rect:
+        serializedVersion: 2
+        x: 239
+        y: 161
+        width: 35
+        height: 53
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ecb4f9cf71be83ae0800000000000000
+      internalID: -1569245981883544626
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Imprvplayer_67
+      rect:
+        serializedVersion: 2
+        x: 284
+        y: 164
+        width: 35
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 64379489e7a78bd10800000000000000
+      internalID: 2141596306954089286
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Imprvplayer_68
+      rect:
+        serializedVersion: 2
+        x: 398
+        y: 161
+        width: 38
+        height: 56
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4f32e14460cccd480800000000000000
+      internalID: -8872992838542023692
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Imprvplayer_69
+      rect:
+        serializedVersion: 2
+        x: 440
+        y: 167
+        width: 38
+        height: 35
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9585c1e4784ee1b80800000000000000
+      internalID: -8422042983354050471
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Imprvplayer_70
+      rect:
+        serializedVersion: 2
+        x: 554
+        y: 161
+        width: 38
+        height: 62
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ea7f169481e5ecbd0800000000000000
+      internalID: -2608043675797555282
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Imprvplayer_71
+      rect:
+        serializedVersion: 2
+        x: 596
+        y: 167
+        width: 35
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2f1e3569d54ebacb0800000000000000
+      internalID: -4851533082956406286
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Imprvplayer_72
+      rect:
+        serializedVersion: 2
+        x: 722
+        y: 161
+        width: 35
+        height: 53
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ad35f60f05e1e4300800000000000000
+      internalID: 238161163277259738
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Imprvplayer_73
+      rect:
+        serializedVersion: 2
+        x: 767
+        y: 164
+        width: 35
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f86f6140141b16b30800000000000000
+      internalID: 4278896013778286223
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Imprvplayer_74
+      rect:
+        serializedVersion: 2
+        x: 17
+        y: 32
+        width: 47
+        height: 92
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 44a225a47c4cfade0800000000000000
+      internalID: -1319619805571831228
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Imprvplayer_75
+      rect:
+        serializedVersion: 2
+        x: 77
+        y: 95
+        width: 17
+        height: 35
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2b80d570a916cfb60800000000000000
+      internalID: 7781201570365769906
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Imprvplayer_76
+      rect:
+        serializedVersion: 2
+        x: 101
+        y: 104
+        width: 17
+        height: 23
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3a26a32e556dd2610800000000000000
+      internalID: 1598169107142435491
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Imprvplayer_77
+      rect:
+        serializedVersion: 2
+        x: 173
+        y: 32
+        width: 41
+        height: 92
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f22d4e158f69f8c50800000000000000
+      internalID: 6669715566429000239
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Imprvplayer_78
+      rect:
+        serializedVersion: 2
+        x: 227
+        y: 95
+        width: 29
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 764ec629a0acfecf0800000000000000
+      internalID: -220735709962771353
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Imprvplayer_79
+      rect:
+        serializedVersion: 2
+        x: 266
+        y: 104
+        width: 11
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 651e01ab150505060800000000000000
+      internalID: 6940135337722175830
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Imprvplayer_80
+      rect:
+        serializedVersion: 2
+        x: 326
+        y: 32
+        width: 50
+        height: 89
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7250bd9e8e9157c20800000000000000
+      internalID: 3203495198090528039
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Imprvplayer_81
+      rect:
+        serializedVersion: 2
+        x: 386
+        y: 101
+        width: 38
+        height: 23
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9adddbcb33feb98b0800000000000000
+      internalID: -5144255143851729495
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Imprvplayer_82
+      rect:
+        serializedVersion: 2
+        x: 431
+        y: 101
+        width: 11
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f983bf6875d84d010800000000000000
+      internalID: 1212749606735788191
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Imprvplayer_83
+      rect:
+        serializedVersion: 2
+        x: 482
+        y: 35
+        width: 47
+        height: 89
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e73b2f810b60f5250800000000000000
+      internalID: 5935470187300172670
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Imprvplayer_84
+      rect:
+        serializedVersion: 2
+        x: 656
+        y: 35
+        width: 44
+        height: 89
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a6d49724e91f127b0800000000000000
+      internalID: -5250650028514914966
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Imprvplayer_85
+      rect:
+        serializedVersion: 2
+        x: 71
+        y: 32
+        width: 38
+        height: 59
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c767816bb3d493690800000000000000
+      internalID: -7621975975494388100
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Imprvplayer_86
+      rect:
+        serializedVersion: 2
+        x: 230
+        y: 32
+        width: 38
+        height: 59
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e91cd3b9e8161bfc0800000000000000
+      internalID: -3480893771862916706
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Imprvplayer_87
+      rect:
+        serializedVersion: 2
+        x: 269
+        y: 44
+        width: 41
+        height: 35
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ae961edf0df238010800000000000000
+      internalID: 1189847301215054314
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Imprvplayer_88
+      rect:
+        serializedVersion: 2
+        x: 383
+        y: 32
+        width: 41
+        height: 62
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 14899be1073b0d980800000000000000
+      internalID: -8516109601224419263
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Imprvplayer_89
+      rect:
+        serializedVersion: 2
+        x: 533
+        y: 35
+        width: 41
+        height: 62
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5c01435ba4ba81520800000000000000
+      internalID: 2673074716200407237
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Imprvplayer_90
+      rect:
+        serializedVersion: 2
+        x: 578
+        y: 71
+        width: 32
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e10eeba0f0018f610800000000000000
+      internalID: 1655090519849492510
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Imprvplayer_91
+      rect:
+        serializedVersion: 2
+        x: 614
+        y: 77
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8aeaf1ddfe1277080800000000000000
+      internalID: -9189839200535466328
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Imprvplayer_92
+      rect:
+        serializedVersion: 2
+        x: 707
+        y: 35
+        width: 41
+        height: 62
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 807f280b79213be00800000000000000
+      internalID: 1059210780072933128
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Imprvplayer_93
+      rect:
+        serializedVersion: 2
+        x: 749
+        y: 71
+        width: 26
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8489ce6c1db401660800000000000000
+      internalID: 7354461555853662280
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Imprvplayer_94
+      rect:
+        serializedVersion: 2
+        x: 779
+        y: 77
+        width: 8
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 77d140cd4276ab8b0800000000000000
+      internalID: -5135679017054888585
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Imprvplayer_95
+      rect:
+        serializedVersion: 2
+        x: 113
+        y: 41
+        width: 41
+        height: 35
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c40b9c22a67675440800000000000000
+      internalID: 4924518423100764236
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Imprvplayer_96
+      rect:
+        serializedVersion: 2
+        x: 431
+        y: 35
+        width: 35
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 43bc652727432ae40800000000000000
+      internalID: 5666148947334712116
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Imprvplayer_97
+      rect:
+        serializedVersion: 2
+        x: 584
+        y: 35
+        width: 35
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5b662b31288cb6310800000000000000
+      internalID: 1399432570230433461
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Imprvplayer_98
+      rect:
+        serializedVersion: 2
+        x: 758
+        y: 35
+        width: 35
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cac6f4d87a164f090800000000000000
+      internalID: -8001663265672303444
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: ede827a52515df84e8e52d0bbb94c030
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Imprvplayer_0: 5377219870112218209
+      Imprvplayer_1: -5756479932428048933
+      Imprvplayer_10: -4244166193413411770
+      Imprvplayer_11: 6699289654815430723
+      Imprvplayer_12: 3237119438829146257
+      Imprvplayer_13: -5084749388503319074
+      Imprvplayer_14: 877718970754476514
+      Imprvplayer_15: -5096403777443386844
+      Imprvplayer_16: -1786407347539808058
+      Imprvplayer_17: -4882224740334480502
+      Imprvplayer_18: 7415664841557008104
+      Imprvplayer_19: -6416237367828869914
+      Imprvplayer_2: -7548991304663894664
+      Imprvplayer_20: -5542803795030625130
+      Imprvplayer_21: -5461209530692966965
+      Imprvplayer_22: 7544973318523565197
+      Imprvplayer_23: 2757388665607370984
+      Imprvplayer_24: -5254073504069974944
+      Imprvplayer_25: -7435197618229910257
+      Imprvplayer_26: -7843302223237611170
+      Imprvplayer_27: -2854048889790076713
+      Imprvplayer_28: -8278431973777629395
+      Imprvplayer_29: -2492589553132997896
+      Imprvplayer_3: -6540492938073835909
+      Imprvplayer_30: -3460421267177663026
+      Imprvplayer_31: 9011360829923369672
+      Imprvplayer_32: -8794024619953716976
+      Imprvplayer_33: -7954145822329574020
+      Imprvplayer_34: -743298979447469427
+      Imprvplayer_35: 8822934757574942733
+      Imprvplayer_36: -8999876544840612569
+      Imprvplayer_37: -7680629165832497279
+      Imprvplayer_38: 4103342975214113626
+      Imprvplayer_39: -7559372606882277604
+      Imprvplayer_4: -7255163298291159741
+      Imprvplayer_40: 7786299016510997861
+      Imprvplayer_41: 5117056886598565222
+      Imprvplayer_42: -8629756821835332171
+      Imprvplayer_43: 657390367031929119
+      Imprvplayer_44: -7590477542666972091
+      Imprvplayer_45: 4880090586766284572
+      Imprvplayer_46: -65528273807495179
+      Imprvplayer_47: -7903044502172825087
+      Imprvplayer_48: 5847573356373601289
+      Imprvplayer_49: 8649160130941511233
+      Imprvplayer_5: 9127435863934767591
+      Imprvplayer_50: -5225309923523220223
+      Imprvplayer_51: -4950256413162343750
+      Imprvplayer_52: 1144824906945588550
+      Imprvplayer_53: 6582484786354679964
+      Imprvplayer_54: 6018069822359510612
+      Imprvplayer_55: 1948804379552946290
+      Imprvplayer_56: 6281905593117162527
+      Imprvplayer_57: -5953271233129497470
+      Imprvplayer_58: -3751409565081920039
+      Imprvplayer_59: 5377002748945447938
+      Imprvplayer_6: -405583250249040355
+      Imprvplayer_60: -111050329033235805
+      Imprvplayer_61: 5042219863360877069
+      Imprvplayer_62: -7989721617645147084
+      Imprvplayer_63: -8073803151383875600
+      Imprvplayer_64: -394055694199212695
+      Imprvplayer_65: -8639342546524450808
+      Imprvplayer_66: -1569245981883544626
+      Imprvplayer_67: 2141596306954089286
+      Imprvplayer_68: -8872992838542023692
+      Imprvplayer_69: -8422042983354050471
+      Imprvplayer_7: -6522375394067334856
+      Imprvplayer_70: -2608043675797555282
+      Imprvplayer_71: -4851533082956406286
+      Imprvplayer_72: 238161163277259738
+      Imprvplayer_73: 4278896013778286223
+      Imprvplayer_74: -1319619805571831228
+      Imprvplayer_75: 7781201570365769906
+      Imprvplayer_76: 1598169107142435491
+      Imprvplayer_77: 6669715566429000239
+      Imprvplayer_78: -220735709962771353
+      Imprvplayer_79: 6940135337722175830
+      Imprvplayer_8: -4732570996871769798
+      Imprvplayer_80: 3203495198090528039
+      Imprvplayer_81: -5144255143851729495
+      Imprvplayer_82: 1212749606735788191
+      Imprvplayer_83: 5935470187300172670
+      Imprvplayer_84: -5250650028514914966
+      Imprvplayer_85: -7621975975494388100
+      Imprvplayer_86: -3480893771862916706
+      Imprvplayer_87: 1189847301215054314
+      Imprvplayer_88: -8516109601224419263
+      Imprvplayer_89: 2673074716200407237
+      Imprvplayer_9: -2588691588832645078
+      Imprvplayer_90: 1655090519849492510
+      Imprvplayer_91: -9189839200535466328
+      Imprvplayer_92: 1059210780072933128
+      Imprvplayer_93: 7354461555853662280
+      Imprvplayer_94: -5135679017054888585
+      Imprvplayer_95: 4924518423100764236
+      Imprvplayer_96: 5666148947334712116
+      Imprvplayer_97: 1399432570230433461
+      Imprvplayer_98: -8001663265672303444
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

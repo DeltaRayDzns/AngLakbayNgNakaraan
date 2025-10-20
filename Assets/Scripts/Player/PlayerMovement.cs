@@ -15,7 +15,7 @@ public class PlayerMovement : MonoBehaviour
 	public float CurrentJumpPower => currentJumpPower;
 
     [SerializeField] private float currentJumpPower = 0f;
-    bool isJumping = false;
+    bool isGrounded = false;
 
 
     [Header("Animation")]
@@ -26,63 +26,81 @@ public class PlayerMovement : MonoBehaviour
     {
         rb = GetComponent<Rigidbody2D>();
         sr = GetComponent<SpriteRenderer>();
+        animator = GetComponent<Animator>();
     }
 
     void Update()
     {
         horizontalInput = Input.GetAxis("Horizontal");
 
-        animator.SetBool("isRunning", horizontalInput != 0);
+        animator.SetBool("IsJump", !isGrounded);
 
+        SpriteFlip();
+
+        HandleChargeJump();
+    }
+
+    private void SpriteFlip()
+    {
         if (horizontalInput > 0)
         {
-            transform.localScale = new Vector3( 1.3f, transform.localScale.y, 1.3f);
+            transform.localScale = new Vector3(1.3f, transform.localScale.y, transform.localScale.z);
         }
         else if (horizontalInput < 0)
         {
-            transform.localScale = new Vector3(-1.3f, transform.localScale.y, 1.3f);
+            transform.localScale = new Vector3(-1.3f, transform.localScale.y, transform.localScale.z);
         }
+    }
 
-        if (Input.GetButtonDown("Jump") && !isJumping)
+    private void  HandleChargeJump()
+    {
+        if (Input.GetButtonDown("Jump") && isGrounded)
         {
             currentJumpPower = minJumpPower;
         }
 
-        if (Input.GetButton("Jump") && !isJumping)
+        if (Input.GetButton("Jump") && isGrounded)
         {
             currentJumpPower += jumpChargeRate * Time.deltaTime;
             currentJumpPower = Mathf.Clamp(currentJumpPower, minJumpPower, maxJumpPower);
         }
 
-        if (Input.GetButtonUp("Jump") && !isJumping)
+        if (Input.GetButtonUp("Jump") && isGrounded)
         {
             rb.linearVelocity = new Vector2(rb.linearVelocity.x, currentJumpPower);
-            isJumping = true;
+            currentJumpPower = 0f;
+            isGrounded = false;
         }
+    
     }
+
 
     private void FixedUpdate()
     {
         rb.linearVelocity = new Vector2(horizontalInput * moveSpeed, rb.linearVelocity.y);
+        animator.SetFloat("Runspeed", Mathf.Abs(rb.velocity.x));
+        animator.SetFloat("yVelocity", rb.velocity.y);
     }
 
-    private void OnCollisionEnter2D(Collision2D collision)
+   private void OnCollisionEnter2D(Collision2D collision)
     {
         if (collision.gameObject.CompareTag("Ground"))
         {
-            isJumping = false;
-            animator.SetBool("isJump", false);
-            currentJumpPower = 0f;
+           
+            isGrounded = true;
+            animator.SetBool("IsJump", !isGrounded);
+
         }
     }
+
     private void OnCollisionExit2D(Collision2D collision)
     {
         if (collision.gameObject.CompareTag("Ground"))
         {
-            currentJumpPower = 0f;
-			isJumping = true;
-            animator.SetBool("isJump", true);
+            isGrounded = false;
+            animator.SetBool("IsJump", !isGrounded); 
+
         }
     }
-	
+
 }
