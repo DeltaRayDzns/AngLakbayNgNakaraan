@@ -323,8 +323,6 @@ GameObject:
   - component: {fileID: 4017802625420023159}
   - component: {fileID: 5155764017866311955}
   - component: {fileID: 7574211760638591054}
-  - component: {fileID: 5079959270844030151}
-  - component: {fileID: 5011357991455482373}
   m_Layer: 9
   m_Name: Enemy_Conquistador
   m_TagString: Enemy
@@ -460,7 +458,7 @@ MonoBehaviour:
   target: {fileID: 0}
   activateDistance: 15
   pathUpdateSeconds: 0.5
-  speed: 2500
+  speed: 2100
   nextWaypointDistance: 1
   jumpNodeHeightRequirement: 0.8
   jumpModifier: 0.015
@@ -500,55 +498,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::KnockBack
   strength: 15
   duration: 0.5
---- !u!114 &5079959270844030151
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5547586876719499772}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d835e6495b3b82143b15107c957b87c1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::Enemy_direction
-  enemyAI: {fileID: 5011357991455482373}
-  enemyGFX: {fileID: 5086431982741063552}
---- !u!114 &5011357991455482373
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5547586876719499772}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bdf4321b6f3769d4ab3af2bf4b005afe, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: '::'
-  target: {fileID: 0}
-  speed: 10
-  nextWaypointDistance: 0.5
-  jumpForce: 25
-  groundCheck: {fileID: 3911162090938168013}
-  wallCheck: {fileID: 370033204466144462}
-  ledgeCheck: {fileID: 1253604958311022167}
-  groundLayer:
-    serializedVersion: 2
-    m_Bits: 192
-  wallCheckDistance: 0.5
-  ledgeCheckDistance: 0.8
-  segmentUpThreshold: 0.5
-  segmentDownThreshold: 0.5
-  jumpLeadX: 0.25
-  repathInterval: 0.35
-  jumpCooldown: 1
-  coyoteTime: 0.08
-  maxAirSpeed: 6
-  airAccel: 60
-  landingXSlack: 0.25
-  landingYSlack: 0.35
-  dropThroughDuration: 0.22
 --- !u!1 &6022647099681291064
 GameObject:
   m_ObjectHideFlags: 0
