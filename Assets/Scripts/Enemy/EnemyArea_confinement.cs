@@ -1,10 +1,14 @@
 using UnityEngine;
 
+/// Attach this to a Jump_Area GameObject that has a BoxCollider2D (IsTrigger = true).
+/// Keeps EnemyAI_controller objects inside the box.
+/// Optional: set requiredTag to "Enemy" if you want to filter by tag too.
+[AddComponentMenu("AI/Confine Enemies To Area 2D")]
 [RequireComponent(typeof(BoxCollider2D))]
 public class EnemyArea_confinement : MonoBehaviour
 {
     [Tooltip("Only objects with this tag are confined. Leave empty to accept any with EnemyAI_controller.")]
-    public string requiredTag = "Enemy";
+    public string requiredTag = "Enemy";         // e.g., "Enemy"
     [Tooltip("Confine along X axis.")]
     public bool confineX = true;
     [Tooltip("Confine along Y axis.")]
@@ -59,8 +63,8 @@ public class EnemyArea_confinement : MonoBehaviour
 
         if (changed)
         {
-            rb.position = p;
-            rb.linearVelocity = v;
+            rb.position = p;   // snap back inside
+            rb.linearVelocity = v;   // stop the escape velocity
         }
     }
 

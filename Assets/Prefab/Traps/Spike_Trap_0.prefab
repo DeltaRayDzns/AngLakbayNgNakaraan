@@ -12,7 +12,8 @@ GameObject:
   - component: {fileID: 5814827117701326193}
   - component: {fileID: 2110864073903037868}
   - component: {fileID: 4448969091219512826}
-  m_Layer: 0
+  - component: {fileID: 4864200276031396716}
+  m_Layer: 8
   m_Name: Spike_Trap_0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -173,3 +174,23 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: '::'
   playerHealth: {fileID: 0}
+--- !u!114 &4864200276031396716
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1798872622423569933}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c6502a328755b344c8145a84b4c5f766, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Enemy_passthrough
+  requiredTag: Enemy
+  enemyLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  acceptByComponent: 1
+  reenableOnExit: 0
+  warmStartScan: 1
+  includeChildrenColliders: 1

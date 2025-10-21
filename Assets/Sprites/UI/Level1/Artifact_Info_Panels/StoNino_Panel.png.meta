@@ -103,9 +103,9 @@ TextureImporter:
       name: StoNino_Panel_0
       rect:
         serializedVersion: 2
-        x: 13
+        x: 24
         y: 36
-        width: 988
+        width: 977
         height: 505
       alignment: 0
       pivot: {x: 0, y: 0}

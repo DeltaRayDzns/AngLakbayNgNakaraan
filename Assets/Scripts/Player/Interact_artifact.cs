@@ -7,7 +7,6 @@ public class Interact_artifact : MonoBehaviour
     public GameObject[] artefact_Panels;
     public GameObject[] Interact_UI;
     public GameObject X_Button;
-	public GameObject Weapon_System;
 
     void Start()
     {
@@ -46,10 +45,9 @@ public class Interact_artifact : MonoBehaviour
                 if (Keyboard.current.fKey.wasPressedThisFrame)
                 {
                     Debug.Log("Pressed F and Paused: " + artefacts[i].name);
-					Weapon_System.SetActive(false);
                     artefact_Panels[i].SetActive(true);
                     X_Button.SetActive(true);
-                    Time.timeScale = 0f; // pause
+                    Time.timeScale = 0f; 
                 }
             }
         }
