@@ -5,6 +5,14 @@ TagManager:
   serializedVersion: 3
   tags:
   - Ground
+<<<<<<< Updated upstream
+=======
+  - JumpArea
+  - Uncollision
+  - Enemy
+  - PlayerAttack
+  - BossNode
+>>>>>>> Stashed changes
   layers:
   - Default
   - TransparentFX
