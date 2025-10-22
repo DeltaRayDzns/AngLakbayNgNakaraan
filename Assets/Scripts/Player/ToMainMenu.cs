@@ -9,4 +9,18 @@ public class ToMainMenu : MonoBehaviour
         Time.timeScale = 1f;
     }
 
+    public void Level1_NextLevel()
+    {
+        SceneManager.LoadScene("Level2");
+        Time.timeScale = 1f; 
+    }
+
+    public void Level2_NextLevel()
+    {
+        SceneManager.LoadScene("Level3");
+        Time.timeScale = 1f; 
+    }
+    
+    
 }
+

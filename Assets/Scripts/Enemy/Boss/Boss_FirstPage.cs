@@ -5,37 +5,34 @@ using System.Collections;
 [RequireComponent(typeof(Rigidbody2D))]
 public class Boss_FirstPage : MonoBehaviour
 {
-    [Header("UI")]
-    public GameObject Interact_UI;
-    public GameObject[] PlayerUI;
+    [Header("UI (optional)")]
+    public GameObject Interact_UI;          // e.g. “Press E” prompt
+    public GameObject[] PlayerUI;           // UI to hide during the victory sequence (Pause, Weapon_System, etc.)
 
     [Header("Pickup")]
     public string playerTag = "Player";
 
     [Header("Effects")]
-    [SerializeField] private FadeIn fader;
+    [SerializeField] private FadeIn fader;  // Scene object with FadeIn
     [SerializeField] private bool shrinkAfterFade = true;
 
     private bool pickedUp = false;
 
     void Awake()
     {
+        // Auto-find fader if not wired
         if (!fader)
         {
-        #if UNITY_2023_1_OR_NEWER
+#if UNITY_2023_1_OR_NEWER
             fader = FindFirstObjectByType<FadeIn>(FindObjectsInactive.Include);
-        #else
+#else
             fader = FindObjectOfType<FadeIn>(true);
-        #endif
-            if (!fader)
-                Debug.LogWarning("[Boss_FirstPage] No FadeIn found in scene. Assign one to 'Fader' in the Inspector.");
+#endif
         }
 
         var rb = GetComponent<Rigidbody2D>();
         rb.gravityScale = 1f;
         rb.freezeRotation = true;
-
-        var rootCol = GetComponent<Collider2D>();
     }
 
     void OnTriggerEnter2D(Collider2D other)
@@ -53,38 +50,24 @@ public class Boss_FirstPage : MonoBehaviour
     private IEnumerator CollectRoutine()
     {
         pickedUp = true;
+
+        // Stop further contacts
         foreach (var c in GetComponentsInChildren<Collider2D>()) c.enabled = false;
 
-        if (Interact_UI) Interact_UI.SetActive(false);
-
-        if (PlayerUI != null)
-        {
-            for (int i = 0; i < PlayerUI.Length; i++)
-            {
-                var ui = PlayerUI[i];
-                if (!ui) continue;
-
-                if (fader && ui == fader.gameObject) continue;
-
-                ui.SetActive(false);
-            }
-        }
-
+        // Let the fader run the whole victory sequence (fade, hold, pause, show panel)
         if (fader)
         {
-            if (!fader.gameObject.activeSelf)
-                fader.gameObject.SetActive(true);
+            // Hide the “interact” prompt before fading
+            if (Interact_UI) Interact_UI.SetActive(false);
 
-            if (!fader.enabled) fader.enabled = true;
-
-            Debug.Log("[Boss_FirstPage] Starting victory fade…");
-            yield return StartCoroutine(fader.DoVictoryFade());
+            yield return StartCoroutine(fader.PlayVictorySequence(Interact_UI, PlayerUI));
         }
         else
         {
-            Debug.LogError("[Boss_FirstPage] Fader not set/found. No fade will play.");
+            Debug.LogError("[Boss_FirstPage] No FadeIn found in scene. Skipping fade.");
         }
 
+        // Finally, shrink (or just hide) the page item
         var shrink = GetComponent<ShrinkItem>();
         if (shrink && shrinkAfterFade)
             yield return StartCoroutine(shrink.Shrinktofalse());
