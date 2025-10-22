@@ -8,6 +8,8 @@ TagManager:
   - JumpArea
   - Uncollision
   - Enemy
+  - BossNode
+  - WhiteOverlay
   layers:
   - Default
   - TransparentFX

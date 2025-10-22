@@ -5,28 +5,24 @@ using System.Collections;
 [RequireComponent(typeof(Rigidbody2D))]
 public class Boss_FirstPage : MonoBehaviour
 {
-    [Header("UI (optional)")]
-    public GameObject Interact_UI;          // e.g. “Press E” prompt
-    public GameObject[] PlayerUI;           // UI to hide during the victory sequence (Pause, Weapon_System, etc.)
-
     [Header("Pickup")]
     public string playerTag = "Player";
 
     [Header("Effects")]
-    [SerializeField] private FadeIn fader;  // Scene object with FadeIn
+    [SerializeField] private FadeIn fader;         // Scene object with FadeIn
     [SerializeField] private bool shrinkAfterFade = true;
 
     private bool pickedUp = false;
 
     void Awake()
     {
-        // Auto-find fader if not wired
+        // Auto-find active fader in the scene if not assigned manually
         if (!fader)
         {
 #if UNITY_2023_1_OR_NEWER
-            fader = FindFirstObjectByType<FadeIn>(FindObjectsInactive.Include);
+        fader = FindFirstObjectByType<FadeIn>(FindObjectsInactive.Exclude);
 #else
-            fader = FindObjectOfType<FadeIn>(true);
+            fader = FindObjectOfType<FadeIn>(false); // Only search active objects
 #endif
         }
 
@@ -34,6 +30,7 @@ public class Boss_FirstPage : MonoBehaviour
         rb.gravityScale = 1f;
         rb.freezeRotation = true;
     }
+
 
     void OnTriggerEnter2D(Collider2D other)
     {
@@ -51,23 +48,17 @@ public class Boss_FirstPage : MonoBehaviour
     {
         pickedUp = true;
 
-        // Stop further contacts
-        foreach (var c in GetComponentsInChildren<Collider2D>()) c.enabled = false;
+        // (Optional) keep collider ON if you want it to still collide while shrinking.
+        // If you prefer to stop further triggers, uncomment the loop below:
+        // foreach (var col in GetComponentsInChildren<Collider2D>()) col.enabled = false;
 
-        // Let the fader run the whole victory sequence (fade, hold, pause, show panel)
+        // Start fader sequence (handles UI hiding + pause + victory)
         if (fader)
-        {
-            // Hide the “interact” prompt before fading
-            if (Interact_UI) Interact_UI.SetActive(false);
-
-            yield return StartCoroutine(fader.PlayVictorySequence(Interact_UI, PlayerUI));
-        }
+            yield return StartCoroutine(fader.PlayVictorySequence());
         else
-        {
             Debug.LogError("[Boss_FirstPage] No FadeIn found in scene. Skipping fade.");
-        }
 
-        // Finally, shrink (or just hide) the page item
+        // Shrink (or hide) the page item
         var shrink = GetComponent<ShrinkItem>();
         if (shrink && shrinkAfterFade)
             yield return StartCoroutine(shrink.Shrinktofalse());

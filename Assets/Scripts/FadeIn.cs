@@ -5,21 +5,23 @@ using System.Collections;
 public class FadeIn : MonoBehaviour
 {
     [Header("Fade UI")]
-    public Image fadePanel;                  // White Image that covers the screen
-    public float fadeDuration = 0.5f;        // Time to fade to/from white
-    public float holdTime = 0.2f;            // Time to stay fully white before victory
+    public Image fadePanel;                  // White fullscreen Image
+    public float fadeDuration = 0.5f;        // Unscaled seconds
+    public float holdTime = 0.2f;            // Unscaled seconds to stay white before victory
 
     [Header("Victory")]
-    public GameObject victoryPanel;          // The victory UI to show
-    public bool revealPanelAfterWhite = true;
-    public float revealDelay = 0.05f;        // Small delay before fading white away
+    public GameObject victoryPanel;          // Victory UI to show (make sure it renders above the overlay)
+
+    [Header("UI To Hide During Sequence")]
+    public GameObject interactPrompt;        // e.g. “Press E”
+    public GameObject[] uiToHide;            // e.g. Pause, Weapon_System, HUD, etc.
 
     void Awake()
     {
         if (!fadePanel) fadePanel = GetComponent<Image>();
         if (fadePanel)
         {
-            // Ensure starts transparent white and blocks clicks
+            // Start transparent white and block clicks by default
             var c = fadePanel.color;
             fadePanel.color = new Color(1f, 1f, 1f, 0f);
             fadePanel.raycastTarget = true;
@@ -29,24 +31,24 @@ public class FadeIn : MonoBehaviour
     }
 
     /// <summary>
-    /// Full victory flow:
-    /// 1) Hide provided UI (except this fader)
+    /// Full victory flow owned here:
+    /// 1) Hide listed UI (except this overlay)
     /// 2) Fade to white (unscaled)
-    /// 3) Hold white, then pause game
+    /// 3) Hold, then pause game
     /// 4) Show victory panel
-    /// 5) Optionally fade the white back out to reveal the panel behind
+    /// NOTE: No fade-back — overlay stays after fade.
     /// </summary>
-    public IEnumerator PlayVictorySequence(GameObject interactUI, GameObject[] toHide)
+    public IEnumerator PlayVictorySequence()
     {
-        // Hide requested UI (never hide the fader’s own GO)
-        if (interactUI) interactUI.SetActive(false);
-        if (toHide != null)
+        // Hide requested UI (never hide the overlay object itself)
+        if (interactPrompt) interactPrompt.SetActive(false);
+        if (uiToHide != null)
         {
-            for (int i = 0; i < toHide.Length; i++)
+            for (int i = 0; i < uiToHide.Length; i++)
             {
-                var go = toHide[i];
+                var go = uiToHide[i];
                 if (!go) continue;
-                if (go == gameObject) continue; // don't hide the overlay itself
+                if (go == gameObject) continue;
                 go.SetActive(false);
             }
         }
@@ -55,27 +57,26 @@ public class FadeIn : MonoBehaviour
         if (!gameObject.activeSelf) gameObject.SetActive(true);
         if (!enabled) enabled = true;
 
-        // Fade to white
+        // 2) Fade to white
         yield return StartCoroutine(Fade(0f, 1f));
 
-        // Keep full white briefly (real-time)
+        // 3) Hold at full white (still unscaled), then pause game
         if (holdTime > 0f)
             yield return new WaitForSecondsRealtime(holdTime);
 
-        // Pause gameplay
         Time.timeScale = 0f;
 
-        // Show victory UI
-        if (victoryPanel) victoryPanel.SetActive(true);
-
-        // Fade off the white so the victory panel is visible
-        if (revealPanelAfterWhite)
+        // 4) Show victory UI and ensure it draws above the overlay
+        if (victoryPanel)
         {
-            if (revealDelay > 0f)
-                yield return new WaitForSecondsRealtime(revealDelay);
-
-            yield return StartCoroutine(Fade(1f, 0f)); // white -> transparent
+            victoryPanel.SetActive(true);
+            victoryPanel.transform.SetAsLastSibling(); // draw on top if same canvas
         }
+
+        // IMPORTANT: We DO NOT fade back. The overlay stays as-is (white).
+        // If you want clicks on the victory panel, ensure it renders above this image.
+        // (Optionally, you can turn off raycast on the overlay if needed:)
+        // if (fadePanel) fadePanel.raycastTarget = false;
     }
 
     private IEnumerator Fade(float from, float to)
@@ -85,7 +86,6 @@ public class FadeIn : MonoBehaviour
         float t = 0f;
         var c = fadePanel.color;
 
-        // Work in real-time so we’re unaffected by timescale
         while (t < fadeDuration)
         {
             t += Time.unscaledDeltaTime;

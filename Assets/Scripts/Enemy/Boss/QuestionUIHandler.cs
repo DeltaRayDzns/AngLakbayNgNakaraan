@@ -4,7 +4,6 @@ public class QuestionUIHandler : MonoBehaviour
 {
     [HideInInspector] public Boss_questionNodes currentNode;
 
-    // Called by Correct Answer Button
     public void Correct()
     {
         if (currentNode != null)
@@ -13,7 +12,6 @@ public class QuestionUIHandler : MonoBehaviour
             Debug.LogWarning("No current node reference found!");
     }
 
-    // Called by Wrong Answer Buttons
     public void Wrong()
     {
         if (currentNode != null)

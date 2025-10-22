@@ -1,15 +1,18 @@
 using UnityEngine;
 using UnityEngine.UI;
 using System.Collections.Generic;
-using TMPro; 
+using TMPro;
 
 public class Inventory_manager : MonoBehaviour
 {
-    public TMP_Dropdown weaponDropdown; 
-    public Image weaponIcon; 
-    public WeaponData equippedWeapon;   
+    public TMP_Dropdown weaponDropdown;
+    public Image weaponIcon;
+    public WeaponData equippedWeapon;
 
-    private List<WeaponData> inventory = new List<WeaponData>();
+    private readonly List<WeaponData> inventory = new List<WeaponData>();
+
+    public bool IsEmpty => inventory.Count == 0;
+    public bool HasEquipped => equippedWeapon != null;
 
     void Start()
     {
@@ -17,45 +20,51 @@ public class Inventory_manager : MonoBehaviour
         {
             weaponDropdown.onValueChanged.AddListener(OnDropdownChanged);
             RefreshDropdown();
-        } 
+        }
     }
 
     public void AddWeapon(WeaponData w)
     {
         if (w == null) return;
-        inventory.Add(w);
+        if (!inventory.Contains(w)) inventory.Add(w);
+
         RefreshDropdown();
 
-        // auto-equip collected weapon
-        EquipWeapon(inventory.Count - 1);
+        if (equippedWeapon == null) EquipWeapon(inventory.Count - 1);
     }
 
-    private void OnDropdownChanged(int index)
-    {
-        EquipWeapon(index);
-    }
+    void OnDropdownChanged(int index) => EquipWeapon(index);
 
     public void EquipWeapon(int index)
     {
-        if (index < 0 || index >= inventory.Count) return;
+        if (index < 0 || index >= inventory.Count) { equippedWeapon = null; return; }
+
         equippedWeapon = inventory[index];
 
-        if (weaponIcon != null && equippedWeapon.icon != null)
-            weaponIcon.sprite = equippedWeapon.icon;
+        if (weaponIcon != null)
+            weaponIcon.sprite = equippedWeapon != null ? equippedWeapon.icon : null;
     }
 
-    private void RefreshDropdown()
+    void RefreshDropdown()
     {
         if (weaponDropdown == null) return;
 
         weaponDropdown.ClearOptions();
 
-        List<string> options = new List<string>();
-        foreach (var weapon in inventory)
+        var options = new List<TMP_Dropdown.OptionData>();
+        if (inventory.Count == 0)
         {
-            options.Add(weapon.weaponName);
+            options.Add(new TMP_Dropdown.OptionData("Empty"));
+            weaponDropdown.AddOptions(options);
+            weaponDropdown.SetValueWithoutNotify(0);
+            return;
         }
 
+        foreach (var weapon in inventory)
+            options.Add(new TMP_Dropdown.OptionData(weapon.weaponName));
+
         weaponDropdown.AddOptions(options);
+        weaponDropdown.SetValueWithoutNotify(Mathf.Max(0, inventory.Count - 1));
+        weaponDropdown.RefreshShownValue();
     }
 }

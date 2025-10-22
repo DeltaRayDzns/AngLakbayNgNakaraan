@@ -276,15 +276,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8a5444d2c57f8f64c8ea823d3a25f95f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: '::'
-  Interact_UI: {fileID: 5045607215857441793}
-  PlayerUI:
-  - {fileID: 325890689927157824, guid: 75de3ce3e5206744b9486eb34a4ba03b, type: 3}
-  - {fileID: 5164824058368025453, guid: 4b534dbd8f2e06f42809e9a8edc5fa37, type: 3}
-  - {fileID: 9193038340574373190, guid: ebb1158d2264b8144b4999f7581bcd63, type: 3}
-  - {fileID: 7051793036040006226, guid: d74dee5e69ff50946be582d32e246310, type: 3}
-  - {fileID: 6638011179257943740, guid: f54f9077b058b1542aefacd4787f9e82, type: 3}
   playerTag: Player
-  fader: {fileID: 4059772831682474651, guid: 25f373dd490e264448b8aab87fe7177c, type: 3}
+  fader: {fileID: 0}
   shrinkAfterFade: 1
 --- !u!50 &1558674400684910566
 Rigidbody2D:
@@ -312,7 +305,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 4
 --- !u!61 &8725970650671203181
 BoxCollider2D:
   m_ObjectHideFlags: 0

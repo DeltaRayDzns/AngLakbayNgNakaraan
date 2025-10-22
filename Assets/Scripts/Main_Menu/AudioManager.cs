@@ -14,6 +14,7 @@ public class AudioManager : MonoBehaviour
     public AudioClip spanishColonization;
     public AudioClip americanColonization;
     public AudioClip japaneseColonization;
+    public AudioClip levelVictory;
     public AudioClip endMusic;
 
     [Header("SFX Clips")]
@@ -73,6 +74,7 @@ public class AudioManager : MonoBehaviour
     public void PlaySpanishColonization() => PlayMusic(spanishColonization);
     public void PlayAmericanColonization() => PlayMusic(americanColonization);
     public void PlayJapaneseColonization() => PlayMusic(japaneseColonization);
+    public void PlayVictoryMusic() => PlayMusic(levelVictory);
     public void PlayEndMusic() => PlayMusic(endMusic);
 
     private void PlayMusic(AudioClip clip)
