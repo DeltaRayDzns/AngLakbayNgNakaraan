@@ -163,8 +163,8 @@ CapsuleCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 0.009534542, y: 0.038230024}
-  m_Size: {x: 0.7, y: 1.5}
+  m_Offset: {x: 0.011225481, y: 0.035296123}
+  m_Size: {x: 0.52080303, y: 1.3007457}
   m_Direction: 0
 --- !u!95 &1626954785903660787
 Animator:
@@ -227,7 +227,11 @@ MonoBehaviour:
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
   heart_empty_Icons:
+  - {fileID: 0}
+  - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
