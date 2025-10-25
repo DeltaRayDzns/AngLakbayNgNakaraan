@@ -17,6 +17,9 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] private float currentJumpPower = 0f;
     bool isGrounded = false;
 
+    [Header("Movement On Platform")] 
+    public bool isOnPlatform;
+    public Rigidbody2D platformRb;
 
     [Header("Animation")]
     [SerializeField] private Animator animator;
@@ -77,7 +80,17 @@ public class PlayerMovement : MonoBehaviour
 
     private void FixedUpdate()
     {
-        rb.linearVelocity = new Vector2(horizontalInput * moveSpeed, rb.linearVelocity.y);
+        float targetSpeed = horizontalInput * moveSpeed;
+        
+        if (isOnPlatform)
+        {
+            rb.linearVelocity = new Vector2(targetSpeed + platformRb.velocity.x, rb.linearVelocity.y);
+        }
+        else
+        {
+            rb.linearVelocity = new Vector2(targetSpeed, rb.linearVelocity.y);
+        }
+
         animator.SetFloat("Runspeed", Mathf.Abs(rb.velocity.x));
         animator.SetFloat("yVelocity", rb.velocity.y);
     }

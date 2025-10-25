@@ -1,0 +1,157 @@
+using UnityEngine;
+using System.Collections;
+
+public class MovingPlatform : MonoBehaviour
+{
+    public float Speed; 
+    Vector3 targetPos;
+    
+    private PlayerMovement playerMovement;
+    private Rigidbody2D rb; 
+    Vector3 moveDirection;
+    private Rigidbody2D playerRb;
+
+    [Header("Ways")] 
+    public GameObject ways;
+    public Transform[] wayPoints; 
+    int pointIndex;
+    int pointCount;
+    int direction = 1;
+
+    [Header("Coroutine: wait before go")] 
+    public float waitDuration;
+
+    [Header("Gizmos")]
+    public bool showGizmos = true;
+    public Color waypointColor = new Color(1f, 0.7f, 0f, 0.9f); 
+    public Color lineColor     = new Color(0f, 1f, 1f, 0.9f);    
+    public float waypointRadius = 0.15f;
+    public bool showTarget = true;
+    public Color targetColor = Color.green;
+
+    private void Awake()
+    {
+        playerMovement = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerMovement>();
+        rb = GetComponent<Rigidbody2D>();
+        playerRb = GameObject.FindGameObjectWithTag("Player").GetComponent<Rigidbody2D>();
+
+        wayPoints = new Transform[ways.transform.childCount];
+        for (int i = 0; i < ways.gameObject.transform.childCount; i++)
+        {
+            wayPoints[i] = ways.transform.GetChild(i).gameObject.transform;
+        }
+    }
+
+    private void Start()
+    {
+        pointIndex = 1;
+        pointCount = wayPoints.Length;
+        targetPos = wayPoints[1].transform.position;
+        
+        DirectionCalculate();
+    }
+
+    private void Update()
+    {
+        if (Vector2.Distance(transform.position, targetPos) < 0.05f)
+        {
+            NextPoint(); 
+        }
+    }
+
+    private void FixedUpdate()
+    {
+        rb.velocity = moveDirection * Speed; 
+    }
+
+    void NextPoint()
+    {
+        transform.position = targetPos;
+        moveDirection = Vector3.zero;
+
+        if (pointIndex ==  pointCount - 1)
+        {
+            direction = -1;
+        }
+
+        if (pointIndex == 0)
+        {
+            direction = 1;
+        }
+        
+        pointIndex += direction;
+        targetPos = wayPoints[pointIndex].transform.position;
+        DirectionCalculate();
+
+        StartCoroutine(WaitNextPoint());
+    }
+
+    IEnumerator WaitNextPoint()
+    {
+        yield return new WaitForSeconds(waitDuration);
+        DirectionCalculate();
+    }
+
+    void DirectionCalculate()
+    {
+        moveDirection = (targetPos - transform.position).normalized;
+    }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.CompareTag("Player"))
+        {
+            playerMovement.isOnPlatform = true;
+            playerMovement.platformRb = rb;
+            playerRb.gravityScale = playerRb.gravityScale * 1;
+        }
+    }    
+    private void OnTriggerExit2D(Collider2D collision)
+    {
+        if (collision.CompareTag("Player"))
+        {
+            playerMovement.isOnPlatform = false;
+            playerRb.gravityScale = playerRb.gravityScale / 1; 
+        }
+    }
+
+    void OnDrawGizmos()
+    {
+        if (!showGizmos) return;
+
+        Transform[] pts = wayPoints;
+        if ((pts == null || pts.Length == 0) && ways != null)
+        {
+            int childCount = ways.transform.childCount;
+            if (childCount > 0)
+            {
+                pts = new Transform[childCount];
+                for (int i = 0; i < childCount; i++)
+                    pts[i] = ways.transform.GetChild(i);
+            }
+        }
+
+        if (pts == null || pts.Length == 0) return;
+
+        Gizmos.color = waypointColor;
+        for (int i = 0; i < pts.Length; i++)
+        {
+            if (!pts[i]) continue;
+            Gizmos.DrawSphere(pts[i].position, waypointRadius);
+        }
+
+        Gizmos.color = lineColor;
+        for (int i = 0; i < pts.Length - 1; i++)
+        {
+            if (!pts[i] || !pts[i + 1]) continue;
+            Gizmos.DrawLine(pts[i].position, pts[i + 1].position);
+        }
+
+        if (showTarget && Application.isPlaying)
+        {
+            Gizmos.color = targetColor;
+            Gizmos.DrawWireSphere(targetPos, waypointRadius * 1.6f);
+            Gizmos.DrawLine(transform.position, targetPos);
+        }
+    }
+}
