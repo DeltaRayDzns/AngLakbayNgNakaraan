@@ -21,6 +21,7 @@ public class AudioManager : MonoBehaviour
     public AudioClip damageSFX;
     public AudioClip deathSFX;
     public AudioClip interactSFX;
+    public AudioClip SpeakSFX;
 
     [Header("UI References")]
     public GameObject optionsPanel;
@@ -98,6 +99,7 @@ public class AudioManager : MonoBehaviour
     public void PlayDamageSFX() => PlaySFX(damageSFX);
     public void PlayDeathSFX() => PlaySFX(deathSFX);
     public void PlayInteractSFX() => PlaySFX(interactSFX);
+    public void PlaySpeakSFX() => PlaySFX(SpeakSFX);
 
     private void PlaySFX(AudioClip clip)
     {

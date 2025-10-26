@@ -29,6 +29,8 @@ public class MovingPlatform : MonoBehaviour
     public bool showTarget = true;
     public Color targetColor = Color.green;
 
+    bool isWaiting = false;
+
     private void Awake()
     {
         playerMovement = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerMovement>();
@@ -46,14 +48,21 @@ public class MovingPlatform : MonoBehaviour
     {
         pointIndex = 1;
         pointCount = wayPoints.Length;
+
+        if (pointCount < 2)
+        {
+            Debug.LogWarning("[MovingPlatform] Need at least 2 waypoints under 'ways'.");
+            enabled = false;
+            return;
+        }
+
         targetPos = wayPoints[1].transform.position;
-        
         DirectionCalculate();
     }
 
     private void Update()
     {
-        if (Vector2.Distance(transform.position, targetPos) < 0.05f)
+        if (!isWaiting && Vector2.SqrMagnitude((Vector2)transform.position - (Vector2)targetPos) < (0.05f * 0.05f))
         {
             NextPoint(); 
         }
@@ -61,27 +70,39 @@ public class MovingPlatform : MonoBehaviour
 
     private void FixedUpdate()
     {
-        rb.velocity = moveDirection * Speed; 
+        Vector2 curr = rb.position;
+        Vector2 step = (Vector2)(moveDirection * Speed * Time.fixedDeltaTime);
+        Vector2 next = curr + step;
+
+        if (!isWaiting && step.sqrMagnitude > 0f)
+        {
+            Vector2 toTargetCurr = (Vector2)targetPos - curr;
+            Vector2 toTargetNext = (Vector2)targetPos - next;
+
+            if (Vector2.Dot(toTargetCurr, toTargetNext) <= 0f)
+            {
+                rb.MovePosition((Vector2)targetPos);
+                NextPoint();
+                return;
+            }
+        }
+
+        rb.MovePosition(next);
     }
 
     void NextPoint()
     {
+        if (isWaiting) return;
+        isWaiting = true;
+
         transform.position = targetPos;
         moveDirection = Vector3.zero;
 
-        if (pointIndex ==  pointCount - 1)
-        {
-            direction = -1;
-        }
-
-        if (pointIndex == 0)
-        {
-            direction = 1;
-        }
+        if (pointIndex ==  pointCount - 1) direction = -1;
+        if (pointIndex == 0)               direction =  1;
         
         pointIndex += direction;
         targetPos = wayPoints[pointIndex].transform.position;
-        DirectionCalculate();
 
         StartCoroutine(WaitNextPoint());
     }
@@ -90,6 +111,7 @@ public class MovingPlatform : MonoBehaviour
     {
         yield return new WaitForSeconds(waitDuration);
         DirectionCalculate();
+        isWaiting = false;
     }
 
     void DirectionCalculate()
