@@ -88,15 +88,19 @@ public class Boss_questionNodes : MonoBehaviour
 
     public void WrongAnswer()
     {
-        if (playerHealth != null) playerHealth.TakeDamage(1);
-		XMark.SetActive(true);
+        if (playerHealth != null)
+        {
+            playerHealth.TakeDamage(1);
+        }
+
+        XMark.SetActive(true);
         StartCoroutine(CloseAfterDelay(disableThisNode: false, destroyPanel: false));
     }
 
     private IEnumerator CloseAfterDelay(bool disableThisNode, bool destroyPanel)
     {
         yield return new WaitForSecondsRealtime(postAnswerDelay);
-
+        
         if (destroyPanel && activeQuestion != null)
         {
             for (int i = 0; i < questionPanels.Length; i++)
@@ -113,6 +117,7 @@ public class Boss_questionNodes : MonoBehaviour
 			{
 				activeQuestion.SetActive(false);
 				XMark.SetActive(false);
+                
 			}
                 
 			
@@ -123,6 +128,13 @@ public class Boss_questionNodes : MonoBehaviour
         if (Pause)        Pause.SetActive(true);
         if (WeaponSystem) WeaponSystem.SetActive(true);
         Time.timeScale = 1f;
+        
+        if (playerHealth == null)
+        {
+            Time.timeScale = 0f;
+            Pause.SetActive(false);
+            WeaponSystem.SetActive(false);
+        }
 
         if (disableThisNode) gameObject.SetActive(false); 
     }

@@ -50,7 +50,7 @@ public class NPC_Talk : MonoBehaviour
 	{
 		if (other.CompareTag("Player")) 
 		{
-			Interact_UI.SetActive(true);
+			Interact_UI.SetActive(false);
 			Debug.Log("Player can interact");
 		}
 	}

@@ -4,9 +4,9 @@ using System.Collections;
 public class Enemy_attack : MonoBehaviour
 {
     [Header("Attack Settings")]
-    public float attackCooldown = 1f;         // Time between attacks
-    public int damage = 1;                    // Damage dealt to player
-    public float moveStopDuration = 0.5f;     // How long the enemy stops when attacking
+    public float attackCooldown = 1f; 
+    public int damage = 1;
+    public float moveStopDuration = 0.5f;
 
     private float lastAttackTime;
     private EnemyAI_controller enemyAI;
@@ -19,7 +19,6 @@ public class Enemy_attack : MonoBehaviour
 
     private void OnTriggerStay2D(Collider2D other)
     {
-        // Only attack player and respect cooldown
         if (other.CompareTag("Player") && Time.time >= lastAttackTime + attackCooldown)
         {
             Player_health playerHealth = other.GetComponent<Player_health>();
@@ -48,11 +47,11 @@ public class Enemy_attack : MonoBehaviour
         if (enemyAI != null)
         {
             float originalSpeed = enemyAI.speed;
-            enemyAI.speed = 0f;  // Stop moving during attack
+            enemyAI.speed = 0f; 
 
             yield return new WaitForSeconds(moveStopDuration);
 
-            enemyAI.speed = originalSpeed;  // Resume normal movement
+            enemyAI.speed = originalSpeed;
         }
 
         isAttacking = false;
