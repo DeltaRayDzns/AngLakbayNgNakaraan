@@ -1,5 +1,6 @@
 using UnityEngine;
 using System.Collections;
+using System.Collections.Generic;   // NEW
 
 public class MovingPlatform : MonoBehaviour
 {
@@ -31,6 +32,12 @@ public class MovingPlatform : MonoBehaviour
 
     bool isWaiting = false;
 
+    // -------- NEW: carry riders by delta, no parenting ----------
+    private readonly HashSet<Rigidbody2D> riders = new HashSet<Rigidbody2D>();
+    private Vector2 lastPos;        // platform pos last physics step
+    private Vector2 frameDelta;     // how far platform moved this step
+    // ------------------------------------------------------------
+
     private void Awake()
     {
         playerMovement = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerMovement>();
@@ -58,6 +65,9 @@ public class MovingPlatform : MonoBehaviour
 
         targetPos = wayPoints[1].transform.position;
         DirectionCalculate();
+
+        // NEW: init lastPos so first delta is clean
+        lastPos = rb.position;
     }
 
     private void Update()
@@ -82,12 +92,33 @@ public class MovingPlatform : MonoBehaviour
             if (Vector2.Dot(toTargetCurr, toTargetNext) <= 0f)
             {
                 rb.MovePosition((Vector2)targetPos);
+                frameDelta = (Vector2)targetPos - lastPos;   // NEW: delta this step
+                CarryRiders(frameDelta);                      // NEW
+                lastPos = rb.position;                        // NEW
                 NextPoint();
                 return;
             }
         }
 
         rb.MovePosition(next);
+
+        // NEW: compute delta and carry riders every physics step
+        frameDelta = next - lastPos;
+        CarryRiders(frameDelta);
+        lastPos = next;
+    }
+
+    // NEW: Move any rider by the exact platform delta (keeps contact, no parenting)
+    private void CarryRiders(Vector2 delta)
+    {
+        if (delta == Vector2.zero || riders.Count == 0) return;
+
+        foreach (var r in riders)
+        {
+            if (!r) continue;
+            // Only carry if still roughly on top (optional safety)
+            r.MovePosition(r.position + delta);
+        }
     }
 
     void NextPoint()
@@ -119,23 +150,28 @@ public class MovingPlatform : MonoBehaviour
         moveDirection = (targetPos - transform.position).normalized;
     }
 
+    // ----- CHANGED: no hard-parenting, no gravity hacks; just mark as rider -----
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.CompareTag("Player"))
-        {
-            playerMovement.isOnPlatform = true;
-            playerMovement.platformRb = rb;
-            playerRb.gravityScale = playerRb.gravityScale * 1;
-        }
-    }    
+        if (!collision.CompareTag("Player")) return;
+
+        riders.Add(collision.attachedRigidbody);
+
+        playerMovement.isOnPlatform = true;
+        playerMovement.platformRb = rb;
+        // removed parenting and gravityScale edits
+    }
+
     private void OnTriggerExit2D(Collider2D collision)
     {
-        if (collision.CompareTag("Player"))
-        {
-            playerMovement.isOnPlatform = false;
-            playerRb.gravityScale = playerRb.gravityScale / 1; 
-        }
+        if (!collision.CompareTag("Player")) return;
+
+        riders.Remove(collision.attachedRigidbody);
+
+        playerMovement.isOnPlatform = false;
+        // removed parenting and gravityScale edits
     }
+    // ----------------------------------------------------------------------------
 
     void OnDrawGizmos()
     {

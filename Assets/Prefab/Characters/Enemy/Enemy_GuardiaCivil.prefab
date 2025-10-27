@@ -499,7 +499,7 @@ MonoBehaviour:
   speed: 2100
   nextWaypointDistance: 1
   jumpNodeHeightRequirement: 0.8
-  jumpModifier: 0.015
+  jumpModifier: 0.018
   jumpCheckOffset: 0.1
   followEnabled: 1
   jumpEnabled: 1
