@@ -15,4 +15,20 @@ public class SceneAudio_Level1 : MonoBehaviour
         if (AudioManager.Instance != null)
             AudioManager.Instance.PlaySpanishColonization();
     }
+    
+    public void Level1ButtonSFX()
+    {
+        if (AudioManager.Instance != null) 
+        {
+            AudioManager.Instance.PlayInteractSFX(); 
+        }
+    }
+
+    public void Level1SpeakingSFX() 
+    {
+        if (AudioManager.Instance != null) 
+        {
+            AudioManager.Instance.PlaySpeakSFX();
+        }
+    }
 }

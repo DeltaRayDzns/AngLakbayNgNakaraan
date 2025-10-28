@@ -15,4 +15,20 @@ public class Level2_Audio : MonoBehaviour
         if (AudioManager.Instance != null)
             AudioManager.Instance.PlayAmericanColonization();
     }
+
+	public void Level2ButtonSFX() 
+	{
+		if (AudioManager.Instance != null) 
+		{
+			AudioManager.Instance.PlayInteractSFX(); 
+		}
+	}
+
+	public void Level2SpeakingSFX() 
+	{
+		if (AudioManager.Instance != null) 
+		{
+			AudioManager.Instance.PlaySpeakSFX();
+		}
+	}
 }

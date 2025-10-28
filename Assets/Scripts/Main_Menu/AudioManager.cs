@@ -14,7 +14,6 @@ public class AudioManager : MonoBehaviour
     public AudioClip spanishColonization;
     public AudioClip americanColonization;
     public AudioClip japaneseColonization;
-    public AudioClip levelVictory;
     public AudioClip endMusic;
 
     [Header("SFX Clips")]
@@ -22,6 +21,8 @@ public class AudioManager : MonoBehaviour
     public AudioClip deathSFX;
     public AudioClip interactSFX;
     public AudioClip SpeakSFX;
+    public AudioClip WalkingSFX; 
+	public AudioClip levelVictory; 
 
     [Header("UI References")]
     public GameObject optionsPanel;
@@ -75,7 +76,6 @@ public class AudioManager : MonoBehaviour
     public void PlaySpanishColonization() => PlayMusic(spanishColonization);
     public void PlayAmericanColonization() => PlayMusic(americanColonization);
     public void PlayJapaneseColonization() => PlayMusic(japaneseColonization);
-    public void PlayVictoryMusic() => PlayMusic(levelVictory);
     public void PlayEndMusic() => PlayMusic(endMusic);
 
     private void PlayMusic(AudioClip clip)
@@ -100,6 +100,8 @@ public class AudioManager : MonoBehaviour
     public void PlayDeathSFX() => PlaySFX(deathSFX);
     public void PlayInteractSFX() => PlaySFX(interactSFX);
     public void PlaySpeakSFX() => PlaySFX(SpeakSFX);
+	public void PlayVictorySFX() => PlaySFX(levelVictory);
+	public void PlayWalkingSFX() => PlaySFX(WalkingSFX);
 
     private void PlaySFX(AudioClip clip)
     {
