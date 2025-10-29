@@ -34,7 +34,12 @@ public class PlayerMovement : MonoBehaviour
 
     void Update()
     {
-        horizontalInput = Input.GetAxis("Horizontal");
+        float keyboardInput = Input.GetAxis("Horizontal");
+
+		if (Mathf.Abs(horizontalInput) < 0.1f) 
+		{
+			horizontalInput = keyboardInput; 
+		}
 
         animator.SetBool("IsJump", !isGrounded);
 
@@ -116,4 +121,34 @@ public class PlayerMovement : MonoBehaviour
         }
     }
 
+	public void SetHorizontalInput(float value) 
+	{
+		horizontalInput = value; 
+		SpriteFlip();
+
+	}
+
+	public void StartJumpCharge() 
+	{
+		if (isGrounded) currentJumpPower = minJumpPower; 
+	}
+
+	public void HoldJumpButton() 
+	{
+		if (isGrounded) 
+		{
+			currentJumpPower += jumpChargeRate * Time.deltaTime;
+			currentJumpPower = Mathf.Clamp(currentJumpPower, minJumpPower, maxJumpPower);
+		}
+	} 
+	
+ 	public void ReleaseJump() 
+	{
+		if (isGrounded) 
+		{
+			rb.linearVelocity = new Vector2(rb.linearVelocity.x, currentJumpPower);	
+			currentJumpPower = 0f;
+			isGrounded = false; 
+		}
+	} 
 }

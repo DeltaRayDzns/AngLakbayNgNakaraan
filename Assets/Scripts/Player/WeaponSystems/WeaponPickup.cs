@@ -4,13 +4,18 @@ using UnityEngine.InputSystem;
 public class WeaponPickup : MonoBehaviour
 {
     [Header("Weapon Info")]
-    public string weaponName; 
-    public WeaponData weaponData;    
-    public GameObject weaponPanel;          
-    public GameObject interactUI;           
-    public GameObject xButton;              
+    public string weaponName;
+    public WeaponData weaponData;
 
-    private bool hasPickedUp = false;       
+    [Header("UI References")]
+    public GameObject weaponPanel;
+    public GameObject interactUI;
+    public GameObject xButton;
+    public GameObject controlButtons; 
+
+    private bool playerInRange = false;
+    private bool hasPickedUp = false;
+    private GameObject playerRef;
 
     void Start()
     {
@@ -25,6 +30,9 @@ public class WeaponPickup : MonoBehaviour
 
         if (other.CompareTag("Player"))
         {
+            playerInRange = true;
+            playerRef = other.gameObject;
+
             if (interactUI != null)
                 interactUI.SetActive(true);
 
@@ -38,16 +46,45 @@ public class WeaponPickup : MonoBehaviour
 
         if (other.CompareTag("Player") && Keyboard.current.fKey.wasPressedThisFrame)
         {
-            Debug.Log($"[WeaponPickup] Picked up weapon: {weaponName}");
-            hasPickedUp = true;
+            InteractButtonPressed();
+        }
+    }
 
-            if (weaponPanel != null) weaponPanel.SetActive(true);
-            if (xButton != null) xButton.SetActive(true);
-            if (interactUI != null) interactUI.SetActive(false);
+    void OnTriggerExit2D(Collider2D other)
+    {
+        if (other.CompareTag("Player"))
+        {
+            playerInRange = false;
+            playerRef = null;
 
-            Time.timeScale = 0f;
+            if (interactUI != null)
+                interactUI.SetActive(false);
 
-            var inv = other.GetComponentInChildren<Inventory_manager>();
+            Debug.Log($"[WeaponPickup] Exited pickup range for {weaponName}");
+        }
+    }
+
+    public void InteractButtonPressed()
+    {
+        if (!playerInRange || hasPickedUp)
+        {
+            Debug.Log("[WeaponPickup] No weapon in range or already picked up.");
+            return;
+        }
+
+        hasPickedUp = true;
+        Debug.Log($"[WeaponPickup] Picked up weapon: {weaponName}");
+
+        if (interactUI != null) interactUI.SetActive(false);
+        if (weaponPanel != null) weaponPanel.SetActive(true);
+        if (xButton != null) xButton.SetActive(true);
+        if (controlButtons != null) controlButtons.SetActive(false);
+
+        Time.timeScale = 0f;
+
+        if (playerRef != null)
+        {
+            var inv = playerRef.GetComponentInChildren<Inventory_manager>();
             if (inv != null && weaponData != null)
             {
                 inv.AddWeapon(weaponData);
@@ -61,18 +98,9 @@ public class WeaponPickup : MonoBehaviour
             {
                 Debug.LogWarning("[WeaponPickup] No WeaponData assigned!");
             }
-
-            gameObject.SetActive(false);
         }
-    }
 
-    void OnTriggerExit2D(Collider2D other)
-    {
-        if (other.CompareTag("Player") && interactUI != null)
-        {
-            interactUI.SetActive(false);
-            Debug.Log($"[WeaponPickup] Exited pickup range for {weaponName}");
-        }
+        gameObject.SetActive(false);
     }
 
     public void ClosePanel()
@@ -82,6 +110,9 @@ public class WeaponPickup : MonoBehaviour
 
         if (xButton != null)
             xButton.SetActive(false);
+
+        if (controlButtons != null)
+            controlButtons.SetActive(true);
 
         Time.timeScale = 1f;
     }

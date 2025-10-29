@@ -1,69 +1,75 @@
 using UnityEngine;
-using System.Collections; 
+using System.Collections;
 using UnityEngine.InputSystem;
 
 public class NPC_Talk : MonoBehaviour
 {
-	[Header("Dialogue")]
-	public GameObject Dialogue_Panel;
-	public GameObject Interact_UI;     
+    [Header("Dialogue")]
+    public GameObject Dialogue_Panel;
+    public GameObject Interact_UI;
+
+    [Header("Player_UI")]
+    public GameObject Weapon_System;
+    public GameObject Pause;
+	public GameObject ControlButtons; 
 	
-	[Header("Player_UI")]
-	public GameObject Weapon_System; 
-	public GameObject Pause; 
-	
+
+    private bool playerInRange = false;
+
     void Start()
     {
         Interact_UI.SetActive(false);
-		Dialogue_Panel.SetActive(false);
+        Dialogue_Panel.SetActive(false);
     }
-    
-	void OnTriggerEnter2D (Collider2D other) 
-	{
-		if (other.CompareTag("Player")) 
-		{
-			Interact_UI.SetActive(true);
-			Debug.Log("Player can interact");
-		}
-	}
 
-    void OnTriggerStay2D(Collider2D other) 
-	{
-		if (other.CompareTag("Player")) 
-		{
-			Interact_UI.SetActive(true);
-			if (Keyboard.current.fKey.wasPressedThisFrame) 
-			{
-				Debug.Log("Pressed F and Paused: Talk with " + gameObject.name);
-				
-				Weapon_System.SetActive(false);
-				Pause.SetActive(false);
-				
-				Time.timeScale = 0f;
-				Interact_UI.SetActive(true);
-				Dialogue_Panel.SetActive(true); 
-			}
-		}
-	}
+    void OnTriggerEnter2D(Collider2D other)
+    {
+        if (other.CompareTag("Player"))
+        {
+            playerInRange = true;
+            Interact_UI.SetActive(true);
+        }
+    }
 
-	void OnTriggerExit2D (Collider2D other) 
-	{
-		if (other.CompareTag("Player")) 
-		{
-			Interact_UI.SetActive(false);
-			Debug.Log("Player can interact");
-		}
-	}
+    void OnTriggerExit2D(Collider2D other)
+    {
+        if (other.CompareTag("Player"))
+        {
+            playerInRange = false;
+            Interact_UI.SetActive(false);
+        }
+    }
 
-	public void DialogueContinue() 	
-	{
-		Time.timeScale = 1f;
+    public void InteractButtonPressed()
+    {
+        if (!playerInRange)
+        {
+            Debug.Log("NPC Interacts: NULL");
+            return;
+        }
 
-        Weapon_System.SetActive(true);
-		Pause.SetActive(true);
 
-		Debug.Log("Continue Game: Bye " + gameObject.name);
-		Dialogue_Panel.SetActive(false); 
-	}
+        if (Weapon_System != null) Weapon_System.SetActive(false);
+        if (Pause != null) Pause.SetActive(false);
 
+        Time.timeScale = 0f;
+
+        if (Interact_UI != null) Interact_UI.SetActive(true);
+		if (ControlButtons != null) ControlButtons.SetActive(false);
+        if (Dialogue_Panel != null) Dialogue_Panel.SetActive(true);
+    }
+
+    public void DialogueContinue()
+    {
+        Time.timeScale = 1f;
+
+        if (Weapon_System != null) Weapon_System.SetActive(true);
+        if (Pause != null) Pause.SetActive(true);
+
+		
+		if (ControlButtons != null) ControlButtons.SetActive(true);
+
+        Debug.Log("Continue Game: Bye " + gameObject.name);
+        if (Dialogue_Panel != null) Dialogue_Panel.SetActive(false);
+    }
 }

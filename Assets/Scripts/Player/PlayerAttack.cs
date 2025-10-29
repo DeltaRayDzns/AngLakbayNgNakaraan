@@ -34,6 +34,14 @@ public class PlayerAttack : MonoBehaviour
         }
     }
 
+	public void StartAttack() 
+	{	
+		if (!isAttacking && inventoryManager && inventoryManager.equippedWeapon != null)
+		{
+			StartCoroutine(PerformAttack(inventoryManager.equippedWeapon));
+		}
+	}
+
     IEnumerator PerformAttack(WeaponData w)
     {
         if (!w)
@@ -69,7 +77,7 @@ public class PlayerAttack : MonoBehaviour
         Debug.Log("[PlayerAttack] Attack ready again.");
     }
 
-    // --- Melee Attack ---
+    // para sa melee
     IEnumerator SwingAttack(WeaponData w)
     {
         if (!attackOrigin)
@@ -143,7 +151,7 @@ public class PlayerAttack : MonoBehaviour
         }
     }
 
-    // --- Ranged Attack ---
+    // para sa ranged 
     IEnumerator RangedAttack(WeaponData w)
     {
         if (!bulletPrefab)

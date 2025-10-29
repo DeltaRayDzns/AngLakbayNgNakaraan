@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 8124480349818620003}
   - component: {fileID: 2920473572874280909}
   - component: {fileID: 3510611579424502597}
-  - component: {fileID: 3725122256814703480}
+  - component: {fileID: 270029044624089756}
   m_Layer: 0
   m_Name: Bolo
   m_TagString: Untagged
@@ -125,8 +125,9 @@ MonoBehaviour:
   weaponPanel: {fileID: 0}
   interactUI: {fileID: 5731819163606692806}
   xButton: {fileID: 0}
---- !u!60 &3725122256814703480
-PolygonCollider2D:
+  controlButtons: {fileID: 0}
+--- !u!61 &270029044624089756
+BoxCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -159,7 +160,7 @@ PolygonCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: -0.009002611, y: 0.004119754}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -169,20 +170,8 @@ PolygonCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Points:
-    m_Paths:
-    - - {x: 0.24499999, y: 0.155}
-      - {x: 0.24499999, y: 0.24499999}
-      - {x: 0.125, y: 0.24499999}
-      - {x: -0.024999999, y: 0.175}
-      - {x: -0.225, y: -0.125}
-      - {x: -0.24499999, y: -0.185}
-      - {x: -0.24499999, y: -0.24499999}
-      - {x: -0.155, y: -0.24499999}
-      - {x: -0.074999996, y: -0.185}
-      - {x: 0.095, y: 0.024999999}
-      - {x: 0.16499999, y: 0.005}
-  m_UseDelaunayMesh: 0
+  m_Size: {x: 0.5341915, y: 0.64987636}
+  m_EdgeRadius: 0
 --- !u!1 &5731819163606692806
 GameObject:
   m_ObjectHideFlags: 0

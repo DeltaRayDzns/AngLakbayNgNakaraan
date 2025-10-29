@@ -8,6 +8,7 @@ public class NoWeapon_warning : MonoBehaviour
     [Header("Player UI")]
     public GameObject Pause;
     public GameObject Weapon_system;
+    public GameObject ControlButtons;
     public GameObject BackBtn;
 
     [SerializeField] 
@@ -42,6 +43,7 @@ public class NoWeapon_warning : MonoBehaviour
             Time.timeScale = 0f;
             if (Pause)         Pause.SetActive(false);
             if (Weapon_system) Weapon_system.SetActive(false);
+            if (ControlButtons) ControlButtons.SetActive(false);
 
             Debug.Log("[NoWeapon_warning] Player has NO weapon -> showing warning.");
         }
@@ -66,5 +68,7 @@ public class NoWeapon_warning : MonoBehaviour
         if (NoWeapon_warn_panel) NoWeapon_warn_panel.SetActive(false);
         if (Pause)               Pause.SetActive(true);
         if (Weapon_system)       Weapon_system.SetActive(true);
+        if (ControlButtons) ControlButtons.SetActive(true);
+        
     }
 }

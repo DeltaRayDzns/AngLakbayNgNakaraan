@@ -101,8 +101,8 @@ GameObject:
   - component: {fileID: 7287754720627981721}
   - component: {fileID: 7014606156182196037}
   - component: {fileID: 3255093614572114540}
-  - component: {fileID: 5283053706947590931}
   - component: {fileID: 4997525853373237372}
+  - component: {fileID: 729400075410633355}
   m_Layer: 0
   m_Name: Campil
   m_TagString: Untagged
@@ -118,9 +118,9 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8863016891412066773}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -19.87, y: -3.49, z: 0}
-  m_LocalScale: {x: 4.307277, y: 4.277265, z: 1}
+  m_LocalScale: {x: 7.178795, y: 7.1287746, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1858843345734265857}
@@ -198,8 +198,26 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::BobbingItem
   bobHeight: 0.4
   bobSpeed: 2
---- !u!60 &5283053706947590931
-PolygonCollider2D:
+--- !u!114 &4997525853373237372
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8863016891412066773}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3d7d357affd207f41b3ae06be38e1c69, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::WeaponPickup
+  weaponName: Campilan
+  weaponData: {fileID: 11400000, guid: 7315a6b7e574e8f43a2e05853fabedbb, type: 2}
+  weaponPanel: {fileID: 0}
+  interactUI: {fileID: 6836258722490617533}
+  xButton: {fileID: 0}
+  controlButtons: {fileID: 0}
+--- !u!61 &729400075410633355
+BoxCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -232,7 +250,7 @@ PolygonCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: 0.013093054, y: -0.035437033}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -242,51 +260,5 @@ PolygonCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Points:
-    m_Paths:
-    - - {x: 0.22578935, y: 0.31014323}
-      - {x: 0.17615132, y: 0.31246206}
-      - {x: 0.13378587, y: 0.26701504}
-      - {x: 0.108388625, y: 0.2178265}
-      - {x: 0.043330137, y: 0.110384}
-      - {x: -0.085, y: -0.089999996}
-      - {x: -0.118031785, y: -0.08895673}
-      - {x: -0.13210097, y: -0.12062411}
-      - {x: -0.13086109, y: -0.1351542}
-      - {x: -0.119613454, y: -0.15340868}
-      - {x: -0.13858387, y: -0.1878735}
-      - {x: -0.16465002, y: -0.20533243}
-      - {x: -0.18168618, y: -0.22967291}
-      - {x: -0.2156222, y: -0.24508965}
-      - {x: -0.22511272, y: -0.25399405}
-      - {x: -0.22578752, y: -0.27805063}
-      - {x: -0.19446023, y: -0.28020597}
-      - {x: -0.19257604, y: -0.31811988}
-      - {x: -0.155362, y: -0.32014322}
-      - {x: -0.13199824, y: -0.2839119}
-      - {x: -0.072954394, y: -0.17934737}
-      - {x: -0.031081337, y: -0.17703924}
-      - {x: -0.0105447555, y: -0.16362146}
-      - {x: -0.028909748, y: -0.12739864}
-      - {x: -0.013205864, y: -0.09652533}
-      - {x: 0.069286466, y: 0.037737112}
-      - {x: 0.13672973, y: 0.14914756}
-      - {x: 0.22304386, y: 0.2717373}
-  m_UseDelaunayMesh: 0
---- !u!114 &4997525853373237372
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8863016891412066773}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3d7d357affd207f41b3ae06be38e1c69, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::WeaponPickup
-  weaponName: Campilan
-  weaponData: {fileID: 11400000, guid: 7315a6b7e574e8f43a2e05853fabedbb, type: 2}
-  weaponPanel: {fileID: 0}
-  interactUI: {fileID: 6836258722490617533}
-  xButton: {fileID: 0}
+  m_Size: {x: 0.4583435, y: 0.7315382}
+  m_EdgeRadius: 0

@@ -14,6 +14,7 @@ public class Boss_warning : MonoBehaviour
     public GameObject Warning_panel;
     public GameObject Pausebtn;
     public GameObject Weapon_System; 
+    public GameObject ControlButtons;
     void Start()
     {
         PreBoss_barrier.SetActive(true);
@@ -29,6 +30,7 @@ public class Boss_warning : MonoBehaviour
             
             Pausebtn.SetActive(false);
             Weapon_System.SetActive(false);
+            ControlButtons.SetActive(false);
             Warning_panel.SetActive(true);
         }
     }
@@ -39,6 +41,7 @@ public class Boss_warning : MonoBehaviour
             
         Pausebtn.SetActive(true);
         Weapon_System.SetActive(true);
+        ControlButtons.SetActive(true);
         Warning_panel.SetActive(false);
     }
 
@@ -48,6 +51,7 @@ public class Boss_warning : MonoBehaviour
             
         Pausebtn.SetActive(true);
         Weapon_System.SetActive(true);
+        ControlButtons.SetActive(true);
         Warning_panel.SetActive(false);
         
         //barriers activate and deactivate

@@ -1,6 +1,6 @@
 using UnityEngine;
 using System.Collections;
-using System.Collections.Generic;   // NEW
+using System.Collections.Generic; 
 
 public class MovingPlatform : MonoBehaviour
 {

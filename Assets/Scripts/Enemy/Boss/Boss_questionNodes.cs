@@ -17,6 +17,7 @@ public class Boss_questionNodes : MonoBehaviour
 
     public GameObject Pause;
     public GameObject WeaponSystem;	
+	public GameObject ControlButtons; 
 	public GameObject CheckMark;
 	public GameObject XMark;
 
@@ -34,6 +35,7 @@ public class Boss_questionNodes : MonoBehaviour
         if (playerHealth == null) playerHealth = FindAnyObjectByType<Player_health>();
         if (Pause == null)        Pause        = GameObject.Find("Pause");
         if (WeaponSystem == null) WeaponSystem = GameObject.Find("WeaponSystem");
+		if (ControlButtons == null) ControlButtons = GameObject.Find("ControlButtons");
     }
 
     public void OnHit()
@@ -43,6 +45,7 @@ public class Boss_questionNodes : MonoBehaviour
         Time.timeScale = 0f;
         if (Pause)        Pause.SetActive(false);
         if (WeaponSystem) WeaponSystem.SetActive(false);
+		if (ControlButtons) ControlButtons.SetActive(false);
 
         TriggerQuestion();
     }
@@ -127,6 +130,7 @@ public class Boss_questionNodes : MonoBehaviour
 
         if (Pause)        Pause.SetActive(true);
         if (WeaponSystem) WeaponSystem.SetActive(true);
+		if (ControlButtons) ControlButtons.SetActive(true);
         Time.timeScale = 1f;
         
         if (playerHealth == null)
@@ -134,6 +138,7 @@ public class Boss_questionNodes : MonoBehaviour
             Time.timeScale = 0f;
             Pause.SetActive(false);
             WeaponSystem.SetActive(false);
+			ControlButtons.SetActive(false);
         }
 
         if (disableThisNode) gameObject.SetActive(false); 
