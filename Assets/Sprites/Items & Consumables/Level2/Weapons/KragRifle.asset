@@ -12,9 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: df221cc73a37e714dba31c1e035b82a8, type: 3}
   m_Name: KragRifle
   m_EditorClassIdentifier: Assembly-CSharp::WeaponData
-  weaponName: 
+  weaponName: Krag Rifle
   icon: {fileID: 0}
   damage: 1
-  attackSpeed: 1
+  attackSpeed: 2
   pattern: 1
-  reach: 1.5
+  reach: 5
