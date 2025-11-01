@@ -1,0 +1,651 @@
+fileFormatVersion: 2
+guid: 4d1645b952dc6534e813233e667943d7
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -7126137249197281385
+    second: GuardiaCivilFullSheet_0
+  - first:
+      213: 2450592733383644096
+    second: GuardiaCivilFullSheet_1
+  - first:
+      213: -2728176683909358835
+    second: GuardiaCivilFullSheet_2
+  - first:
+      213: -3913813873498349773
+    second: GuardiaCivilFullSheet_3
+  - first:
+      213: -4636545513251532300
+    second: GuardiaCivilFullSheet_4
+  - first:
+      213: -6710726020172905800
+    second: GuardiaCivilFullSheet_5
+  - first:
+      213: 7320363074040120218
+    second: GuardiaCivilFullSheet_6
+  - first:
+      213: 7768088636722154799
+    second: GuardiaCivilFullSheet_7
+  - first:
+      213: 4455784854046833372
+    second: GuardiaCivilFullSheet_8
+  - first:
+      213: 2029408774105793782
+    second: GuardiaCivilFullSheet_9
+  - first:
+      213: -6761097159653850434
+    second: GuardiaCivilFullSheet_10
+  - first:
+      213: -9033321723008928116
+    second: GuardiaCivilFullSheet_11
+  - first:
+      213: -2771003769083035769
+    second: GuardiaCivilFullSheet_12
+  - first:
+      213: -1678157775563960059
+    second: GuardiaCivilFullSheet_13
+  - first:
+      213: 8375931324183525740
+    second: GuardiaCivilFullSheet_14
+  - first:
+      213: -6762014742129689416
+    second: GuardiaCivilFullSheet_15
+  - first:
+      213: 1130576203572269815
+    second: GuardiaCivilFullSheet_16
+  - first:
+      213: -4355250817407594563
+    second: GuardiaCivilFullSheet_17
+  - first:
+      213: -6743055720534510489
+    second: GuardiaCivilFullSheet_18
+  - first:
+      213: 58009303433397817
+    second: GuardiaCivilFullSheet_19
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 64
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: GuardiaCivilFullSheet_0
+      rect:
+        serializedVersion: 2
+        x: 11
+        y: 471
+        width: 70
+        height: 138
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 79faae08defda1d90800000000000000
+      internalID: -7126137249197281385
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GuardiaCivilFullSheet_1
+      rect:
+        serializedVersion: 2
+        x: 111
+        y: 471
+        width: 70
+        height: 138
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0c35c727b11420220800000000000000
+      internalID: 2450592733383644096
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GuardiaCivilFullSheet_2
+      rect:
+        serializedVersion: 2
+        x: 219
+        y: 471
+        width: 70
+        height: 138
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d0b541fa2c1932ad0800000000000000
+      internalID: -2728176683909358835
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GuardiaCivilFullSheet_3
+      rect:
+        serializedVersion: 2
+        x: 319
+        y: 471
+        width: 70
+        height: 130
+      alignment: 9
+      pivot: {x: 0.5450919, y: 0.53035045}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 33f9221b4075fa9c0800000000000000
+      internalID: -3913813873498349773
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GuardiaCivilFullSheet_4
+      rect:
+        serializedVersion: 2
+        x: 423
+        y: 471
+        width: 70
+        height: 134
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4f116b1db6ea7afb0800000000000000
+      internalID: -4636545513251532300
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GuardiaCivilFullSheet_5
+      rect:
+        serializedVersion: 2
+        x: 11
+        y: 319
+        width: 66
+        height: 146
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8b28f965d36bed2a0800000000000000
+      internalID: -6710726020172905800
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GuardiaCivilFullSheet_6
+      rect:
+        serializedVersion: 2
+        x: 91
+        y: 319
+        width: 90
+        height: 142
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a934c0f4e67279560800000000000000
+      internalID: 7320363074040120218
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GuardiaCivilFullSheet_7
+      rect:
+        serializedVersion: 2
+        x: 199
+        y: 319
+        width: 70
+        height: 142
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f2d829f357bcdcb60800000000000000
+      internalID: 7768088636722154799
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GuardiaCivilFullSheet_8
+      rect:
+        serializedVersion: 2
+        x: 315
+        y: 323
+        width: 66
+        height: 142
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cdaf60d87b026dd30800000000000000
+      internalID: 4455784854046833372
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GuardiaCivilFullSheet_9
+      rect:
+        serializedVersion: 2
+        x: 423
+        y: 323
+        width: 62
+        height: 146
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6f403ac1788e92c10800000000000000
+      internalID: 2029408774105793782
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GuardiaCivilFullSheet_10
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 187
+        width: 70
+        height: 114
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eb20ee284f1cb22a0800000000000000
+      internalID: -6761097159653850434
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GuardiaCivilFullSheet_11
+      rect:
+        serializedVersion: 2
+        x: 99
+        y: 187
+        width: 74
+        height: 122
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c86bb36e0c133a280800000000000000
+      internalID: -9033321723008928116
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GuardiaCivilFullSheet_12
+      rect:
+        serializedVersion: 2
+        x: 199
+        y: 187
+        width: 70
+        height: 126
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 78f7980e0ca6b89d0800000000000000
+      internalID: -2771003769083035769
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GuardiaCivilFullSheet_13
+      rect:
+        serializedVersion: 2
+        x: 299
+        y: 191
+        width: 74
+        height: 130
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5015376f46cf5b8e0800000000000000
+      internalID: -1678157775563960059
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GuardiaCivilFullSheet_14
+      rect:
+        serializedVersion: 2
+        x: 395
+        y: 187
+        width: 82
+        height: 118
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c69b60969294d3470800000000000000
+      internalID: 8375931324183525740
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GuardiaCivilFullSheet_15
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 43
+        width: 89
+        height: 134
+      alignment: 9
+      pivot: {x: 0.6024772, y: 0.47382185}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8bcb7613b6f7822a0800000000000000
+      internalID: -6762014742129689416
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GuardiaCivilFullSheet_16
+      rect:
+        serializedVersion: 2
+        x: 107
+        y: 43
+        width: 66
+        height: 134
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7f25f6d211d90bf00800000000000000
+      internalID: 1130576203572269815
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GuardiaCivilFullSheet_17
+      rect:
+        serializedVersion: 2
+        x: 204
+        y: 44
+        width: 96
+        height: 138
+      alignment: 9
+      pivot: {x: 0.35871077, y: 0.4576343}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dbfc0b8e47a0f83c0800000000000000
+      internalID: -4355250817407594563
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GuardiaCivilFullSheet_18
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 44
+        width: 94
+        height: 138
+      alignment: 9
+      pivot: {x: 0.32585013, y: 0.43560416}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 764ffd46c8adb62a0800000000000000
+      internalID: -6743055720534510489
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GuardiaCivilFullSheet_19
+      rect:
+        serializedVersion: 2
+        x: 411
+        y: 43
+        width: 94
+        height: 138
+      alignment: 9
+      pivot: {x: 0.38555875, y: 0.48135918}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 936c0d477271ec000800000000000000
+      internalID: 58009303433397817
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: f4ba2acff32d9494982d38be763777c8
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      GuardiaCivilFullSheet_0: -7126137249197281385
+      GuardiaCivilFullSheet_1: 2450592733383644096
+      GuardiaCivilFullSheet_10: -6761097159653850434
+      GuardiaCivilFullSheet_11: -9033321723008928116
+      GuardiaCivilFullSheet_12: -2771003769083035769
+      GuardiaCivilFullSheet_13: -1678157775563960059
+      GuardiaCivilFullSheet_14: 8375931324183525740
+      GuardiaCivilFullSheet_15: -6762014742129689416
+      GuardiaCivilFullSheet_16: 1130576203572269815
+      GuardiaCivilFullSheet_17: -4355250817407594563
+      GuardiaCivilFullSheet_18: -6743055720534510489
+      GuardiaCivilFullSheet_19: 58009303433397817
+      GuardiaCivilFullSheet_2: -2728176683909358835
+      GuardiaCivilFullSheet_20: 185645920
+      GuardiaCivilFullSheet_3: -3913813873498349773
+      GuardiaCivilFullSheet_4: -4636545513251532300
+      GuardiaCivilFullSheet_5: -6710726020172905800
+      GuardiaCivilFullSheet_6: 7320363074040120218
+      GuardiaCivilFullSheet_7: 7768088636722154799
+      GuardiaCivilFullSheet_8: 4455784854046833372
+      GuardiaCivilFullSheet_9: 2029408774105793782
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -1,0 +1,650 @@
+fileFormatVersion: 2
+guid: cdc5c546a9e05ca4cbc0198dd46a7037
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -6810388352745170261
+    second: Gen Tomuyaki whole body_0
+  - first:
+      213: -1128266821568360919
+    second: Gen Tomuyaki whole body_1
+  - first:
+      213: -4473467492278549860
+    second: Gen Tomuyaki whole body_2
+  - first:
+      213: -5909178559540272402
+    second: Gen Tomuyaki whole body_3
+  - first:
+      213: 510843803065110209
+    second: Gen Tomuyaki whole body_4
+  - first:
+      213: -3653673045056471265
+    second: Gen Tomuyaki whole body_5
+  - first:
+      213: 3059104296351201179
+    second: Gen Tomuyaki whole body_6
+  - first:
+      213: 7967363149873350599
+    second: Gen Tomuyaki whole body_7
+  - first:
+      213: 426603331580050556
+    second: Gen Tomuyaki whole body_8
+  - first:
+      213: -7374684205311927036
+    second: Gen Tomuyaki whole body_9
+  - first:
+      213: 817297439528140349
+    second: Gen Tomuyaki whole body_10
+  - first:
+      213: -5914204338693213093
+    second: Gen Tomuyaki whole body_11
+  - first:
+      213: -2814925947956929315
+    second: Gen Tomuyaki whole body_12
+  - first:
+      213: 6002519982858015662
+    second: Gen Tomuyaki whole body_13
+  - first:
+      213: 4645757013003560404
+    second: Gen Tomuyaki whole body_14
+  - first:
+      213: 6768567499815254692
+    second: Gen Tomuyaki whole body_15
+  - first:
+      213: 1127671795787646228
+    second: Gen Tomuyaki whole body_16
+  - first:
+      213: 6240426443638358760
+    second: Gen Tomuyaki whole body_17
+  - first:
+      213: 2808583931147950928
+    second: Gen Tomuyaki whole body_18
+  - first:
+      213: -6554652360197607043
+    second: Gen Tomuyaki whole body_19
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 64
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Gen Tomuyaki whole body_0
+      rect:
+        serializedVersion: 2
+        x: 31
+        y: 783
+        width: 114
+        height: 226
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: baa9a2c40e3ac71a0800000000000000
+      internalID: -6810388352745170261
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gen Tomuyaki whole body_1
+      rect:
+        serializedVersion: 2
+        x: 191
+        y: 783
+        width: 114
+        height: 226
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 92e0f88bd479750f0800000000000000
+      internalID: -1128266821568360919
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gen Tomuyaki whole body_2
+      rect:
+        serializedVersion: 2
+        x: 367
+        y: 783
+        width: 114
+        height: 226
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c92ca78640d0be1c0800000000000000
+      internalID: -4473467492278549860
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gen Tomuyaki whole body_3
+      rect:
+        serializedVersion: 2
+        x: 535
+        y: 783
+        width: 122
+        height: 226
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ee26f3488616efda0800000000000000
+      internalID: -5909178559540272402
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gen Tomuyaki whole body_4
+      rect:
+        serializedVersion: 2
+        x: 703
+        y: 783
+        width: 122
+        height: 218
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1cec7697bb1e61700800000000000000
+      internalID: 510843803065110209
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gen Tomuyaki whole body_5
+      rect:
+        serializedVersion: 2
+        x: 31
+        y: 527
+        width: 122
+        height: 234
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f1f3df739bb8b4dc0800000000000000
+      internalID: -3653673045056471265
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gen Tomuyaki whole body_6
+      rect:
+        serializedVersion: 2
+        x: 159
+        y: 527
+        width: 146
+        height: 226
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b9772e2562f147a20800000000000000
+      internalID: 3059104296351201179
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gen Tomuyaki whole body_7
+      rect:
+        serializedVersion: 2
+        x: 335
+        y: 527
+        width: 130
+        height: 226
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7c70db86292c19e60800000000000000
+      internalID: 7967363149873350599
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gen Tomuyaki whole body_8
+      rect:
+        serializedVersion: 2
+        x: 527
+        y: 535
+        width: 130
+        height: 226
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c7cb3d648799be500800000000000000
+      internalID: 426603331580050556
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gen Tomuyaki whole body_9
+      rect:
+        serializedVersion: 2
+        x: 703
+        y: 535
+        width: 130
+        height: 234
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 40dd2bbb9cbd7a990800000000000000
+      internalID: -7374684205311927036
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gen Tomuyaki whole body_10
+      rect:
+        serializedVersion: 2
+        x: 23
+        y: 311
+        width: 138
+        height: 186
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d3e39e6e0bf975b00800000000000000
+      internalID: 817297439528140349
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gen Tomuyaki whole body_11
+      rect:
+        serializedVersion: 2
+        x: 167
+        y: 311
+        width: 146
+        height: 202
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b54fd1f1d768ceda0800000000000000
+      internalID: -5914204338693213093
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gen Tomuyaki whole body_12
+      rect:
+        serializedVersion: 2
+        x: 335
+        y: 311
+        width: 130
+        height: 202
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ddc5ff2b3cf5fe8d0800000000000000
+      internalID: -2814925947956929315
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gen Tomuyaki whole body_13
+      rect:
+        serializedVersion: 2
+        x: 503
+        y: 303
+        width: 130
+        height: 226
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ea39f672f1c3d4350800000000000000
+      internalID: 6002519982858015662
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gen Tomuyaki whole body_14
+      rect:
+        serializedVersion: 2
+        x: 663
+        y: 311
+        width: 146
+        height: 202
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4d56bd8936b097040800000000000000
+      internalID: 4645757013003560404
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gen Tomuyaki whole body_15
+      rect:
+        serializedVersion: 2
+        x: 47
+        y: 71
+        width: 138
+        height: 218
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4aafdb89748ceed50800000000000000
+      internalID: 6768567499815254692
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gen Tomuyaki whole body_16
+      rect:
+        serializedVersion: 2
+        x: 199
+        y: 71
+        width: 122
+        height: 226
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 415462b068b46af00800000000000000
+      internalID: 1127671795787646228
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gen Tomuyaki whole body_17
+      rect:
+        serializedVersion: 2
+        x: 327
+        y: 71
+        width: 162
+        height: 226
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8e2c40c89c27a9650800000000000000
+      internalID: 6240426443638358760
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gen Tomuyaki whole body_18
+      rect:
+        serializedVersion: 2
+        x: 503
+        y: 71
+        width: 146
+        height: 226
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 05b91f174381af620800000000000000
+      internalID: 2808583931147950928
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gen Tomuyaki whole body_19
+      rect:
+        serializedVersion: 2
+        x: 687
+        y: 71
+        width: 138
+        height: 226
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d71fe3c08623905a0800000000000000
+      internalID: -6554652360197607043
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Gen Tomuyaki whole body_0: -6810388352745170261
+      Gen Tomuyaki whole body_1: -1128266821568360919
+      Gen Tomuyaki whole body_10: 817297439528140349
+      Gen Tomuyaki whole body_11: -5914204338693213093
+      Gen Tomuyaki whole body_12: -2814925947956929315
+      Gen Tomuyaki whole body_13: 6002519982858015662
+      Gen Tomuyaki whole body_14: 4645757013003560404
+      Gen Tomuyaki whole body_15: 6768567499815254692
+      Gen Tomuyaki whole body_16: 1127671795787646228
+      Gen Tomuyaki whole body_17: 6240426443638358760
+      Gen Tomuyaki whole body_18: 2808583931147950928
+      Gen Tomuyaki whole body_19: -6554652360197607043
+      Gen Tomuyaki whole body_2: -4473467492278549860
+      Gen Tomuyaki whole body_3: -5909178559540272402
+      Gen Tomuyaki whole body_4: 510843803065110209
+      Gen Tomuyaki whole body_5: -3653673045056471265
+      Gen Tomuyaki whole body_6: 3059104296351201179
+      Gen Tomuyaki whole body_7: 7967363149873350599
+      Gen Tomuyaki whole body_8: 426603331580050556
+      Gen Tomuyaki whole body_9: -7374684205311927036
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

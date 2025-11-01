@@ -1,0 +1,652 @@
+fileFormatVersion: 2
+guid: e57d11555bfd1984c9147401792c7db7
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -5411482970666127550
+    second: ConquistadorFullSheet_0
+  - first:
+      213: -7755251702952254776
+    second: ConquistadorFullSheet_1
+  - first:
+      213: 2954861715034803411
+    second: ConquistadorFullSheet_2
+  - first:
+      213: -4348214074451925323
+    second: ConquistadorFullSheet_3
+  - first:
+      213: 2189404464489637529
+    second: ConquistadorFullSheet_4
+  - first:
+      213: -5598050674091124245
+    second: ConquistadorFullSheet_5
+  - first:
+      213: -2122177121364635923
+    second: ConquistadorFullSheet_6
+  - first:
+      213: 8805722499223670145
+    second: ConquistadorFullSheet_7
+  - first:
+      213: -6049419295340169835
+    second: ConquistadorFullSheet_8
+  - first:
+      213: 7273113298401060420
+    second: ConquistadorFullSheet_9
+  - first:
+      213: 4680162421029291457
+    second: ConquistadorFullSheet_10
+  - first:
+      213: -6150628776945597315
+    second: ConquistadorFullSheet_11
+  - first:
+      213: 1625058423621956843
+    second: ConquistadorFullSheet_12
+  - first:
+      213: -6093315145254679337
+    second: ConquistadorFullSheet_13
+  - first:
+      213: 4054026871723537657
+    second: ConquistadorFullSheet_14
+  - first:
+      213: 1455114657003534544
+    second: ConquistadorFullSheet_15
+  - first:
+      213: -1022662174890169776
+    second: ConquistadorFullSheet_16
+  - first:
+      213: -4944653169554862460
+    second: ConquistadorFullSheet_17
+  - first:
+      213: 7690413024963909804
+    second: ConquistadorFullSheet_18
+  - first:
+      213: -7457474407060830845
+    second: ConquistadorFullSheet_19
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 64
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: ConquistadorFullSheet_0
+      rect:
+        serializedVersion: 2
+        x: 12
+        y: 472
+        width: 68
+        height: 136
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 24fae51d8ec86e4b0800000000000000
+      internalID: -5411482970666127550
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ConquistadorFullSheet_1
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 473
+        width: 68
+        height: 136
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8c2a9cd4aafcf5490800000000000000
+      internalID: -7755251702952254776
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ConquistadorFullSheet_2
+      rect:
+        serializedVersion: 2
+        x: 220
+        y: 472
+        width: 68
+        height: 136
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3dc0d050317c10920800000000000000
+      internalID: 2954861715034803411
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ConquistadorFullSheet_3
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 472
+        width: 69
+        height: 128
+      alignment: 9
+      pivot: {x: 0.55718154, y: 0.53699017}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5b660fc465a08a3c0800000000000000
+      internalID: -4348214074451925323
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ConquistadorFullSheet_4
+      rect:
+        serializedVersion: 2
+        x: 424
+        y: 472
+        width: 68
+        height: 132
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9962f8fa2c3526e10800000000000000
+      internalID: 2189404464489637529
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ConquistadorFullSheet_5
+      rect:
+        serializedVersion: 2
+        x: 12
+        y: 320
+        width: 68
+        height: 144
+      alignment: 9
+      pivot: {x: 0.5000002, y: 0.50548023}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: be99928529abf42b0800000000000000
+      internalID: -5598050674091124245
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ConquistadorFullSheet_6
+      rect:
+        serializedVersion: 2
+        x: 92
+        y: 320
+        width: 88
+        height: 140
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dee8992e6238c82e0800000000000000
+      internalID: -2122177121364635923
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ConquistadorFullSheet_7
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 320
+        width: 72
+        height: 140
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 18d44e455f5343a70800000000000000
+      internalID: 8805722499223670145
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ConquistadorFullSheet_8
+      rect:
+        serializedVersion: 2
+        x: 317
+        y: 324
+        width: 68
+        height: 140
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 595fadbb3352c0ca0800000000000000
+      internalID: -6049419295340169835
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ConquistadorFullSheet_9
+      rect:
+        serializedVersion: 2
+        x: 420
+        y: 324
+        width: 68
+        height: 144
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4466d52a20a4fe460800000000000000
+      internalID: 7273113298401060420
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ConquistadorFullSheet_10
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 188
+        width: 72
+        height: 112
+      alignment: 9
+      pivot: {x: 0.5767187, y: 0.45772648}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1c54594ece643f040800000000000000
+      internalID: 4680162421029291457
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ConquistadorFullSheet_11
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 188
+        width: 76
+        height: 120
+      alignment: 9
+      pivot: {x: 0.5103832, y: 0.45396882}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d74ccdcf6b394aaa0800000000000000
+      internalID: -6150628776945597315
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ConquistadorFullSheet_12
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 188
+        width: 72
+        height: 124
+      alignment: 9
+      pivot: {x: 0.60959816, y: 0.47454515}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: be43e3fb60e5d8610800000000000000
+      internalID: 1625058423621956843
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ConquistadorFullSheet_13
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 192
+        width: 72
+        height: 128
+      alignment: 9
+      pivot: {x: 0.52191925, y: 0.54931927}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7dc469eb822307ba0800000000000000
+      internalID: -6093315145254679337
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ConquistadorFullSheet_14
+      rect:
+        serializedVersion: 2
+        x: 396
+        y: 188
+        width: 84
+        height: 116
+      alignment: 9
+      pivot: {x: 0.5469709, y: 0.39796078}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9f438fee5fbc24830800000000000000
+      internalID: 4054026871723537657
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ConquistadorFullSheet_15
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 44
+        width: 88
+        height: 132
+      alignment: 9
+      pivot: {x: 0.6703751, y: 0.4701097}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0d8f82e221b913410800000000000000
+      internalID: 1455114657003534544
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ConquistadorFullSheet_16
+      rect:
+        serializedVersion: 2
+        x: 104
+        y: 44
+        width: 68
+        height: 132
+      alignment: 9
+      pivot: {x: 0.45358232, y: 0.48206583}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 05a61749b26cec1f0800000000000000
+      internalID: -1022662174890169776
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ConquistadorFullSheet_17
+      rect:
+        serializedVersion: 2
+        x: 204
+        y: 44
+        width: 96
+        height: 136
+      alignment: 9
+      pivot: {x: 0.3684826, y: 0.47679126}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 48e4c23e320116bb0800000000000000
+      internalID: -4944653169554862460
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ConquistadorFullSheet_18
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 44
+        width: 92
+        height: 136
+      alignment: 9
+      pivot: {x: 0.37134153, y: 0.4651868}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ca8d20196e5d9ba60800000000000000
+      internalID: 7690413024963909804
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ConquistadorFullSheet_19
+      rect:
+        serializedVersion: 2
+        x: 408
+        y: 44
+        width: 96
+        height: 136
+      alignment: 9
+      pivot: {x: 0.4095818, y: 0.45938453}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3858295c98ab18890800000000000000
+      internalID: -7457474407060830845
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: a65b9e5072209ee4d883cded8424be61
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":64.0,"y":64.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":0,"keepEmptyRects":false,"isAlternate":false}'
+    nameFileIdTable:
+      ConquistadorFullSheet_0: -5411482970666127550
+      ConquistadorFullSheet_1: -7755251702952254776
+      ConquistadorFullSheet_10: 4680162421029291457
+      ConquistadorFullSheet_11: -6150628776945597315
+      ConquistadorFullSheet_12: 1625058423621956843
+      ConquistadorFullSheet_13: -6093315145254679337
+      ConquistadorFullSheet_14: 4054026871723537657
+      ConquistadorFullSheet_15: 1455114657003534544
+      ConquistadorFullSheet_16: -1022662174890169776
+      ConquistadorFullSheet_17: -4944653169554862460
+      ConquistadorFullSheet_18: 7690413024963909804
+      ConquistadorFullSheet_19: -7457474407060830845
+      ConquistadorFullSheet_2: 2954861715034803411
+      ConquistadorFullSheet_3: -4348214074451925323
+      ConquistadorFullSheet_4: 2189404464489637529
+      ConquistadorFullSheet_5: -5598050674091124245
+      ConquistadorFullSheet_6: -2122177121364635923
+      ConquistadorFullSheet_7: 8805722499223670145
+      ConquistadorFullSheet_8: -6049419295340169835
+      ConquistadorFullSheet_9: 7273113298401060420
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
