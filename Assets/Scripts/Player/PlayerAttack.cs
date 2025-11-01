@@ -153,42 +153,81 @@ public class PlayerAttack : MonoBehaviour
 
     // para sa ranged 
     IEnumerator RangedAttack(WeaponData w)
-    {
-        if (!bulletPrefab)
-        {
-            Debug.LogWarning("[PlayerAttack] Missing bulletPrefab!");
-            yield break;
-        }
+	{
+    	if (!bulletPrefab)
+    	{
+        	Debug.LogWarning("[PlayerAttack] Missing bulletPrefab!");
+        	yield break;
+    	}
 
-        if (!attackOrigin)
-        {
-            attackOrigin = transform;
-            Debug.LogWarning("[PlayerAttack] No attackOrigin, using player transform instead.");
-        }
+    	if (!attackOrigin)
+    	{
+        	attackOrigin = transform;
+        	Debug.LogWarning("[PlayerAttack] No attackOrigin, using player transform instead.");
+    	}
 
-        GameObject bullet = Instantiate(bulletPrefab, attackOrigin.position, Quaternion.identity);
-        Debug.Log($"[PlayerAttack] Spawned bullet {bullet.name}");
+    	GameObject bullet = Instantiate(bulletPrefab, attackOrigin.position, Quaternion.identity);
+    	Debug.Log($"[PlayerAttack] Spawned bullet {bullet.name}");
 
-        var rb2d = bullet.GetComponent<Rigidbody2D>();
-        if (rb2d)
-        {
-            Vector2 dir = attackOrigin.right;
-            if (dir.sqrMagnitude < 0.0001f) dir = Vector2.right * Mathf.Sign(transform.lossyScale.x);
+    	var rb2d = EnsureBulletSetup(bullet);
 
-            rb2d.linearVelocity = dir.normalized * bulletSpeed;
-            Debug.Log($"[PlayerAttack] Bullet velocity set to {rb2d.linearVelocity}");
-        }
+    	float facing = Mathf.Sign(transform.lossyScale.x);
+    	if (Mathf.Approximately(facing, 0f)) facing = 1f;
+    	Vector2 dir = new Vector2(facing, 0f).normalized;
 
-        var b = bullet.GetComponent<Bullet>();  
-        if (b)
-        {
-            b.damage = w.damage;
-            b.attacker = transform;             
-            Debug.Log($"[PlayerAttack] Bullet damage set to {b.damage}");
-        }
+   		rb2d.velocity = dir * bulletSpeed;
 
-        yield return null;
-    }
+    	float lifetime = Mathf.Max(0.05f, (w.reach > 0 ? w.reach : attackRadius * 3f) / Mathf.Max(0.01f, bulletSpeed));
+    	Destroy(bullet, lifetime);
+
+    	var b1 = bullet.GetComponent<Bullet>();
+    	if (b1 != null)
+    	{
+        	b1.damage = w.damage;
+        	b1.attacker = transform;
+    	}
+    	else
+    	{
+        	var b2 = bullet.GetComponent<EnemyBullet2D>();
+        	if (b2 != null)
+        	{	
+            	b2.damage = w.damage;
+            	b2.attacker = transform;
+            	b2.lifetime = lifetime;
+        	}
+    	}
+
+    	IgnorePlayerCollisionWithBullet(bullet);
+
+	    yield return null;
+	}
+
+	Rigidbody2D EnsureBulletSetup(GameObject bullet)
+	{
+	    var rb2d = bullet.GetComponent<Rigidbody2D>();
+	    if (!rb2d) rb2d = bullet.AddComponent<Rigidbody2D>();
+	
+    	rb2d.bodyType = RigidbodyType2D.Dynamic;
+    	rb2d.gravityScale = 0f;
+    	rb2d.freezeRotation = true;
+    	rb2d.collisionDetectionMode = CollisionDetectionMode2D.Continuous;
+
+    	var col = bullet.GetComponent<Collider2D>();
+    	if (!col) col = bullet.AddComponent<CircleCollider2D>();
+    	col.isTrigger = true;
+
+    	return rb2d;
+	}
+
+	void IgnorePlayerCollisionWithBullet(GameObject bullet)
+	{	
+    	var bulletCols = bullet.GetComponentsInChildren<Collider2D>();
+    	var playerCols = GetComponentsInChildren<Collider2D>();
+    	foreach (var bc in bulletCols)
+        	foreach (var pc in playerCols)
+            	if (bc && pc) Physics2D.IgnoreCollision(bc, pc, true);
+	}
+
 
 #if UNITY_EDITOR
     void OnDrawGizmosSelected()

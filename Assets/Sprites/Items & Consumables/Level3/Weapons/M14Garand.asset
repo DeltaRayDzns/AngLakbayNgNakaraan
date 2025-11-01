@@ -13,8 +13,8 @@ MonoBehaviour:
   m_Name: M14Garand
   m_EditorClassIdentifier: Assembly-CSharp::WeaponData
   weaponName: M14 Garand
-  icon: {fileID: 0}
+  icon: {fileID: -1043260893708946572, guid: 4f6cc0c7a683b094698b3075844bcb37, type: 3}
   damage: 2
-  attackSpeed: 0.5
+  attackSpeed: 1
   pattern: 1
   reach: 10
