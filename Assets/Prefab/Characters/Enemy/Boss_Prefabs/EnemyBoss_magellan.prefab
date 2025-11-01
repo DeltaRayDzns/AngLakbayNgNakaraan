@@ -291,6 +291,7 @@ GameObject:
   - component: {fileID: 3049205309867712997}
   - component: {fileID: 4461207994265153449}
   - component: {fileID: 7679520505315237576}
+  - component: {fileID: 6294687816359275987}
   m_Layer: 9
   m_Name: EnemyBoss_magellan
   m_TagString: Enemy
@@ -455,6 +456,28 @@ MonoBehaviour:
   - {fileID: 0}
   - {fileID: 0}
   FirstPage: {fileID: 8581380510510512008, guid: 9bde7daee05b2a84a974a8c942a4ce0e, type: 3}
+--- !u!95 &6294687816359275987
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5515677787701931294}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 83d3054b14465b747bfc9d1265d2e488, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &7309755523406667454
 GameObject:
   m_ObjectHideFlags: 0

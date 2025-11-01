@@ -173,12 +173,12 @@ TextureImporter:
       name: Magellan Full_0
       rect:
         serializedVersion: 2
-        x: 11
-        y: 471
-        width: 70
-        height: 138
+        x: 12
+        y: 472
+        width: 68
+        height: 136
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -195,12 +195,12 @@ TextureImporter:
       name: Magellan Full_1
       rect:
         serializedVersion: 2
-        x: 111
-        y: 471
-        width: 70
-        height: 138
+        x: 112
+        y: 472
+        width: 68
+        height: 136
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -217,12 +217,12 @@ TextureImporter:
       name: Magellan Full_2
       rect:
         serializedVersion: 2
-        x: 219
-        y: 471
-        width: 70
-        height: 138
+        x: 220
+        y: 472
+        width: 68
+        height: 136
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -239,12 +239,12 @@ TextureImporter:
       name: Magellan Full_3
       rect:
         serializedVersion: 2
-        x: 319
-        y: 471
+        x: 320
+        y: 472
         width: 70
-        height: 130
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        height: 128
+      alignment: 9
+      pivot: {x: 0.5416486, y: 0.5402069}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -261,12 +261,12 @@ TextureImporter:
       name: Magellan Full_4
       rect:
         serializedVersion: 2
-        x: 423
-        y: 471
-        width: 70
-        height: 134
+        x: 424
+        y: 472
+        width: 68
+        height: 132
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -283,12 +283,12 @@ TextureImporter:
       name: Magellan Full_5
       rect:
         serializedVersion: 2
-        x: 11
-        y: 319
-        width: 70
-        height: 146
+        x: 12
+        y: 320
+        width: 68
+        height: 144
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -305,12 +305,12 @@ TextureImporter:
       name: Magellan Full_6
       rect:
         serializedVersion: 2
-        x: 91
-        y: 319
-        width: 90
-        height: 142
+        x: 92
+        y: 320
+        width: 88
+        height: 140
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -327,12 +327,12 @@ TextureImporter:
       name: Magellan Full_7
       rect:
         serializedVersion: 2
-        x: 199
-        y: 319
-        width: 74
-        height: 142
+        x: 200
+        y: 320
+        width: 72
+        height: 140
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -349,12 +349,12 @@ TextureImporter:
       name: Magellan Full_8
       rect:
         serializedVersion: 2
-        x: 315
-        y: 323
-        width: 70
-        height: 142
+        x: 316
+        y: 324
+        width: 68
+        height: 140
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -371,12 +371,12 @@ TextureImporter:
       name: Magellan Full_9
       rect:
         serializedVersion: 2
-        x: 419
-        y: 323
-        width: 70
-        height: 146
+        x: 420
+        y: 324
+        width: 68
+        height: 144
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -393,12 +393,12 @@ TextureImporter:
       name: Magellan Full_10
       rect:
         serializedVersion: 2
-        x: 7
-        y: 187
-        width: 74
-        height: 114
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 8
+        y: 188
+        width: 72
+        height: 112
+      alignment: 9
+      pivot: {x: 0.5718847, y: 0.46639183}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -415,12 +415,12 @@ TextureImporter:
       name: Magellan Full_11
       rect:
         serializedVersion: 2
-        x: 99
-        y: 187
-        width: 78
-        height: 122
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 100
+        y: 188
+        width: 76
+        height: 120
+      alignment: 9
+      pivot: {x: 0.55571926, y: 0.46863237}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -437,12 +437,12 @@ TextureImporter:
       name: Magellan Full_12
       rect:
         serializedVersion: 2
-        x: 199
-        y: 187
-        width: 74
-        height: 126
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 200
+        y: 188
+        width: 72
+        height: 124
+      alignment: 9
+      pivot: {x: 0.57842, y: 0.4734389}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -459,12 +459,12 @@ TextureImporter:
       name: Magellan Full_13
       rect:
         serializedVersion: 2
-        x: 299
-        y: 191
-        width: 74
-        height: 130
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 300
+        y: 192
+        width: 72
+        height: 128
+      alignment: 9
+      pivot: {x: 0.53921044, y: 0.43015778}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -481,12 +481,12 @@ TextureImporter:
       name: Magellan Full_14
       rect:
         serializedVersion: 2
-        x: 395
-        y: 187
-        width: 86
-        height: 118
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 396
+        y: 188
+        width: 84
+        height: 116
+      alignment: 9
+      pivot: {x: 0.57281893, y: 0.44726998}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -504,11 +504,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 43
-        width: 89
-        height: 134
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        y: 44
+        width: 88
+        height: 132
+      alignment: 9
+      pivot: {x: 0.6015891, y: 0.47504836}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -525,12 +525,12 @@ TextureImporter:
       name: Magellan Full_16
       rect:
         serializedVersion: 2
-        x: 103
-        y: 43
-        width: 70
-        height: 134
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 104
+        y: 44
+        width: 68
+        height: 132
+      alignment: 9
+      pivot: {x: 0.56227446, y: 0.45009664}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -547,12 +547,12 @@ TextureImporter:
       name: Magellan Full_17
       rect:
         serializedVersion: 2
-        x: 203
-        y: 43
-        width: 98
-        height: 138
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 204
+        y: 44
+        width: 96
+        height: 136
+      alignment: 9
+      pivot: {x: 0.3578647, y: 0.46886298}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -569,12 +569,12 @@ TextureImporter:
       name: Magellan Full_18
       rect:
         serializedVersion: 2
-        x: 299
-        y: 43
-        width: 98
-        height: 138
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 300
+        y: 44
+        width: 96
+        height: 136
+      alignment: 9
+      pivot: {x: 0.32355595, y: 0.4342661}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -591,12 +591,12 @@ TextureImporter:
       name: Magellan Full_19
       rect:
         serializedVersion: 2
-        x: 407
-        y: 43
-        width: 98
-        height: 138
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 408
+        y: 44
+        width: 96
+        height: 136
+      alignment: 9
+      pivot: {x: 0.4362847, y: 0.4896211}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -613,7 +613,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: f590b6cf44f2aee4b9d98a60b55bee3e
     internalID: 0
     vertices: []
     indices: 
@@ -621,7 +621,9 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     spriteCustomMetadata:
-      entries: []
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":64.0,"y":64.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":0,"keepEmptyRects":false,"isAlternate":false}'
     nameFileIdTable:
       Magellan Full_0: -2562588663166060086
       Magellan Full_1: 463588965101510783

@@ -167,12 +167,12 @@ TextureImporter:
       name: American Soldiers_0
       rect:
         serializedVersion: 2
-        x: 31
-        y: 783
-        width: 114
-        height: 218
+        x: 19
+        y: 475
+        width: 66
+        height: 130
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -189,12 +189,12 @@ TextureImporter:
       name: American Soldiers_1
       rect:
         serializedVersion: 2
-        x: 191
-        y: 783
-        width: 114
-        height: 218
+        x: 114
+        y: 475
+        width: 66
+        height: 130
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -211,12 +211,12 @@ TextureImporter:
       name: American Soldiers_2
       rect:
         serializedVersion: 2
-        x: 367
-        y: 783
-        width: 114
-        height: 218
+        x: 218
+        y: 475
+        width: 66
+        height: 130
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -233,12 +233,12 @@ TextureImporter:
       name: American Soldiers_3
       rect:
         serializedVersion: 2
-        x: 535
-        y: 783
-        width: 122
-        height: 218
+        x: 318
+        y: 475
+        width: 71
+        height: 130
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -255,12 +255,12 @@ TextureImporter:
       name: American Soldiers_4
       rect:
         serializedVersion: 2
-        x: 703
-        y: 783
-        width: 122
-        height: 210
+        x: 417
+        y: 475
+        width: 71
+        height: 126
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -277,12 +277,12 @@ TextureImporter:
       name: American Soldiers_5
       rect:
         serializedVersion: 2
-        x: 31
-        y: 527
-        width: 122
-        height: 226
+        x: 19
+        y: 320
+        width: 71
+        height: 135
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -299,12 +299,12 @@ TextureImporter:
       name: American Soldiers_6
       rect:
         serializedVersion: 2
-        x: 159
-        y: 527
-        width: 146
-        height: 218
+        x: 95
+        y: 320
+        width: 85
+        height: 130
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -321,12 +321,12 @@ TextureImporter:
       name: American Soldiers_7
       rect:
         serializedVersion: 2
-        x: 335
-        y: 527
-        width: 130
-        height: 218
+        x: 199
+        y: 320
+        width: 76
+        height: 130
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -343,12 +343,12 @@ TextureImporter:
       name: American Soldiers_8
       rect:
         serializedVersion: 2
-        x: 527
-        y: 535
-        width: 130
-        height: 218
+        x: 313
+        y: 325
+        width: 76
+        height: 130
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -365,12 +365,12 @@ TextureImporter:
       name: American Soldiers_9
       rect:
         serializedVersion: 2
-        x: 703
-        y: 535
-        width: 130
-        height: 226
+        x: 417
+        y: 325
+        width: 76
+        height: 135
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -387,12 +387,12 @@ TextureImporter:
       name: American Soldiers_10
       rect:
         serializedVersion: 2
-        x: 31
-        y: 287
-        width: 138
-        height: 178
+        x: 19
+        y: 174
+        width: 81
+        height: 107
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -409,12 +409,12 @@ TextureImporter:
       name: American Soldiers_11
       rect:
         serializedVersion: 2
-        x: 175
-        y: 287
-        width: 146
-        height: 194
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 104
+        y: 174
+        width: 86
+        height: 117
+      alignment: 9
+      pivot: {x: 0.51192707, y: 0.43424818}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -431,12 +431,12 @@ TextureImporter:
       name: American Soldiers_12
       rect:
         serializedVersion: 2
-        x: 343
-        y: 287
-        width: 130
-        height: 194
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 204
+        y: 174
+        width: 76
+        height: 117
+      alignment: 9
+      pivot: {x: 0.5134964, y: 0.40356392}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -453,12 +453,12 @@ TextureImporter:
       name: American Soldiers_13
       rect:
         serializedVersion: 2
-        x: 511
-        y: 287
-        width: 130
-        height: 218
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 303
+        y: 174
+        width: 76
+        height: 131
+      alignment: 9
+      pivot: {x: 0.4932516, y: 0.37863496}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -475,12 +475,12 @@ TextureImporter:
       name: American Soldiers_14
       rect:
         serializedVersion: 2
-        x: 671
-        y: 287
-        width: 146
-        height: 194
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 398
+        y: 174
+        width: 86
+        height: 117
+      alignment: 9
+      pivot: {x: 0.53578115, y: 0.47808263}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -497,12 +497,12 @@ TextureImporter:
       name: American Soldiers_15
       rect:
         serializedVersion: 2
-        x: 151
-        y: 39
-        width: 162
-        height: 210
+        x: 90
+        y: 24
+        width: 95
+        height: 126
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -519,12 +519,12 @@ TextureImporter:
       name: American Soldiers_16
       rect:
         serializedVersion: 2
-        x: 335
-        y: 39
-        width: 154
-        height: 218
+        x: 199
+        y: 24
+        width: 90
+        height: 131
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -541,12 +541,12 @@ TextureImporter:
       name: American Soldiers_17
       rect:
         serializedVersion: 2
-        x: 527
-        y: 39
-        width: 154
-        height: 218
+        x: 313
+        y: 24
+        width: 90
+        height: 131
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -563,7 +563,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: d118d378d6f9bf34e8b8ea4529cda0c4
     internalID: 0
     vertices: []
     indices: 
@@ -571,7 +571,9 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     spriteCustomMetadata:
-      entries: []
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":64.0,"y":64.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":0,"keepEmptyRects":false,"isAlternate":false}'
     nameFileIdTable:
       American Soldiers_0: 4961340712200114196
       American Soldiers_1: 1971436114571168403
