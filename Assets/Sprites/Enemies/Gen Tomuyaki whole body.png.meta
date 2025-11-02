@@ -173,12 +173,12 @@ TextureImporter:
       name: Gen Tomuyaki whole body_0
       rect:
         serializedVersion: 2
-        x: 31
-        y: 783
-        width: 114
-        height: 226
+        x: 19
+        y: 475
+        width: 66
+        height: 135
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -195,12 +195,12 @@ TextureImporter:
       name: Gen Tomuyaki whole body_1
       rect:
         serializedVersion: 2
-        x: 191
-        y: 783
-        width: 114
-        height: 226
+        x: 114
+        y: 475
+        width: 66
+        height: 135
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -217,12 +217,12 @@ TextureImporter:
       name: Gen Tomuyaki whole body_2
       rect:
         serializedVersion: 2
-        x: 367
-        y: 783
-        width: 114
-        height: 226
+        x: 218
+        y: 475
+        width: 66
+        height: 135
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -239,12 +239,12 @@ TextureImporter:
       name: Gen Tomuyaki whole body_3
       rect:
         serializedVersion: 2
-        x: 535
-        y: 783
-        width: 122
-        height: 226
+        x: 318
+        y: 475
+        width: 71
+        height: 135
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -261,12 +261,12 @@ TextureImporter:
       name: Gen Tomuyaki whole body_4
       rect:
         serializedVersion: 2
-        x: 703
-        y: 783
-        width: 122
-        height: 218
+        x: 417
+        y: 475
+        width: 71
+        height: 130
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -283,12 +283,12 @@ TextureImporter:
       name: Gen Tomuyaki whole body_5
       rect:
         serializedVersion: 2
-        x: 31
-        y: 527
-        width: 122
-        height: 234
+        x: 19
+        y: 320
+        width: 71
+        height: 140
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -305,12 +305,12 @@ TextureImporter:
       name: Gen Tomuyaki whole body_6
       rect:
         serializedVersion: 2
-        x: 159
-        y: 527
-        width: 146
-        height: 226
+        x: 95
+        y: 320
+        width: 85
+        height: 135
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -327,12 +327,12 @@ TextureImporter:
       name: Gen Tomuyaki whole body_7
       rect:
         serializedVersion: 2
-        x: 335
-        y: 527
-        width: 130
-        height: 226
+        x: 199
+        y: 320
+        width: 76
+        height: 135
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -349,12 +349,12 @@ TextureImporter:
       name: Gen Tomuyaki whole body_8
       rect:
         serializedVersion: 2
-        x: 527
-        y: 535
-        width: 130
-        height: 226
+        x: 313
+        y: 325
+        width: 76
+        height: 135
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -371,12 +371,12 @@ TextureImporter:
       name: Gen Tomuyaki whole body_9
       rect:
         serializedVersion: 2
-        x: 703
-        y: 535
-        width: 130
-        height: 234
+        x: 417
+        y: 325
+        width: 76
+        height: 140
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -393,12 +393,12 @@ TextureImporter:
       name: Gen Tomuyaki whole body_10
       rect:
         serializedVersion: 2
-        x: 23
-        y: 311
-        width: 138
-        height: 186
+        x: 14
+        y: 189
+        width: 81
+        height: 111
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -415,12 +415,12 @@ TextureImporter:
       name: Gen Tomuyaki whole body_11
       rect:
         serializedVersion: 2
-        x: 167
-        y: 311
-        width: 146
-        height: 202
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 100
+        y: 189
+        width: 85
+        height: 121
+      alignment: 9
+      pivot: {x: 0.5278507, y: 0.42826352}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -437,12 +437,12 @@ TextureImporter:
       name: Gen Tomuyaki whole body_12
       rect:
         serializedVersion: 2
-        x: 335
-        y: 311
-        width: 130
-        height: 202
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 199
+        y: 189
+        width: 76
+        height: 121
+      alignment: 9
+      pivot: {x: 0.60383004, y: 0.38261274}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -459,12 +459,12 @@ TextureImporter:
       name: Gen Tomuyaki whole body_13
       rect:
         serializedVersion: 2
-        x: 503
-        y: 303
-        width: 130
-        height: 226
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 299
+        y: 184
+        width: 76
+        height: 136
+      alignment: 9
+      pivot: {x: 0.5311488, y: 0.41876894}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -481,12 +481,12 @@ TextureImporter:
       name: Gen Tomuyaki whole body_14
       rect:
         serializedVersion: 2
-        x: 663
-        y: 311
-        width: 146
-        height: 202
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 393
+        y: 189
+        width: 86
+        height: 121
+      alignment: 9
+      pivot: {x: 0.55505407, y: 0.39565587}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -503,12 +503,12 @@ TextureImporter:
       name: Gen Tomuyaki whole body_15
       rect:
         serializedVersion: 2
-        x: 47
-        y: 71
-        width: 138
-        height: 218
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 28
+        y: 44
+        width: 81
+        height: 130
+      alignment: 9
+      pivot: {x: 0.3246434, y: 0.40287933}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -525,12 +525,12 @@ TextureImporter:
       name: Gen Tomuyaki whole body_16
       rect:
         serializedVersion: 2
-        x: 199
-        y: 71
-        width: 122
-        height: 226
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 119
+        y: 44
+        width: 71
+        height: 135
+      alignment: 9
+      pivot: {x: 0.33328784, y: 0.47661912}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -547,12 +547,12 @@ TextureImporter:
       name: Gen Tomuyaki whole body_17
       rect:
         serializedVersion: 2
-        x: 327
-        y: 71
-        width: 162
-        height: 226
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 194
+        y: 44
+        width: 95
+        height: 135
+      alignment: 9
+      pivot: {x: 0.342179, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -569,12 +569,12 @@ TextureImporter:
       name: Gen Tomuyaki whole body_18
       rect:
         serializedVersion: 2
-        x: 503
-        y: 71
-        width: 146
-        height: 226
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 299
+        y: 44
+        width: 85
+        height: 135
+      alignment: 9
+      pivot: {x: 0.37931374, y: 0.47077388}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -591,12 +591,12 @@ TextureImporter:
       name: Gen Tomuyaki whole body_19
       rect:
         serializedVersion: 2
-        x: 687
-        y: 71
-        width: 138
-        height: 226
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 408
+        y: 45
+        width: 80
+        height: 135
+      alignment: 9
+      pivot: {x: 0.46054497, y: 0.49415487}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -613,7 +613,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 20606ab9d5c317741a3529027381193c
     internalID: 0
     vertices: []
     indices: 
@@ -621,7 +621,9 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     spriteCustomMetadata:
-      entries: []
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":64.0,"y":64.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":0,"keepEmptyRects":false,"isAlternate":false}'
     nameFileIdTable:
       Gen Tomuyaki whole body_0: -6810388352745170261
       Gen Tomuyaki whole body_1: -1128266821568360919
