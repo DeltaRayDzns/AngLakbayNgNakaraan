@@ -45,6 +45,7 @@ GameObject:
   - component: {fileID: 2395351041813151864}
   - component: {fileID: 4864882673063920575}
   - component: {fileID: 6874212433947586845}
+  - component: {fileID: 5053187205945756671}
   - component: {fileID: 1105159285174286831}
   m_Layer: 9
   m_Name: EnemyBoss_GenTomuyaki
@@ -192,6 +193,10 @@ MonoBehaviour:
   jumpLeadX: 0.35
   jumpCooldown: 0.3
   coyoteTime: 0.08
+  anim: {fileID: 0}
+  pSpeed: Speed
+  pGrounded: IsGrounded
+  tJump: Jump
   groundTag: Ground
 --- !u!114 &6874212433947586845
 MonoBehaviour:
@@ -212,6 +217,28 @@ MonoBehaviour:
   - {fileID: 0}
   - {fileID: 0}
   FirstPage: {fileID: 8581380510510512008, guid: 9bde7daee05b2a84a974a8c942a4ce0e, type: 3}
+--- !u!95 &5053187205945756671
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 859427494866913390}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 80031f525a4ccac4ba6c4cf2de2aea43, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!212 &1105159285174286831
 SpriteRenderer:
   m_ObjectHideFlags: 0

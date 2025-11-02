@@ -178,38 +178,8 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 8506871877907107421, guid: c020adf5f09de824fa9ea30d0e988cc0, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 227020163}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c020adf5f09de824fa9ea30d0e988cc0, type: 3}
---- !u!1 &227020162 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 8506871877907107421, guid: c020adf5f09de824fa9ea30d0e988cc0, type: 3}
-  m_PrefabInstance: {fileID: 227020161}
-  m_PrefabAsset: {fileID: 0}
---- !u!95 &227020163
-Animator:
-  serializedVersion: 7
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 227020162}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 0}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_StabilizeFeet: 0
-  m_AnimatePhysics: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorStateOnDisable: 0
-  m_WriteDefaultValuesOnDisable: 0
 --- !u!1001 &542932794
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -270,9 +240,6 @@ PrefabInstance:
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 859427494866913390, guid: aa18073d62de9b946ae0e65791211431, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 542932797}
     - targetCorrespondingSourceObject: {fileID: 859427494866913390, guid: aa18073d62de9b946ae0e65791211431, type: 3}
       insertIndex: -1
       addedObject: {fileID: 542932796}
@@ -340,28 +307,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!95 &542932797
-Animator:
-  serializedVersion: 7
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 542932795}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 80031f525a4ccac4ba6c4cf2de2aea43, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_StabilizeFeet: 0
-  m_AnimatePhysics: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorStateOnDisable: 0
-  m_WriteDefaultValuesOnDisable: 0
 --- !u!1001 &665870376
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1190,9 +1135,105 @@ PrefabInstance:
       value: Smooth Stone
       objectReference: {fileID: 0}
     - target: {fileID: 2791364744033390113, guid: 2b11351c7e0cd47438ad6807926e8024, type: 3}
+      propertyPath: m_TileColorArray.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2791364744033390113, guid: 2b11351c7e0cd47438ad6807926e8024, type: 3}
       propertyPath: m_TileAssetArray.Array.data[0].m_Data
       value: 
       objectReference: {fileID: 795470068}
+    - target: {fileID: 2791364744033390113, guid: 2b11351c7e0cd47438ad6807926e8024, type: 3}
+      propertyPath: m_TileColorArray.Array.data[0].m_Data.a
+      value: 1e-43
+      objectReference: {fileID: 0}
+    - target: {fileID: 2791364744033390113, guid: 2b11351c7e0cd47438ad6807926e8024, type: 3}
+      propertyPath: m_TileColorArray.Array.data[0].m_Data.b
+      value: 1e-43
+      objectReference: {fileID: 0}
+    - target: {fileID: 2791364744033390113, guid: 2b11351c7e0cd47438ad6807926e8024, type: 3}
+      propertyPath: m_TileColorArray.Array.data[0].m_Data.g
+      value: 1e-43
+      objectReference: {fileID: 0}
+    - target: {fileID: 2791364744033390113, guid: 2b11351c7e0cd47438ad6807926e8024, type: 3}
+      propertyPath: m_TileColorArray.Array.data[0].m_Data.r
+      value: 1e-43
+      objectReference: {fileID: 0}
+    - target: {fileID: 2791364744033390113, guid: 2b11351c7e0cd47438ad6807926e8024, type: 3}
+      propertyPath: m_TileColorArray.Array.data[1].m_Data.a
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2791364744033390113, guid: 2b11351c7e0cd47438ad6807926e8024, type: 3}
+      propertyPath: m_TileColorArray.Array.data[1].m_Data.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2791364744033390113, guid: 2b11351c7e0cd47438ad6807926e8024, type: 3}
+      propertyPath: m_TileColorArray.Array.data[1].m_Data.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2791364744033390113, guid: 2b11351c7e0cd47438ad6807926e8024, type: 3}
+      propertyPath: m_TileColorArray.Array.data[1].m_Data.r
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2791364744033390113, guid: 2b11351c7e0cd47438ad6807926e8024, type: 3}
+      propertyPath: m_TileColorArray.Array.data[0].m_RefCount
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2791364744033390113, guid: 2b11351c7e0cd47438ad6807926e8024, type: 3}
+      propertyPath: m_TileColorArray.Array.data[1].m_RefCount
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 2791364744033390113, guid: 2b11351c7e0cd47438ad6807926e8024, type: 3}
+      propertyPath: m_TileSpriteArray.Array.data[0].m_RefCount
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2791364744033390113, guid: 2b11351c7e0cd47438ad6807926e8024, type: 3}
+      propertyPath: m_Tiles.Array.data[0].second.m_AllTileFlags
+      value: 1073741825
+      objectReference: {fileID: 0}
+    - target: {fileID: 2791364744033390113, guid: 2b11351c7e0cd47438ad6807926e8024, type: 3}
+      propertyPath: m_Tiles.Array.data[1].second.m_AllTileFlags
+      value: 1073741825
+      objectReference: {fileID: 0}
+    - target: {fileID: 2791364744033390113, guid: 2b11351c7e0cd47438ad6807926e8024, type: 3}
+      propertyPath: m_Tiles.Array.data[2].second.m_AllTileFlags
+      value: 1073741825
+      objectReference: {fileID: 0}
+    - target: {fileID: 2791364744033390113, guid: 2b11351c7e0cd47438ad6807926e8024, type: 3}
+      propertyPath: m_Tiles.Array.data[3].second.m_AllTileFlags
+      value: 1073741825
+      objectReference: {fileID: 0}
+    - target: {fileID: 2791364744033390113, guid: 2b11351c7e0cd47438ad6807926e8024, type: 3}
+      propertyPath: m_Tiles.Array.data[0].second.m_TileColorIndex
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2791364744033390113, guid: 2b11351c7e0cd47438ad6807926e8024, type: 3}
+      propertyPath: m_Tiles.Array.data[1].second.m_TileColorIndex
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2791364744033390113, guid: 2b11351c7e0cd47438ad6807926e8024, type: 3}
+      propertyPath: m_Tiles.Array.data[2].second.m_TileColorIndex
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2791364744033390113, guid: 2b11351c7e0cd47438ad6807926e8024, type: 3}
+      propertyPath: m_Tiles.Array.data[3].second.m_TileColorIndex
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2791364744033390113, guid: 2b11351c7e0cd47438ad6807926e8024, type: 3}
+      propertyPath: m_Tiles.Array.data[0].second.m_TileSpriteIndex
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 2791364744033390113, guid: 2b11351c7e0cd47438ad6807926e8024, type: 3}
+      propertyPath: m_Tiles.Array.data[1].second.m_TileSpriteIndex
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 2791364744033390113, guid: 2b11351c7e0cd47438ad6807926e8024, type: 3}
+      propertyPath: m_Tiles.Array.data[2].second.m_TileSpriteIndex
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 2791364744033390113, guid: 2b11351c7e0cd47438ad6807926e8024, type: 3}
+      propertyPath: m_Tiles.Array.data[3].second.m_TileSpriteIndex
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 8746535301400637133, guid: 2b11351c7e0cd47438ad6807926e8024, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0

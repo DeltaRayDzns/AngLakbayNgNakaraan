@@ -439,6 +439,10 @@ MonoBehaviour:
   jumpLeadX: 0.35
   jumpCooldown: 0.3
   coyoteTime: 0.08
+  anim: {fileID: 0}
+  pSpeed: Speed
+  pGrounded: IsGrounded
+  tJump: Jump
   groundTag: Ground
 --- !u!114 &7679520505315237576
 MonoBehaviour:
@@ -728,6 +732,7 @@ MonoBehaviour:
   attackCooldown: 1.5
   damage: 1
   moveStopDuration: 1
+  tAttack: Attack
 --- !u!1 &8178355397238784970
 GameObject:
   m_ObjectHideFlags: 0
