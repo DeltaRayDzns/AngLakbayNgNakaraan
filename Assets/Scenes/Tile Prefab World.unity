@@ -612,6 +612,10 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4017802625420023159, guid: 8dc7c70c76af81647b1f2de5e3c41884, type: 3}
+      propertyPath: anim
+      value: 
+      objectReference: {fileID: 976956760}
     - target: {fileID: 5086431982741063552, guid: 8dc7c70c76af81647b1f2de5e3c41884, type: 3}
       propertyPath: m_LocalPosition.x
       value: 48.800373
@@ -731,6 +735,11 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!95 &976956760 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: -8659594390231874122, guid: 8dc7c70c76af81647b1f2de5e3c41884, type: 3}
+  m_PrefabInstance: {fileID: 976956757}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1632008503
 PrefabInstance:
   m_ObjectHideFlags: 0

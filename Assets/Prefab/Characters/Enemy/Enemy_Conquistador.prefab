@@ -318,13 +318,13 @@ GameObject:
   m_Component:
   - component: {fileID: 5086431982741063552}
   - component: {fileID: 5505304343104651768}
+  - component: {fileID: -8659594390231874122}
   - component: {fileID: 6505053242725910056}
   - component: {fileID: 8240731688659462019}
   - component: {fileID: 5857461497468645685}
   - component: {fileID: 4017802625420023159}
   - component: {fileID: 5155764017866311955}
   - component: {fileID: 7574211760638591054}
-  - component: {fileID: -8659594390231874122}
   m_Layer: 9
   m_Name: Enemy_Conquistador
   m_TagString: Enemy
@@ -411,6 +411,28 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!95 &-8659594390231874122
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5547586876719499772}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 08c930c79df471a47b6891b00f2bf520, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!114 &6505053242725910056
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -529,6 +551,10 @@ MonoBehaviour:
   jumpLeadX: 0.35
   jumpCooldown: 0.3
   coyoteTime: 0.08
+  anim: {fileID: 0}
+  pSpeed: Speed
+  pGrounded: IsGrounded
+  tJump: Jump
   groundTag: Ground
 --- !u!114 &5155764017866311955
 MonoBehaviour:
@@ -558,28 +584,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::KnockBack
   strength: 15
   duration: 0.5
---- !u!95 &-8659594390231874122
-Animator:
-  serializedVersion: 7
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5547586876719499772}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 08c930c79df471a47b6891b00f2bf520, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_StabilizeFeet: 0
-  m_AnimatePhysics: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorStateOnDisable: 0
-  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &6022647099681291064
 GameObject:
   m_ObjectHideFlags: 0
@@ -861,3 +865,4 @@ MonoBehaviour:
   attackCooldown: 1.5
   damage: 1
   moveStopDuration: 1
+  tAttack: Attack
