@@ -20,7 +20,11 @@ public class ToMainMenu : MonoBehaviour
         SceneManager.LoadScene("Level3");
         Time.timeScale = 1f; 
     }
-    
-    
+
+    public void FinishGame()
+    {
+        SceneManager.LoadScene("Epilouge");
+        Time.timeScale = 1f; 
+    }
 }
 

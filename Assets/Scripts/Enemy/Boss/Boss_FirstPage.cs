@@ -51,6 +51,8 @@ public class Boss_FirstPage : MonoBehaviour
             yield return StartCoroutine(fader.PlayVictorySequence());
         else
             Debug.LogError("[Boss_FirstPage] No FadeIn found in scene. Skipping fade.");
+        
+        LevelProgress.UnlockNextFromCurrent();
 
         var shrink = GetComponent<ShrinkItem>();
         if (shrink && shrinkAfterFade)

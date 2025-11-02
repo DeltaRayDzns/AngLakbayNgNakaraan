@@ -15,6 +15,6 @@ MonoBehaviour:
   weaponName: Bolo
   icon: {fileID: -5787527824408574670, guid: 6bea5a181b0387d4c8fba9744477bb55, type: 3}
   damage: 2
-  attackSpeed: 3
+  attackSpeed: 5
   pattern: 0
   reach: 0.5

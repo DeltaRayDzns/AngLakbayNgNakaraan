@@ -15,6 +15,6 @@ MonoBehaviour:
   weaponName: Krag Rifle
   icon: {fileID: 5922339462017341208, guid: ef593006f199bf04e8ec6c93767fbe72, type: 3}
   damage: 1
-  attackSpeed: 3
+  attackSpeed: 7
   pattern: 1
   reach: 7

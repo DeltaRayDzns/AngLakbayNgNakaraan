@@ -15,6 +15,6 @@ MonoBehaviour:
   weaponName: Campilan
   icon: {fileID: 21300000, guid: c720ebe822c5dc14aab148256a1a151f, type: 3}
   damage: 1
-  attackSpeed: 5
+  attackSpeed: 4
   pattern: 0
   reach: 0.8
