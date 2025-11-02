@@ -1,0 +1,652 @@
+fileFormatVersion: 2
+guid: e58a8c634a461ae4a99b5a6caa76b80d
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 3090734278630095350
+    second: Aguinaldo Whole Body_0
+  - first:
+      213: -7599176507246924438
+    second: Aguinaldo Whole Body_1
+  - first:
+      213: -8239227181660469870
+    second: Aguinaldo Whole Body_2
+  - first:
+      213: -1938501427186289805
+    second: Aguinaldo Whole Body_3
+  - first:
+      213: 6860792434224576457
+    second: Aguinaldo Whole Body_4
+  - first:
+      213: -8299516065618497345
+    second: Aguinaldo Whole Body_5
+  - first:
+      213: -4599688776043495453
+    second: Aguinaldo Whole Body_6
+  - first:
+      213: -5682321479366947534
+    second: Aguinaldo Whole Body_7
+  - first:
+      213: -5348341540403162213
+    second: Aguinaldo Whole Body_8
+  - first:
+      213: 7042053759761392851
+    second: Aguinaldo Whole Body_9
+  - first:
+      213: 6655863936780667001
+    second: Aguinaldo Whole Body_10
+  - first:
+      213: 8054089610695335765
+    second: Aguinaldo Whole Body_11
+  - first:
+      213: -3405654341767424050
+    second: Aguinaldo Whole Body_12
+  - first:
+      213: -4563146085546385381
+    second: Aguinaldo Whole Body_13
+  - first:
+      213: 1172294955319677309
+    second: Aguinaldo Whole Body_14
+  - first:
+      213: 6829121973298715686
+    second: Aguinaldo Whole Body_15
+  - first:
+      213: -1486041198804622570
+    second: Aguinaldo Whole Body_16
+  - first:
+      213: 9201554000730360495
+    second: Aguinaldo Whole Body_17
+  - first:
+      213: -4613717915522269521
+    second: Aguinaldo Whole Body_18
+  - first:
+      213: 2587168626256090314
+    second: Aguinaldo Whole Body_19
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 64
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Aguinaldo Whole Body_0
+      rect:
+        serializedVersion: 2
+        x: 46
+        y: 477
+        width: 62
+        height: 131
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6f9bed4737e74ea20800000000000000
+      internalID: 3090734278630095350
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Aguinaldo Whole Body_1
+      rect:
+        serializedVersion: 2
+        x: 134
+        y: 477
+        width: 62
+        height: 131
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a6dad049a3d4a8690800000000000000
+      internalID: -7599176507246924438
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Aguinaldo Whole Body_2
+      rect:
+        serializedVersion: 2
+        x: 231
+        y: 477
+        width: 62
+        height: 131
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2958265188268ad80800000000000000
+      internalID: -8239227181660469870
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Aguinaldo Whole Body_3
+      rect:
+        serializedVersion: 2
+        x: 324
+        y: 477
+        width: 66
+        height: 131
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 37339fbf83f0915e0800000000000000
+      internalID: -1938501427186289805
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Aguinaldo Whole Body_4
+      rect:
+        serializedVersion: 2
+        x: 416
+        y: 477
+        width: 66
+        height: 127
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9c7b4af6e5e663f50800000000000000
+      internalID: 6860792434224576457
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Aguinaldo Whole Body_5
+      rect:
+        serializedVersion: 2
+        x: 46
+        y: 321
+        width: 58
+        height: 136
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fb0792d6c1232dc80800000000000000
+      internalID: -8299516065618497345
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Aguinaldo Whole Body_6
+      rect:
+        serializedVersion: 2
+        x: 117
+        y: 321
+        width: 79
+        height: 131
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3ef739aad6f9a20c0800000000000000
+      internalID: -4599688776043495453
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Aguinaldo Whole Body_7
+      rect:
+        serializedVersion: 2
+        x: 214
+        y: 321
+        width: 61
+        height: 131
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 23dc2c288b65421b0800000000000000
+      internalID: -5682321479366947534
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Aguinaldo Whole Body_8
+      rect:
+        serializedVersion: 2
+        x: 319
+        y: 327
+        width: 62
+        height: 130
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b93ddcaa4bfd6c5b0800000000000000
+      internalID: -5348341540403162213
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Aguinaldo Whole Body_9
+      rect:
+        serializedVersion: 2
+        x: 416
+        y: 327
+        width: 62
+        height: 135
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3d428c785966ab160800000000000000
+      internalID: 7042053759761392851
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Aguinaldo Whole Body_10
+      rect:
+        serializedVersion: 2
+        x: 42
+        y: 190
+        width: 66
+        height: 106
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 97805297cf06e5c50800000000000000
+      internalID: 6655863936780667001
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Aguinaldo Whole Body_11
+      rect:
+        serializedVersion: 2
+        x: 121
+        y: 190
+        width: 71
+        height: 116
+      alignment: 9
+      pivot: {x: 0.555571, y: 0.4727895}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 55fd8aa14dfd5cf60800000000000000
+      internalID: 8054089610695335765
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Aguinaldo Whole Body_12
+      rect:
+        serializedVersion: 2
+        x: 214
+        y: 190
+        width: 66
+        height: 116
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ec79f2b8b6facb0d0800000000000000
+      internalID: -3405654341767424050
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Aguinaldo Whole Body_13
+      rect:
+        serializedVersion: 2
+        x: 306
+        y: 190
+        width: 66
+        height: 131
+      alignment: 9
+      pivot: {x: 0.5119564, y: 0.45783415}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b102bc0dfc27ca0c0800000000000000
+      internalID: -4563146085546385381
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Aguinaldo Whole Body_14
+      rect:
+        serializedVersion: 2
+        x: 394
+        y: 190
+        width: 71
+        height: 116
+      alignment: 9
+      pivot: {x: 0.5889132, y: 0.445579}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d71dfcffc04d44010800000000000000
+      internalID: 1172294955319677309
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Aguinaldo Whole Body_15
+      rect:
+        serializedVersion: 2
+        x: 55
+        y: 44
+        width: 71
+        height: 127
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 62cd842a04ae5ce50800000000000000
+      internalID: 6829121973298715686
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Aguinaldo Whole Body_16
+      rect:
+        serializedVersion: 2
+        x: 139
+        y: 44
+        width: 66
+        height: 131
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 613a7af2765806be0800000000000000
+      internalID: -1486041198804622570
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Aguinaldo Whole Body_17
+      rect:
+        serializedVersion: 2
+        x: 218
+        y: 44
+        width: 88
+        height: 131
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: faa8b1b9c9c72bf70800000000000000
+      internalID: 9201554000730360495
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Aguinaldo Whole Body_18
+      rect:
+        serializedVersion: 2
+        x: 306
+        y: 44
+        width: 75
+        height: 131
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fae70771008c8ffb0800000000000000
+      internalID: -4613717915522269521
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Aguinaldo Whole Body_19
+      rect:
+        serializedVersion: 2
+        x: 407
+        y: 44
+        width: 75
+        height: 131
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ac4970e782877e320800000000000000
+      internalID: 2587168626256090314
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: f915f5fa2f64de141a6e0a60684a1616
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":64.0,"y":64.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":0,"keepEmptyRects":false,"isAlternate":false}'
+    nameFileIdTable:
+      Aguinaldo Whole Body_0: 3090734278630095350
+      Aguinaldo Whole Body_1: -7599176507246924438
+      Aguinaldo Whole Body_10: 6655863936780667001
+      Aguinaldo Whole Body_11: 8054089610695335765
+      Aguinaldo Whole Body_12: -3405654341767424050
+      Aguinaldo Whole Body_13: -4563146085546385381
+      Aguinaldo Whole Body_14: 1172294955319677309
+      Aguinaldo Whole Body_15: 6829121973298715686
+      Aguinaldo Whole Body_16: -1486041198804622570
+      Aguinaldo Whole Body_17: 9201554000730360495
+      Aguinaldo Whole Body_18: -4613717915522269521
+      Aguinaldo Whole Body_19: 2587168626256090314
+      Aguinaldo Whole Body_2: -8239227181660469870
+      Aguinaldo Whole Body_3: -1938501427186289805
+      Aguinaldo Whole Body_4: 6860792434224576457
+      Aguinaldo Whole Body_5: -8299516065618497345
+      Aguinaldo Whole Body_6: -4599688776043495453
+      Aguinaldo Whole Body_7: -5682321479366947534
+      Aguinaldo Whole Body_8: -5348341540403162213
+      Aguinaldo Whole Body_9: 7042053759761392851
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

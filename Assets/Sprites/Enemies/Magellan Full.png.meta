@@ -1,0 +1,652 @@
+fileFormatVersion: 2
+guid: 28f033dbed4a45648904a12dc350c944
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -2562588663166060086
+    second: Magellan Full_0
+  - first:
+      213: 463588965101510783
+    second: Magellan Full_1
+  - first:
+      213: -7784768458393704494
+    second: Magellan Full_2
+  - first:
+      213: 4030831923613338594
+    second: Magellan Full_3
+  - first:
+      213: 8872991690466189002
+    second: Magellan Full_4
+  - first:
+      213: 5278872472726252991
+    second: Magellan Full_5
+  - first:
+      213: 721395526409481909
+    second: Magellan Full_6
+  - first:
+      213: 7752773706137494587
+    second: Magellan Full_7
+  - first:
+      213: -4733380712730398548
+    second: Magellan Full_8
+  - first:
+      213: 6449961752452622679
+    second: Magellan Full_9
+  - first:
+      213: 3813743063247462501
+    second: Magellan Full_10
+  - first:
+      213: 5248162200986185343
+    second: Magellan Full_11
+  - first:
+      213: 1669621846360878684
+    second: Magellan Full_12
+  - first:
+      213: 2510798659373428241
+    second: Magellan Full_13
+  - first:
+      213: 5731420028111317701
+    second: Magellan Full_14
+  - first:
+      213: 6010318448139024694
+    second: Magellan Full_15
+  - first:
+      213: -7706282021058264130
+    second: Magellan Full_16
+  - first:
+      213: 4115256456576096866
+    second: Magellan Full_17
+  - first:
+      213: -4559565740496936919
+    second: Magellan Full_18
+  - first:
+      213: 5906498061810791407
+    second: Magellan Full_19
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 64
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Magellan Full_0
+      rect:
+        serializedVersion: 2
+        x: 12
+        y: 472
+        width: 68
+        height: 136
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ac93b82203bdf6cd0800000000000000
+      internalID: -2562588663166060086
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Magellan Full_1
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 472
+        width: 68
+        height: 136
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f70aaa225bffe6600800000000000000
+      internalID: 463588965101510783
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Magellan Full_2
+      rect:
+        serializedVersion: 2
+        x: 220
+        y: 472
+        width: 68
+        height: 136
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2d727c22552f6f390800000000000000
+      internalID: -7784768458393704494
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Magellan Full_3
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 472
+        width: 70
+        height: 128
+      alignment: 9
+      pivot: {x: 0.5416486, y: 0.5402069}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2eb074c374460f730800000000000000
+      internalID: 4030831923613338594
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Magellan Full_4
+      rect:
+        serializedVersion: 2
+        x: 424
+        y: 472
+        width: 68
+        height: 132
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aceda3d6ee2332b70800000000000000
+      internalID: 8872991690466189002
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Magellan Full_5
+      rect:
+        serializedVersion: 2
+        x: 12
+        y: 320
+        width: 68
+        height: 144
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fbdaf679b82524940800000000000000
+      internalID: 5278872472726252991
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Magellan Full_6
+      rect:
+        serializedVersion: 2
+        x: 92
+        y: 320
+        width: 88
+        height: 140
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5be613eb869e20a00800000000000000
+      internalID: 721395526409481909
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Magellan Full_7
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 320
+        width: 72
+        height: 140
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b34605a1c92679b60800000000000000
+      internalID: 7752773706137494587
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Magellan Full_8
+      rect:
+        serializedVersion: 2
+        x: 316
+        y: 324
+        width: 68
+        height: 140
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ca0f40ff157af4eb0800000000000000
+      internalID: -4733380712730398548
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Magellan Full_9
+      rect:
+        serializedVersion: 2
+        x: 420
+        y: 324
+        width: 68
+        height: 144
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7596bcd5a0ed28950800000000000000
+      internalID: 6449961752452622679
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Magellan Full_10
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 188
+        width: 72
+        height: 112
+      alignment: 9
+      pivot: {x: 0.5718847, y: 0.46639183}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 560a9752c132de430800000000000000
+      internalID: 3813743063247462501
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Magellan Full_11
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 188
+        width: 76
+        height: 120
+      alignment: 9
+      pivot: {x: 0.55571926, y: 0.46863237}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f7ee96147b735d840800000000000000
+      internalID: 5248162200986185343
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Magellan Full_12
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 188
+        width: 72
+        height: 124
+      alignment: 9
+      pivot: {x: 0.57842, y: 0.4734389}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c5e62952930bb2710800000000000000
+      internalID: 1669621846360878684
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Magellan Full_13
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 192
+        width: 72
+        height: 128
+      alignment: 9
+      pivot: {x: 0.53921044, y: 0.43015778}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 11eea72f31628d220800000000000000
+      internalID: 2510798659373428241
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Magellan Full_14
+      rect:
+        serializedVersion: 2
+        x: 396
+        y: 188
+        width: 84
+        height: 116
+      alignment: 9
+      pivot: {x: 0.57281893, y: 0.44726998}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5ca622236281a8f40800000000000000
+      internalID: 5731420028111317701
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Magellan Full_15
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 44
+        width: 88
+        height: 132
+      alignment: 9
+      pivot: {x: 0.6015891, y: 0.47504836}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 639bd48d8c0f86350800000000000000
+      internalID: 6010318448139024694
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Magellan Full_16
+      rect:
+        serializedVersion: 2
+        x: 104
+        y: 44
+        width: 68
+        height: 132
+      alignment: 9
+      pivot: {x: 0.56227446, y: 0.45009664}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eb3c7dbd459cd0590800000000000000
+      internalID: -7706282021058264130
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Magellan Full_17
+      rect:
+        serializedVersion: 2
+        x: 204
+        y: 44
+        width: 96
+        height: 136
+      alignment: 9
+      pivot: {x: 0.3578647, y: 0.46886298}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 26ad9d591f35c1930800000000000000
+      internalID: 4115256456576096866
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Magellan Full_18
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 44
+        width: 96
+        height: 136
+      alignment: 9
+      pivot: {x: 0.32355595, y: 0.4342661}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 920a3abdd1b29b0c0800000000000000
+      internalID: -4559565740496936919
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Magellan Full_19
+      rect:
+        serializedVersion: 2
+        x: 408
+        y: 44
+        width: 96
+        height: 136
+      alignment: 9
+      pivot: {x: 0.4362847, y: 0.4896211}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fe3f3c871b818f150800000000000000
+      internalID: 5906498061810791407
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: f590b6cf44f2aee4b9d98a60b55bee3e
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":64.0,"y":64.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":0,"keepEmptyRects":false,"isAlternate":false}'
+    nameFileIdTable:
+      Magellan Full_0: -2562588663166060086
+      Magellan Full_1: 463588965101510783
+      Magellan Full_10: 3813743063247462501
+      Magellan Full_11: 5248162200986185343
+      Magellan Full_12: 1669621846360878684
+      Magellan Full_13: 2510798659373428241
+      Magellan Full_14: 5731420028111317701
+      Magellan Full_15: 6010318448139024694
+      Magellan Full_16: -7706282021058264130
+      Magellan Full_17: 4115256456576096866
+      Magellan Full_18: -4559565740496936919
+      Magellan Full_19: 5906498061810791407
+      Magellan Full_2: -7784768458393704494
+      Magellan Full_3: 4030831923613338594
+      Magellan Full_4: 8872991690466189002
+      Magellan Full_5: 5278872472726252991
+      Magellan Full_6: 721395526409481909
+      Magellan Full_7: 7752773706137494587
+      Magellan Full_8: -4733380712730398548
+      Magellan Full_9: 6449961752452622679
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

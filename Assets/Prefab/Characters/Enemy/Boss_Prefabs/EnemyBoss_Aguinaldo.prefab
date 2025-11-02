@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 7945808610874163176}
   - component: {fileID: 2006985222941389559}
   - component: {fileID: 366357242608466701}
+  - component: {fileID: 249270702631795775}
   m_Layer: 9
   m_Name: EnemyBoss_Aguinaldo
   m_TagString: Enemy
@@ -179,6 +180,28 @@ MonoBehaviour:
   - {fileID: 0}
   - {fileID: 0}
   FirstPage: {fileID: 8581380510510512008, guid: 9bde7daee05b2a84a974a8c942a4ce0e, type: 3}
+--- !u!95 &249270702631795775
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1354738654709277405}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: b67c2ccfc9b245d409fba3b03b1fb4e4, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &2932744236246496950
 GameObject:
   m_ObjectHideFlags: 0
