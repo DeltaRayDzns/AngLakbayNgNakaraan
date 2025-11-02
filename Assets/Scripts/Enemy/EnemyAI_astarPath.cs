@@ -22,18 +22,20 @@ public class EnemyAI_astarPath : MonoBehaviour
     public bool jumpEnabled = true;
     public bool directionLookEnabled = true;
 
-    // NEW: jump gating (prevents “jumping in air”)
     [Header("Jump Gating")]
-    [Tooltip("How close (in X) to the ledge/node we must be before we jump")]
     public float jumpLeadX = 0.35f;
-    [Tooltip("Min time between jumps")]
     public float jumpCooldown = 0.30f;
-    [Tooltip("Allow jump this long after leaving ground")]
     public float coyoteTime = 0.08f;
 
     private Path path;
     private int currentWaypoint = 0;
     private bool isGrounded = false;
+
+    [Header("Animation")]
+    [SerializeField] Animator anim;              
+    [SerializeField] string pSpeed = "Speed";
+    [SerializeField] string pGrounded = "IsGrounded";
+    [SerializeField] string tJump = "Jump";
 
     private Seeker seeker;
     private Rigidbody2D rb;
@@ -41,7 +43,6 @@ public class EnemyAI_astarPath : MonoBehaviour
     [SerializeField] private string groundTag = "Ground";
     private int groundContacts = 0;
 
-    // NEW: timers
     private float lastGroundedAt = -999f;
     private float lastJumpAt = -999f;
 
@@ -50,11 +51,21 @@ public class EnemyAI_astarPath : MonoBehaviour
         seeker = GetComponent<Seeker>();
         rb = GetComponent<Rigidbody2D>();
         InvokeRepeating(nameof(UpdatePath), 0f, pathUpdateSeconds);
+
+		
+        if (!anim) anim = GetComponentInChildren<Animator>(); 
     }
 
     private void FixedUpdate()
     {
-        if (TargetInDistance() && followEnabled) PathFollow();
+        if (TargetInDistance() && followEnabled)
+            PathFollow();
+
+        if (anim)
+        {
+            anim.SetFloat(pSpeed, Mathf.Abs(rb.velocity.x));
+            anim.SetBool(pGrounded, isGrounded);
+        }
     }
 
     private void UpdatePath()
@@ -67,43 +78,38 @@ public class EnemyAI_astarPath : MonoBehaviour
     {
         if (path == null || currentWaypoint >= path.vectorPath.Count) return;
 
-        // Ground check: collisions OR raycast
         bool rayGrounded = Physics2D.Raycast(
-            transform.position,
-            Vector2.down,
+            transform.position, Vector2.down,
             GetComponent<Collider2D>().bounds.extents.y + jumpCheckOffset
         );
         isGrounded = (groundContacts > 0) || rayGrounded;
         if (isGrounded) lastGroundedAt = Time.time;
 
-        // Horizontal steering only (no vertical force each frame)
         Vector2 toWp = (Vector2)path.vectorPath[currentWaypoint] - rb.position;
         float dirX = Mathf.Sign(toWp.x);
         Vector2 hForce = new Vector2(dirX, 0f) * speed * Time.deltaTime;
         rb.AddForce(hForce);
 
-        // ---- Jump gating (prevents mid-air retriggers) ----
         if (jumpEnabled)
         {
-            bool needJumpUp = toWp.y > jumpNodeHeightRequirement;        // next node is above us
-            bool nearLedge  = Mathf.Abs(toWp.x) <= jumpLeadX;            // only jump when close in X
+            bool needJumpUp = toWp.y > jumpNodeHeightRequirement;
+            bool nearLedge  = Mathf.Abs(toWp.x) <= jumpLeadX;
             bool cooled     = (Time.time - lastJumpAt) >= jumpCooldown;
             bool groundedOrCoyote = isGrounded || (Time.time - lastGroundedAt) <= coyoteTime;
 
             if (needJumpUp && nearLedge && cooled && groundedOrCoyote)
             {
-                // consistent takeoff
                 rb.linearVelocity = new Vector2(rb.linearVelocity.x, 0f);
                 rb.AddForce(Vector2.up * speed * jumpModifier, ForceMode2D.Impulse);
                 lastJumpAt = Time.time;
+
+                if (anim) anim.SetTrigger(tJump);
             }
         }
 
-        // Advance waypoint
         float distance = Vector2.Distance(rb.position, path.vectorPath[currentWaypoint]);
         if (distance < nextWaypointDistance) currentWaypoint++;
 
-        // Face move direction
         if (directionLookEnabled)
         {
             if (rb.linearVelocity.x > 0.05f)
@@ -127,7 +133,6 @@ public class EnemyAI_astarPath : MonoBehaviour
         }
     }
 
-    // --- Ground tag contacts ---
     private void OnCollisionEnter2D(Collision2D collision)
     {
         if (collision.collider.CompareTag(groundTag))

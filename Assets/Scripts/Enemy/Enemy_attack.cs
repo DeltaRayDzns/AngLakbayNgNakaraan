@@ -12,48 +12,44 @@ public class Enemy_attack : MonoBehaviour
     private EnemyAI_controller enemyAI;
     private bool isAttacking = false;
 
+    
+    Animator anim;
+    [SerializeField] string tAttack = "Attack";
+
     private void Start()
     {
         enemyAI = GetComponentInParent<EnemyAI_controller>();
+        anim = GetComponentInParent<Animator>();
     }
 
     private void OnTriggerStay2D(Collider2D other)
     {
         if (other.CompareTag("Player") && Time.time >= lastAttackTime + attackCooldown)
         {
-            Player_health playerHealth = other.GetComponent<Player_health>();
-            if (playerHealth != null)
-            {
-                playerHealth.TakeDamage(damage);
-            }
+            var playerHealth = other.GetComponent<Player_health>();
+            if (playerHealth != null) playerHealth.TakeDamage(damage);
 
-            KnockBack kb = other.GetComponent<KnockBack>();
-            if (kb != null)
-            {
-                kb.ApplyKnockback(transform.position);
-            }
+            var kb = other.GetComponent<KnockBack>();
+            if (kb != null) kb.ApplyKnockback(transform.position);
 
             lastAttackTime = Time.time;
 
-            if (!isAttacking)
-                StartCoroutine(StopMovementTemporarily());
+            if (anim) anim.SetTrigger(tAttack);
+
+            if (!isAttacking) StartCoroutine(StopMovementTemporarily());
         }
     }
 
     private IEnumerator StopMovementTemporarily()
     {
         isAttacking = true;
-
         if (enemyAI != null)
         {
-            float originalSpeed = enemyAI.speed;
-            enemyAI.speed = 0f; 
-
+            float original = enemyAI.speed;
+            enemyAI.speed = 0f;
             yield return new WaitForSeconds(moveStopDuration);
-
-            enemyAI.speed = originalSpeed;
+            enemyAI.speed = original;
         }
-
         isAttacking = false;
     }
 }
