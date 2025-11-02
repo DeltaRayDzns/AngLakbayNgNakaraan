@@ -37,10 +37,16 @@ public class EnemyAI_astarPath : MonoBehaviour
     [SerializeField] private string stRun    = "Run";
     [SerializeField] private string stJump   = "Jump";
     [SerializeField] private string stAttack = "Attack";
+
+    // Blend Tree
+    [SerializeField] private string stMovement = "Movement";  // Blend Tree state name
+    [SerializeField] private string paramBlend = "Blend";     // Float parameter driving Idle<->Run
+
     [SerializeField] private float fade = 0.05f;
     [SerializeField] private float moveThreshold = 0.05f;
 
     private int idleID, runID, jumpID, attackID;
+    private int movementID, blendID;
 
     private Seeker seeker;
     private Rigidbody2D rb;
@@ -59,10 +65,13 @@ public class EnemyAI_astarPath : MonoBehaviour
 
         if (!anim) anim = GetComponentInChildren<Animator>();
 
-        idleID   = Animator.StringToHash(stIdle);
-        runID    = Animator.StringToHash(stRun);
-        jumpID   = Animator.StringToHash(stJump);
-        attackID = Animator.StringToHash(stAttack);
+        idleID    = Animator.StringToHash(stIdle);
+        runID     = Animator.StringToHash(stRun);
+        jumpID    = Animator.StringToHash(stJump);
+        attackID  = Animator.StringToHash(stAttack);
+
+        movementID = Animator.StringToHash(stMovement);
+        blendID    = Animator.StringToHash(paramBlend);
     }
 
     private void FixedUpdate()
@@ -104,7 +113,7 @@ public class EnemyAI_astarPath : MonoBehaviour
 
             if (needJumpUp && nearLedge && cooled && groundedOrCoyote)
             {
-                rb.linearVelocity = new Vector2(rb.linearVelocity.x, 0f);
+                rb.velocity = new Vector2(rb.velocity.x, 0f);
                 rb.AddForce(Vector2.up * speed * jumpModifier, ForceMode2D.Impulse);
                 lastJumpAt = Time.time;
             }
@@ -115,21 +124,24 @@ public class EnemyAI_astarPath : MonoBehaviour
 
         if (directionLookEnabled)
         {
-            if (rb.linearVelocity.x > moveThreshold)
+            if (rb.velocity.x > moveThreshold)
                 transform.localScale = new Vector3(-1f * Mathf.Abs(transform.localScale.x), transform.localScale.y, transform.localScale.z);
-            else if (rb.linearVelocity.x < -moveThreshold)
+            else if (rb.velocity.x < -moveThreshold)
                 transform.localScale = new Vector3(Mathf.Abs(transform.localScale.x), transform.localScale.y, transform.localScale.z);
         }
     }
 
+    // Looping Run while moving (minimal changes)
     private void UpdateAnimDirect()
     {
         if (!anim || rb == null) return;
 
         var st = anim.GetCurrentAnimatorStateInfo(0);
 
+        // Don't interrupt Attack while it's still playing
         if (st.shortNameHash == attackID && st.normalizedTime < 0.95f) return;
 
+        // Airborne: Jump
         if (!isGrounded)
         {
             if (st.shortNameHash != jumpID)
@@ -137,17 +149,22 @@ public class EnemyAI_astarPath : MonoBehaviour
             return;
         }
 
-        float absX = Mathf.Abs(rb.linearVelocity.x);
+        // Grounded: ensure we're in the Movement blend tree
+        if (st.shortNameHash != movementID)
+            anim.CrossFade(movementID, fade);
 
-        if (absX > moveThreshold)
+        // 0 = Idle, 1 = Run
+        float absX = Mathf.Abs(rb.velocity.x);
+        float targetBlend = (absX > moveThreshold) ? 1f : 0f;
+
+        // Smoothly drive the blend parameter
+        anim.SetFloat(blendID, targetBlend, 0.1f, Time.deltaTime);
+
+        // --- Fallback to guarantee looping even if the Run clip isn't set to loop ---
+        // When we're effectively running and the state time reaches the end, restart it.
+        if (targetBlend >= 0.5f && st.shortNameHash == movementID && st.normalizedTime >= 0.99f)
         {
-            if (st.shortNameHash != runID)
-                anim.CrossFade(runID, fade);
-        }
-        else
-        {
-            if (st.shortNameHash != idleID)
-                anim.CrossFade(idleID, fade);
+            anim.Play(movementID, 0, 0f);
         }
     }
 
