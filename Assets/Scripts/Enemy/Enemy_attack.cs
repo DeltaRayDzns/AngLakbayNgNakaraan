@@ -4,7 +4,7 @@ using System.Collections;
 public class Enemy_attack : MonoBehaviour
 {
     [Header("Attack Settings")]
-    public float attackCooldown = 1f; 
+    public float attackCooldown = 1f;
     public int damage = 1;
     public float moveStopDuration = 0.5f;
 
@@ -12,9 +12,14 @@ public class Enemy_attack : MonoBehaviour
     private EnemyAI_controller enemyAI;
     private bool isAttacking = false;
 
-    
     Animator anim;
-    [SerializeField] string tAttack = "Attack";
+    [SerializeField] private string stAttack = "Attack";
+    private int attackID;
+
+    private void Awake()
+    {
+        attackID = Animator.StringToHash(stAttack);
+    }
 
     private void Start()
     {
@@ -34,7 +39,7 @@ public class Enemy_attack : MonoBehaviour
 
             lastAttackTime = Time.time;
 
-            if (anim) anim.SetTrigger(tAttack);
+            if (anim) anim.CrossFade(attackID, 0.03f); // play Attack directly
 
             if (!isAttacking) StartCoroutine(StopMovementTemporarily());
         }

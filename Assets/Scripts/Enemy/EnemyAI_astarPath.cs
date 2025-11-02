@@ -31,11 +31,16 @@ public class EnemyAI_astarPath : MonoBehaviour
     private int currentWaypoint = 0;
     private bool isGrounded = false;
 
-    [Header("Animation")]
-    [SerializeField] Animator anim;              
-    [SerializeField] string pSpeed = "Speed";
-    [SerializeField] string pGrounded = "IsGrounded";
-    [SerializeField] string tJump = "Jump";
+    [Header("Animation (by state name)")]
+    [SerializeField] private Animator anim;
+    [SerializeField] private string stIdle   = "Idle";
+    [SerializeField] private string stRun    = "Run";
+    [SerializeField] private string stJump   = "Jump";
+    [SerializeField] private string stAttack = "Attack";
+    [SerializeField] private float fade = 0.05f;
+    [SerializeField] private float moveThreshold = 0.05f;
+
+    private int idleID, runID, jumpID, attackID;
 
     private Seeker seeker;
     private Rigidbody2D rb;
@@ -52,8 +57,12 @@ public class EnemyAI_astarPath : MonoBehaviour
         rb = GetComponent<Rigidbody2D>();
         InvokeRepeating(nameof(UpdatePath), 0f, pathUpdateSeconds);
 
-		
-        if (!anim) anim = GetComponentInChildren<Animator>(); 
+        if (!anim) anim = GetComponentInChildren<Animator>();
+
+        idleID   = Animator.StringToHash(stIdle);
+        runID    = Animator.StringToHash(stRun);
+        jumpID   = Animator.StringToHash(stJump);
+        attackID = Animator.StringToHash(stAttack);
     }
 
     private void FixedUpdate()
@@ -61,11 +70,7 @@ public class EnemyAI_astarPath : MonoBehaviour
         if (TargetInDistance() && followEnabled)
             PathFollow();
 
-        if (anim)
-        {
-            anim.SetFloat(pSpeed, Mathf.Abs(rb.velocity.x));
-            anim.SetBool(pGrounded, isGrounded);
-        }
+        UpdateAnimDirect();
     }
 
     private void UpdatePath()
@@ -102,8 +107,6 @@ public class EnemyAI_astarPath : MonoBehaviour
                 rb.linearVelocity = new Vector2(rb.linearVelocity.x, 0f);
                 rb.AddForce(Vector2.up * speed * jumpModifier, ForceMode2D.Impulse);
                 lastJumpAt = Time.time;
-
-                if (anim) anim.SetTrigger(tJump);
             }
         }
 
@@ -112,10 +115,39 @@ public class EnemyAI_astarPath : MonoBehaviour
 
         if (directionLookEnabled)
         {
-            if (rb.linearVelocity.x > 0.05f)
+            if (rb.linearVelocity.x > moveThreshold)
                 transform.localScale = new Vector3(-1f * Mathf.Abs(transform.localScale.x), transform.localScale.y, transform.localScale.z);
-            else if (rb.linearVelocity.x < -0.05f)
+            else if (rb.linearVelocity.x < -moveThreshold)
                 transform.localScale = new Vector3(Mathf.Abs(transform.localScale.x), transform.localScale.y, transform.localScale.z);
+        }
+    }
+
+    private void UpdateAnimDirect()
+    {
+        if (!anim || rb == null) return;
+
+        var st = anim.GetCurrentAnimatorStateInfo(0);
+
+        if (st.shortNameHash == attackID && st.normalizedTime < 0.95f) return;
+
+        if (!isGrounded)
+        {
+            if (st.shortNameHash != jumpID)
+                anim.CrossFade(jumpID, fade);
+            return;
+        }
+
+        float absX = Mathf.Abs(rb.linearVelocity.x);
+
+        if (absX > moveThreshold)
+        {
+            if (st.shortNameHash != runID)
+                anim.CrossFade(runID, fade);
+        }
+        else
+        {
+            if (st.shortNameHash != idleID)
+                anim.CrossFade(idleID, fade);
         }
     }
 
