@@ -14,9 +14,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::WeaponData
   weaponName: Krag Rifle
   icon: {fileID: 5922339462017341208, guid: ef593006f199bf04e8ec6c93767fbe72, type: 3}
-  damage: 1
+  damage: 2
   attackSpeed: 15
   pattern: 1
   reach: 7
-  attackState: AttackBolo
+  attackClip: {fileID: 7400000, guid: c5cd66c9542072f48b4f0c828436dc06, type: 2}
   attackFade: 0.05

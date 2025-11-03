@@ -18,11 +18,10 @@ public class PlayerAttack : MonoBehaviour
     [Tooltip("Seconds per attack = attackSpeed * this. Example: 4 -> 0.4s when set to 0.1")]
     public float attackSpeedUnitSeconds = 0.1f;
 
-    // --- Animation ---
     [Header("Animation")]
     [SerializeField] private Animator anim;     
     [SerializeField] private int attackLayer = 0;
-    [SerializeField] private string attackStateName = "Attack";   // state that plays the attack
+    [SerializeField] private string attackStateName = "Attack";   
     [SerializeField] private float defaultAttackFade = 0.05f;
 
     [Tooltip("The clip currently assigned to the Attack state in your Animator.")]
@@ -37,7 +36,6 @@ public class PlayerAttack : MonoBehaviour
     {
         if (!anim) anim = GetComponentInChildren<Animator>();
 
-        // Bind an override controller to this Animator
         var current = anim.runtimeAnimatorController;
         if (current is AnimatorOverrideController existing)
         {
@@ -51,13 +49,11 @@ public class PlayerAttack : MonoBehaviour
             Debug.Log("[PlayerAttack] Created and assigned AnimatorOverrideController.");
         }
 
-        // Auto-detect the base Attack clip if not set
         if (baseAttackClip == null)
         {
             var overrides = new List<KeyValuePair<AnimationClip, AnimationClip>>(aoc.overridesCount);
             aoc.GetOverrides(overrides);
 
-            // Look for a key clip whose name matches the attack state name (or contains "Attack")
             foreach (var kv in overrides)
             {
                 if (kv.Key == null) continue;
@@ -69,7 +65,7 @@ public class PlayerAttack : MonoBehaviour
             }
 
             if (baseAttackClip == null && overrides.Count > 0)
-                baseAttackClip = overrides[0].Key; // last resort
+                baseAttackClip = overrides[0].Key; 
 
             if (baseAttackClip != null)
                 Debug.Log($"[PlayerAttack] Auto-detected baseAttackClip = '{baseAttackClip.name}'.");
@@ -113,7 +109,6 @@ public class PlayerAttack : MonoBehaviour
 
         isAttacking = true;
 
-        // Play the weapon-specific animation clip on the Attack state
         PlayAttackAnim(w);
 
         switch (w.pattern)
@@ -127,20 +122,17 @@ public class PlayerAttack : MonoBehaviour
         isAttacking = false;
     }
 
-    // --- Swap-in the clip and play the Attack state ---
     void PlayAttackAnim(WeaponData w)
     {
         if (!anim) return;
 
         AnimationClip clipToUse = (w.attackClip != null) ? w.attackClip : baseAttackClip;
 
-        // ---------- Path A: Single 'Attack' state with clip override ----------
         int stateHash = Animator.StringToHash(attackStateName);
         bool hasAttackState = anim.HasState(attackLayer, stateHash);
 
         if (hasAttackState && aoc != null && baseAttackClip != null && clipToUse != null)
         {
-            // Replace mapping robustly
             var list = new List<KeyValuePair<AnimationClip, AnimationClip>>(aoc.overridesCount);
             aoc.GetOverrides(list);
             bool replaced = false;
@@ -153,7 +145,7 @@ public class PlayerAttack : MonoBehaviour
                 }
             }
             if (replaced) aoc.ApplyOverrides(list);
-            else          aoc[baseAttackClip] = clipToUse; // fallback
+            else          aoc[baseAttackClip] = clipToUse; 
 
             Debug.Log($"[PlayerAttack] Override -> weapon='{w.weaponName}', newClip='{(clipToUse != null ? clipToUse.name : "NULL")}', base='{(baseAttackClip != null ? baseAttackClip.name : "NULL")}'");
 
@@ -164,7 +156,6 @@ public class PlayerAttack : MonoBehaviour
             return;
         }
 
-        // ---------- Path B: Multiple attack states (names match clip names) ----------
         if (w.attackClip != null)
         {
             int byClipName = Animator.StringToHash(w.attackClip.name);
@@ -179,7 +170,6 @@ public class PlayerAttack : MonoBehaviour
             }
         }
 
-        // ---------- If neither path works, log why ----------
         Debug.LogWarning(
             $"[PlayerAttack] Could not play attack anim. " +
             $"HasAttackState={hasAttackState}, baseClip={(baseAttackClip != null ? baseAttackClip.name : "NULL")}, " +
@@ -187,7 +177,7 @@ public class PlayerAttack : MonoBehaviour
         );
     }
 
-    // --- melee ---
+    
     IEnumerator SwingAttack(WeaponData w)
     {
         if (!attackOrigin) attackOrigin = transform;

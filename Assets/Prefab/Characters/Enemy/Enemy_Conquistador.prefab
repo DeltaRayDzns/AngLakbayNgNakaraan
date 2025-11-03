@@ -461,9 +461,11 @@ MonoBehaviour:
   coyoteTime: 0.08
   anim: {fileID: -8659594390231874122}
   stIdle: Idle
-  stRun: Movement
+  stRun: Run
   stJump: Jump
   stAttack: Attack
+  stMovement: Movement
+  paramBlend: Blend
   fade: 0.05
   moveThreshold: 0.05
   groundTag: Ground
@@ -481,6 +483,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: '::'
   maxHealth: 5
   currentHealth: 5
+  hitFlashDuration: 1
+  hitFlashColor: {r: 1, g: 0, b: 0, a: 1}
 --- !u!114 &7574211760638591054
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -607,7 +611,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: -712631045867808456, guid: b670ab75dde984907b8570040daa08c5, type: 3}
+  m_Sprite: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 0}
   m_FlipX: 0
   m_FlipY: 0
@@ -615,7 +619,7 @@ SpriteRenderer:
   m_Size: {x: 1, y: 0.8828125}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!60 &1039424838698570546
