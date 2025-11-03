@@ -39,7 +39,7 @@ public class Enemy_attack : MonoBehaviour
 
             lastAttackTime = Time.time;
 
-            if (anim) anim.CrossFade(attackID, 0.03f); // play Attack directly
+            if (anim) anim.CrossFade(attackID, 0.03f); 
 
             if (!isAttacking) StartCoroutine(StopMovementTemporarily());
         }

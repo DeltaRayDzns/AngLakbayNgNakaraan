@@ -16,6 +16,12 @@ public class Enemy_attack_ranged : MonoBehaviour
     public int damage = 1;
     public float reload = 1.0f;
 
+    [Header("Animation")]
+    [SerializeField] private Animator anim;           // gets from parent at Start
+    [SerializeField] private string stAttack = "Attack";
+    [SerializeField] private float attackFade = 0.03f;
+    private int attackID;
+
     private Rigidbody2D enemyRb; 
     private RigidbodyConstraints2D originalCons;
     private bool playerInLOS = false;
@@ -27,6 +33,13 @@ public class Enemy_attack_ranged : MonoBehaviour
         enemyRb = GetComponentInParent<Rigidbody2D>();
         if (!firePoint) firePoint = transform;
         if (enemyRb) originalCons = enemyRb.constraints;
+
+        attackID = Animator.StringToHash(stAttack);   // cache hash like melee script
+    }
+
+    void Start()
+    {
+        if (!anim) anim = GetComponentInParent<Animator>();
     }
 
     void OnTriggerEnter2D(Collider2D other)
@@ -71,6 +84,9 @@ public class Enemy_attack_ranged : MonoBehaviour
     {
         if (!bulletPrefab) return;
 
+        // Trigger Attack animation (same behavior as melee)
+        if (anim) anim.CrossFade(attackID, attackFade);
+
         Vector2 dir;
         if (targetPlayer != null)
             dir = (targetPlayer.position.x < transform.position.x) ? Vector2.left : Vector2.right;
@@ -81,7 +97,9 @@ public class Enemy_attack_ranged : MonoBehaviour
         }
         dir.Normalize();
 
-        GameObject b = Instantiate(bulletPrefab, firePoint != null ? firePoint.position : transform.position, Quaternion.identity);
+        GameObject b = Instantiate(bulletPrefab,
+                                   firePoint != null ? firePoint.position : transform.position,
+                                   Quaternion.identity);
 
         var rb2d = b.GetComponent<Rigidbody2D>();
         if (rb2d)
@@ -95,7 +113,7 @@ public class Enemy_attack_ranged : MonoBehaviour
             eb.attacker = transform;
             eb.damage = damage;
             eb.lifetime = Mathf.Max(0.05f, range / Mathf.Max(0.01f, bulletSpeed));
-            eb.direction = dir.x; 
+            eb.direction = dir.x;
         }
 
         var spr = b.GetComponentInChildren<SpriteRenderer>();

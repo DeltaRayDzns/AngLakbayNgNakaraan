@@ -37,10 +37,9 @@ public class EnemyAI_astarPath : MonoBehaviour
     [SerializeField] private string stRun    = "Run";
     [SerializeField] private string stJump   = "Jump";
     [SerializeField] private string stAttack = "Attack";
-
-    // Blend Tree
-    [SerializeField] private string stMovement = "Movement";  // Blend Tree state name
-    [SerializeField] private string paramBlend = "Blend";     // Float parameter driving Idle<->Run
+    
+    [SerializeField] private string stMovement = "Movement";
+    [SerializeField] private string paramBlend = "Blend"; 
 
     [SerializeField] private float fade = 0.05f;
     [SerializeField] private float moveThreshold = 0.05f;
@@ -131,17 +130,14 @@ public class EnemyAI_astarPath : MonoBehaviour
         }
     }
 
-    // Looping Run while moving (minimal changes)
     private void UpdateAnimDirect()
     {
         if (!anim || rb == null) return;
 
         var st = anim.GetCurrentAnimatorStateInfo(0);
 
-        // Don't interrupt Attack while it's still playing
         if (st.shortNameHash == attackID && st.normalizedTime < 0.95f) return;
 
-        // Airborne: Jump
         if (!isGrounded)
         {
             if (st.shortNameHash != jumpID)
@@ -149,19 +145,14 @@ public class EnemyAI_astarPath : MonoBehaviour
             return;
         }
 
-        // Grounded: ensure we're in the Movement blend tree
         if (st.shortNameHash != movementID)
             anim.CrossFade(movementID, fade);
 
-        // 0 = Idle, 1 = Run
         float absX = Mathf.Abs(rb.velocity.x);
         float targetBlend = (absX > moveThreshold) ? 1f : 0f;
 
-        // Smoothly drive the blend parameter
         anim.SetFloat(blendID, targetBlend, 0.1f, Time.deltaTime);
 
-        // --- Fallback to guarantee looping even if the Run clip isn't set to loop ---
-        // When we're effectively running and the state time reaches the end, restart it.
         if (targetBlend >= 0.5f && st.shortNameHash == movementID && st.normalizedTime >= 0.99f)
         {
             anim.Play(movementID, 0, 0f);
