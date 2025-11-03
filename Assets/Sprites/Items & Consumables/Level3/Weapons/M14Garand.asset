@@ -15,6 +15,6 @@ MonoBehaviour:
   weaponName: M14 Garand
   icon: {fileID: -1043260893708946572, guid: 4f6cc0c7a683b094698b3075844bcb37, type: 3}
   damage: 2
-  attackSpeed: 4
+  attackSpeed: 1
   pattern: 1
-  reach: 10
+  reach: 15
