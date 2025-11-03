@@ -14,220 +14,142 @@ public class PlayerAttack : MonoBehaviour
     public float bulletSpeed = 15f;
     public float attackRadius = 1.5f;
 
+    [Header("Fire Control")]
+    [Tooltip("Seconds per attack = attackSpeed * this. Example: 4 -> 0.4s when set to 0.1")]
+    public float attackSpeedUnitSeconds = 0.1f;
+
+    private float nextAttackTime = 0f; 
+
     private bool isAttacking = false;
 
     void Update()
     {
-        if (!inventoryManager)
-        {
-            Debug.LogWarning("[PlayerAttack] Missing Inventory Manager reference!");
-            return;
-        }
+        if (!inventoryManager || inventoryManager.equippedWeapon == null) return;
 
-        if (inventoryManager.equippedWeapon == null)
-            return;
-
-        if (Input.GetKeyDown(KeyCode.E) && !isAttacking)
+        
+        if (Input.GetKeyDown(KeyCode.E))
         {
-            Debug.Log("[PlayerAttack] E pressed → Performing attack!");
-            StartCoroutine(PerformAttack(inventoryManager.equippedWeapon));
+            StartAttack(); 
         }
     }
 
-	public void StartAttack() 
-	{	
-		if (!isAttacking && inventoryManager && inventoryManager.equippedWeapon != null)
-		{
-			StartCoroutine(PerformAttack(inventoryManager.equippedWeapon));
-		}
-	}
+    public void StartAttack() 
+    {	
+        if (!inventoryManager || inventoryManager.equippedWeapon == null) return;
+
+        var w = inventoryManager.equippedWeapon;
+        float cooldown = GetCooldownSeconds(w);
+
+        if (Time.time < nextAttackTime || isAttacking) return;
+
+        nextAttackTime = Time.time + cooldown;
+
+        StartCoroutine(PerformAttack(w));
+    }
+
+    float GetCooldownSeconds(WeaponData w)
+    {
+        return Mathf.Max(0.01f, w.attackSpeed * attackSpeedUnitSeconds);
+    }
 
     IEnumerator PerformAttack(WeaponData w)
     {
-        if (!w)
-        {
-            Debug.LogWarning("[PlayerAttack] No weapon data found.");
-            yield break;
-        }
+        if (!w) yield break;
 
         isAttacking = true;
-        Debug.Log($"[PlayerAttack] Attack started using {w.name}, pattern = {w.pattern}");
 
         switch (w.pattern)
         {
-            case AttackPattern.Swing:  
-                yield return SwingAttack(w);  
-                break;
-
-            case AttackPattern.Ranged: 
-                yield return RangedAttack(w); 
-                break;
-
-            default:                   
-                Debug.LogWarning("[PlayerAttack] Unknown attack pattern, defaulting to Swing.");
-                yield return SwingAttack(w);  
-                break;
+            case AttackPattern.Swing:  yield return SwingAttack(w);  break;
+            case AttackPattern.Ranged: yield return RangedAttack(w); break;
+            default:                   yield return SwingAttack(w);  break;
         }
 
-        float cooldown = 1f / Mathf.Max(0.01f, w.attackSpeed);
-        Debug.Log($"[PlayerAttack] Attack cooldown = {cooldown:F2}s");
-        yield return new WaitForSeconds(cooldown);
-
+        yield return new WaitForSeconds(GetCooldownSeconds(w));
         isAttacking = false;
-        Debug.Log("[PlayerAttack] Attack ready again.");
     }
 
-    // para sa melee
+    // para sa melle
     IEnumerator SwingAttack(WeaponData w)
     {
-        if (!attackOrigin)
-        {
-            attackOrigin = transform;
-            Debug.LogWarning("[PlayerAttack] No attackOrigin assigned, using player transform instead.");
-        }
-
+        if (!attackOrigin) attackOrigin = transform;
         yield return new WaitForSeconds(0.05f);
-        Debug.Log("[PlayerAttack] SwingAttack triggered.");
         DoMeleeHit2D(w);
     }
 
     void DoMeleeHit2D(WeaponData w)
     {
         float reach = w.reach > 0 ? w.reach : attackRadius;
-        Debug.Log($"[PlayerAttack] Checking for hits at {attackOrigin.position} with reach {reach}");
-
-        Collider2D[] cols = Physics2D.OverlapCircleAll(
-            (Vector2)attackOrigin.position,
-            reach,
-            hittableLayer
-        );
-
-        Debug.Log($"[PlayerAttack] Found {cols.Length} colliders in range.");
+        Collider2D[] cols = Physics2D.OverlapCircleAll((Vector2)attackOrigin.position, reach, hittableLayer);
 
         var unique = new HashSet<EnemyHealth>();
-
         for (int i = 0; i < cols.Length; i++)
         {
-            Collider2D col = cols[i];
-            Debug.Log($"[PlayerAttack] Hit: {col.name}");
+            var node = cols[i].GetComponentInParent<Boss_questionNodes>();
+            if (node) { node.OnHit(); continue; }
 
-            var node = col.GetComponentInParent<Boss_questionNodes>();
-            if (node)
+            var eh = cols[i].GetComponentInParent<EnemyHealth>();
+            if (eh && unique.Add(eh))
             {
-                Debug.Log($"[PlayerAttack] Detected Boss_questionNodes on {col.name} → calling OnHit()");
-                node.OnHit();
-                continue;
+                eh.TakeDamage(w.damage);
+                var kb = cols[i].GetComponentInParent<KnockBack>();
+                if (kb) kb.ApplyKnockback(transform.position);
             }
-
-            var eh = col.GetComponentInParent<EnemyHealth>();
-            if (eh)
-            {
-                if (unique.Add(eh))
-                {
-                    Debug.Log($"[PlayerAttack] Damaging enemy {eh.name} for {w.damage} damage.");
-                    eh.TakeDamage(w.damage);
-
-                    var kb = col.GetComponentInParent<KnockBack>();
-                    if (kb != null)
-                    {
-                        Debug.Log($"[PlayerAttack] Applying knockback to {eh.name}");
-                        kb.ApplyKnockback(transform.position);
-                    }
-                }
-                else
-                {
-                    Debug.Log($"[PlayerAttack] Skipped duplicate enemy {eh.name}");
-                }
-            }
-            else
-            {
-                Debug.Log($"[PlayerAttack] No EnemyHealth or Node component found on {col.name}");
-            }
-        }
-
-        if (cols.Length == 0)
-        {
-            Debug.Log("[PlayerAttack] No objects hit. Check hittableLayer and collider positions.");
         }
     }
 
-    // para sa ranged 
+    // para sa ranged
     IEnumerator RangedAttack(WeaponData w)
-	{
-    	if (!bulletPrefab)
-    	{
-        	Debug.LogWarning("[PlayerAttack] Missing bulletPrefab!");
-        	yield break;
-    	}
+    {
+        if (!bulletPrefab) yield break;
+        if (!attackOrigin) attackOrigin = transform;
 
-    	if (!attackOrigin)
-    	{
-        	attackOrigin = transform;
-        	Debug.LogWarning("[PlayerAttack] No attackOrigin, using player transform instead.");
-    	}
+        GameObject bullet = Instantiate(bulletPrefab, attackOrigin.position, Quaternion.identity);
+        var rb2d = EnsureBulletSetup(bullet);
 
-    	GameObject bullet = Instantiate(bulletPrefab, attackOrigin.position, Quaternion.identity);
-    	Debug.Log($"[PlayerAttack] Spawned bullet {bullet.name}");
+        float facing = Mathf.Sign(transform.lossyScale.x);
+        if (Mathf.Approximately(facing, 0f)) facing = 1f;
+        Vector2 dir = new Vector2(facing, 0f).normalized;
+        rb2d.velocity = dir * bulletSpeed;
 
-    	var rb2d = EnsureBulletSetup(bullet);
+        float lifetime = Mathf.Max(0.05f, (w.reach > 0 ? w.reach : attackRadius * 3f) / Mathf.Max(0.01f, bulletSpeed));
+        Destroy(bullet, lifetime);
 
-    	float facing = Mathf.Sign(transform.lossyScale.x);
-    	if (Mathf.Approximately(facing, 0f)) facing = 1f;
-    	Vector2 dir = new Vector2(facing, 0f).normalized;
+        var b1 = bullet.GetComponent<Bullet>();
+        if (b1) { b1.damage = w.damage; b1.attacker = transform; }
+        else
+        {
+            var b2 = bullet.GetComponent<EnemyBullet2D>();
+            if (b2) { b2.damage = w.damage; b2.attacker = transform; b2.lifetime = lifetime; }
+        }
 
-   		rb2d.velocity = dir * bulletSpeed;
+        IgnorePlayerCollisionWithBullet(bullet);
+        yield return null;
+    }
 
-    	float lifetime = Mathf.Max(0.05f, (w.reach > 0 ? w.reach : attackRadius * 3f) / Mathf.Max(0.01f, bulletSpeed));
-    	Destroy(bullet, lifetime);
+    Rigidbody2D EnsureBulletSetup(GameObject bullet)
+    {
+        var rb2d = bullet.GetComponent<Rigidbody2D>();
+        if (!rb2d) rb2d = bullet.AddComponent<Rigidbody2D>();
+        rb2d.bodyType = RigidbodyType2D.Dynamic;
+        rb2d.gravityScale = 0f;
+        rb2d.freezeRotation = true;
+        rb2d.collisionDetectionMode = CollisionDetectionMode2D.Continuous;
 
-    	var b1 = bullet.GetComponent<Bullet>();
-    	if (b1 != null)
-    	{
-        	b1.damage = w.damage;
-        	b1.attacker = transform;
-    	}
-    	else
-    	{
-        	var b2 = bullet.GetComponent<EnemyBullet2D>();
-        	if (b2 != null)
-        	{	
-            	b2.damage = w.damage;
-            	b2.attacker = transform;
-            	b2.lifetime = lifetime;
-        	}
-    	}
+        var col = bullet.GetComponent<Collider2D>();
+        if (!col) col = bullet.AddComponent<CircleCollider2D>();
+        col.isTrigger = true;
+        return rb2d;
+    }
 
-    	IgnorePlayerCollisionWithBullet(bullet);
-
-	    yield return null;
-	}
-
-	Rigidbody2D EnsureBulletSetup(GameObject bullet)
-	{
-	    var rb2d = bullet.GetComponent<Rigidbody2D>();
-	    if (!rb2d) rb2d = bullet.AddComponent<Rigidbody2D>();
-	
-    	rb2d.bodyType = RigidbodyType2D.Dynamic;
-    	rb2d.gravityScale = 0f;
-    	rb2d.freezeRotation = true;
-    	rb2d.collisionDetectionMode = CollisionDetectionMode2D.Continuous;
-
-    	var col = bullet.GetComponent<Collider2D>();
-    	if (!col) col = bullet.AddComponent<CircleCollider2D>();
-    	col.isTrigger = true;
-
-    	return rb2d;
-	}
-
-	void IgnorePlayerCollisionWithBullet(GameObject bullet)
-	{	
-    	var bulletCols = bullet.GetComponentsInChildren<Collider2D>();
-    	var playerCols = GetComponentsInChildren<Collider2D>();
-    	foreach (var bc in bulletCols)
-        	foreach (var pc in playerCols)
-            	if (bc && pc) Physics2D.IgnoreCollision(bc, pc, true);
-	}
-
+    void IgnorePlayerCollisionWithBullet(GameObject bullet)
+    {	
+        var bulletCols = bullet.GetComponentsInChildren<Collider2D>();
+        var playerCols = GetComponentsInChildren<Collider2D>();
+        foreach (var bc in bulletCols)
+            foreach (var pc in playerCols)
+                if (bc && pc) Physics2D.IgnoreCollision(bc, pc, true);
+    }
 
 #if UNITY_EDITOR
     void OnDrawGizmosSelected()
