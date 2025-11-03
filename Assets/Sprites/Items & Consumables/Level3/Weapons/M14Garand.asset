@@ -18,3 +18,5 @@ MonoBehaviour:
   attackSpeed: 1
   pattern: 1
   reach: 15
+  attackState: AttackCampil
+  attackFade: 0.05
