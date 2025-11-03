@@ -13,8 +13,12 @@ public class EnemyHealth : MonoBehaviour
 
     public void TakeDamage(int amount)
     {
-        // lagay dito yung damage animator	
+        
         Debug.Log("Damage Taken" + currentHealth);
+        
+        if (AudioManager.Instance != null)
+            AudioManager.Instance.PlayDamageSFX();
+        
         currentHealth -= amount;
         Debug.Log(gameObject.name + " took " + amount + " damage! Current HP: " + currentHealth);
 
@@ -26,6 +30,9 @@ public class EnemyHealth : MonoBehaviour
 
     void Die()
     {
+        if (AudioManager.Instance != null)
+            AudioManager.Instance.PlayDeathSFX();
+        
         Destroy(gameObject);
     }
 }

@@ -50,10 +50,12 @@ public class Player_health : MonoBehaviour
         UpdateHealthUI();
     }
 
-    // Update is called once per frame
     public void TakeDamage(int damage)
     {
-        if (Shield_active)
+		if (AudioManager.Instance != null)
+            AudioManager.Instance.PlayDamageSFX();
+        
+		if (Shield_active)
         {
             Shield_active = false;
             shield_Icons.SetActive(false);
@@ -104,8 +106,12 @@ public class Player_health : MonoBehaviour
 
 	public void OnDeath() 
 	{
-		if (AudioManager.Instance != null)
+		
+		if (AudioManager.Instance != null) 
+		{
+			AudioManager.Instance.PlayDeathSFX();
 			AudioManager.Instance.FadeOutMusic(1.5f);
+		}
 		
 		Time.timeScale = 0f;
 		GameOverPanel.SetActive(true);
